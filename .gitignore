@@ -1,0 +1,11 @@
+*.lnk
+*.exe
+*.ods
+*.xlsx
+*.docx
+*.pptx
+*.pdf
+*.csv
+.aws/
+~*
+.*lock*
