@@ -4,7 +4,7 @@ Presentation
 _______________
 
 Hello,
-Nice to meet you, I'm Nadège.
+I'm Nadège.
 This repository contains all the projects dedicated to obtaining the "Data Science Designer and Developer" certification developed by Jedha (Fullstack Data Science). I'm currently learning, thank you for your kindness!
 ________________
 
