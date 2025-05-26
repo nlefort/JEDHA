@@ -6,6 +6,11 @@
 *.pptx
 *.pdf
 *.csv
+*.doc
+*.msi
+*.xls
+*.txt
+
 .aws/
 ~*
 .*lock*
