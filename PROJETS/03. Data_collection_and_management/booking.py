@@ -4,7 +4,7 @@ import pandas as pd
 import aiohttp
 from playwright.async_api import async_playwright
 
-villes = ["Paris", "Lyon", "Nice"]  # Tu peux modifier cette liste
+villes = ["Paris", "Lyon", "Nice"]  # inclure les villes souhaitées
 
 
 # Fonction de géocodage avec Nominatim (OpenStreetMap)
@@ -115,8 +115,10 @@ async def scrape_booking():
 
     # Sauvegarde
     df = pd.DataFrame(all_hotels)
-    df.to_csv("hotels_booking_async_geocoded.csv", index=False, encoding="utf-8-sig")
-    print("\n✅ Fichier 'hotels_booking_async_geocoded.csv' créé.")
+# Enregistrement des données dans un fichier CSV
+    chemin_fichier = "D:/Profils/NLefort/Desktop/JEDHA/PROJETS/03. Data_collection_and_management"
+    df.to_csv(chemin_fichier + "/all_hotels.csv", index=False)  # Enregistrer le DataFrame dans un fichier CSV
+    print("Fichier 'all_hotels.csv' exporté avec les coordonnées et la météo.")
 
 
 # Lancement
