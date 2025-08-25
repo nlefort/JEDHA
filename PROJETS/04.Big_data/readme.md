@@ -1,68 +1,90 @@
 
 # Étape 1 : Préparation des données
 
-https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1757644669073569/811571160453303/3378110399057887/latest.html
+Lien databricks : [Notebook - Préparation des données](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1757644669073569/811571160453303/3378110399057887/latest.html)
 
-* Charger les données depuis S3
+## Charger les données depuis S3
 
 spark
 sc=spark.sparkContext
 -> non nécessaire dans environnement Databricks car session spark crée automatiquement quand le notebook démarre
 
-* lecture du schéma
+## lecture du schéma
 
-dans le schéma,
+dans le schéma,/
 |-- data: struct (nullable = true)
+
 ...
+
 |-- id: string (nullable = true)
 
 id est une colonne du dataframe au même niveau que data, pas à l'intérieur de la strcutre data.
 chaque ligne du dataframe contient une colonne data (avec tous les champs imbriqués)
 et une colonne id, indépendante de data
 
-* Nettoyage & normalisation
+##  Nettoyage & normalisation
  - Transformation des prix en numérique (.cast("double"))
+
  discount, price, initial price
 
  - Conversion des dates (to_date)
+
  release_date
 
  - réalisation d'un df_main
-Avant : DataFrame initial
-+--------------------+
+
+
+**Avant : DataFrame initial**
+
+
 |        data        |
-+--------------------+
+|--------------------|
 | {appid, categories, ccu, developer, ...} |
 | {appid, categories, ccu, developer, ...} |
-+--------------------+
+
 
 data = struct (objet)
-|-- data: struct (nullable = true)  
-| |-- appid: long (nullable = true) -> ceci est une colonne simple, contenant un nombre entier (long=int) et peut être nul (nullable=true)  
-| |-- categories: array (nullable = true) -> ceci est un tableau/liste imbriqué (array)  
-| | |-- element: string (containsNull = true) -> chaque élément est une chaîne de caractère  
-... 
-| |-- platforms: struct (nullable = true) -> ceci est un objet structuré, un dictionnaire (strcut)  
-| | |-- linux: boolean (nullable = true) -> chaque clé renvoi renvoie une valeur oui/non  
-| | |-- mac: boolean (nullable = true)  
-| | |-- windows: boolean (nullable = true)  
 
-Étape 1 : création d'un df principal
+|-- data: struct (nullable = true)  
+
+| |-- appid: long (nullable = true) -> ceci est une colonne simple, contenant un nombre entier (long=int) et peut être nul (nullable=true)  
+
+| |-- categories: array (nullable = true) -> ceci est un tableau/liste imbriqué (array) 
+
+| | |-- element: string (containsNull = true) -> chaque élément est une chaîne de caractère 
+
+... 
+
+| |-- platforms: struct (nullable = true) -> ceci est un objet structuré, un dictionnaire (strcut)  
+
+| | |-- linux: boolean (nullable = true) -> chaque clé renvoi renvoie une valeur oui/non  
+
+| | |-- mac: boolean (nullable = true)  
+
+| | |-- windows: boolean (nullable = true) 
+
+
+**Étape 1 : création d'un df principal**
 df_main= df.select(
+
     col("data.appid"),
+
     col("data.categories"),
+
     col("data.ccu"),
+
     col("data.developer"),
+
     ...
 )
 
 Résultat : DataFrame imbriqué avec 1 ligne unique par jeu
-+-------+-------------------------------+-----+---------+ ... +
+
 | appid | categories                    | ccu | developer | ... |
-+-------+-------------------------------+-----+---------+ ... +
+|-------|-------------------------------|-----|-----------|---- |
 | 10    | [Multi-player, PvP, ...]      | 13990 | Valve | ... |
 | 1000  | [Single-player, Adventure]    | 500   | Indie  | ... |
-+-------+-------------------------------+-----+---------+ ... +
+
 
 --> ajout colonnes "platforms"
 
@@ -71,15 +93,15 @@ Résultat : DataFrame imbriqué avec 1 ligne unique par jeu
 categorie, langues, genre, tags
 
 Résultat : une ligne = 1 catégorie du jeu. si le jeu a 4 catégories, 4 lignes sont créées.
-+-------+-------------------+
+
 | appid | category          | 
-+-------+-------------------+
+|-------|-------------------|
 | 10    | Multi-player      | 
 | 10    | PvP               | 
 | 10    | Action            | 
 | 1000  | Single-player     | 
 | 1000  | Adventure         | 
-+-------+-------------------+
+
 
 - Nettoyage des valeurs nulles/incomplètes
 
@@ -87,7 +109,7 @@ Résultat : une ligne = 1 catégorie du jeu. si le jeu a 4 catégories, 4 lignes
 
 # Etape 2 : visualisation des données
 
-https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1757644669073569/1637098918164767/3378110399057887/latest.html
+Lien databricks : [Notebook - visualisation des données](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1757644669073569/1637098918164767/3378110399057887/latest.html)
 
 Étape 2.1 : Analyses "macro"
 Éditeurs les plus prolifiques
