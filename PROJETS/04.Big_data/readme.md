@@ -24,7 +24,7 @@ et une colonne id, indépendante de data
 ##  Nettoyage & normalisation
  - Transformation des prix en numérique (.cast("double")):  discount, price, initial price
  - Conversion des dates (to_date):  release_date
- - réalisation d'un df_main
+ - réalisation d'un df_principal et de df_secondaires
 
 
 **Avant : DataFrame initial**
@@ -84,47 +84,30 @@ Résultat : une ligne = 1 catégorie du jeu. si le jeu a 4 catégories, 4 lignes
 | 1000  | Adventure         | 
 
 
-- Nettoyage des valeurs nulles/incomplètes
-    * Prix (conversion en € à la place des cts)
+- Nettoyage des valeurs nulles/incomplètes : Prix (conversion en € à la place des cts)
 
-- Enregistrer format parquet
-    * df principal
-    * df secondaire : genres de jeux vidéos
-    * df secondaire : langues des jeux vidéos
-    * df secondaire : mot clés associés aux jeux vidéos
+- Enregistrer format parquet : df principal, df secondaires
 
 # Etape 2 : visualisation des données
 
 Lien databricks : [Notebook - visualisation_données](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1757644669073569/1637098918164767/3378110399057887/latest.html)
 
-## Analyses macro
-**Période étudiée** : après des années Covid record, les chiffres de ventes de jeux vidéos se sont tassées légèrement.
-
-**Éditeurs les plus prolifiques** : Un grand nombre d'éditeurs indépendants
-
-**Langues représentées** : L'anlglais, langue la plus fréquente 
-
-**Prix des jeux vidéos**: La moitié des jeux à moins de 5 €
-
-**Age requis** : près de 99% des jeux sont tout publics
-
-**Genre** : Le jeux vidéos un passe-temps plutôt qu'une passion
-
-**Catégories**: Jouer seul, n'importe où et n'importe quand
-
-**Palteforme**: Windows incontournable
-
-## Analyses par genres
-
-**Genres les plus populaires** : Les genres de jeux les mieux notés ne sont pas forcément les plus représentés
-
-**Combinaison de genre et de catégories les mieux notées** : Le principe de joueur unique prédominant
-
-**Genre de jeux réalisés par éditeur** : la plupart déjà sur les créneaux "casual"
-
-**Prix médian par genre** : entre 4 et 6 € par jeu
-
 ## Synthèse
+### Analyses macro
+- **Période étudiée** : après des années Covid record, les chiffres de ventes de jeux vidéos se sont tassées légèrement.
+- **Éditeurs les plus prolifiques** : Un grand nombre d'éditeurs indépendants
+- **Langues représentées** : L'anlglais, langue la plus fréquente 
+- **Prix des jeux vidéos**: La moitié des jeux à moins de 5 €
+- **Age requis** : près de 99% des jeux sont tout publics
+- **Genre** : Le jeux vidéos un passe-temps plutôt qu'une passion
+- **Catégories**: Jouer seul, n'importe où et n'importe quand
+- **Palteforme**: Windows incontournable
+
+### Analyses par genres
+
+- **Genres les plus populaires** : Les genres de jeux les mieux notés ne sont pas forcément les plus représentés
+- **Combinaison de genre et de catégories les mieux notées** : Le principe de joueur unique prédominant
+- **Genre de jeux réalisés par éditeur** : la plupart déjà sur les créneaux "casual"
+- **Prix médian par genre** : entre 4 et 6 € par jeu
 
 Voir aussi : [Bilan du marché français 2024](https://www.sell.fr/sites/default/files/essentiel-jeu-video/def_ejv_mars_2025.pdf)
-
