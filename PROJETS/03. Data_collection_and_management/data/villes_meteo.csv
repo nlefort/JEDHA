@@ -1,0 +1,36 @@
+id_ville,nom_ville,temp_moy,ressenti,humidity_moy,prob_pluie_moy,uv_moy
+fb1372c111d5,Mont Saint Michel,23.0,22.7,53.0,300.0,4.4
+b1926dc4d399,Saint Malo,20.8,20.6,63.3,300.0,4.5
+5fd0187b51b2,Bayeux,21.1,20.9,58.3,349.0,4.7
+4e9b8cad09f6,Le Havre,20.1,19.9,64.0,320.0,4.7
+e76e9773c33d,Rouen,24.0,23.7,45.0,260.0,5.1
+ccbee73cd81c,Paris,23.1,22.6,45.6,300.0,5.3
+ebffa599f435,Amiens,23.4,22.8,39.1,100.0,4.6
+964a8bed31d6,Lille,23.2,22.6,38.7,100.0,5.1
+bb29bb72d5fe,Strasbourg,22.0,21.7,55.1,294.0,4.6
+794f211090be,Chateau du Haut Koenigsbourg,19.5,19.0,57.1,300.0,5.1
+83b47b11c640,Colmar,22.0,21.7,56.9,300.0,5.1
+b33bc6c3bd6e,Eguisheim,21.7,21.5,57.0,300.0,5.1
+ac3fbabf43fd,Besancon,23.8,24.1,56.4,355.0,5.6
+7c978763ccd2,Dijon,22.6,22.4,53.7,354.0,5.3
+6d78f94327fe,Annecy,23.0,22.8,56.1,399.0,5.1
+5fdd7011632d,Grenoble,24.4,24.3,57.4,523.0,5.0
+10b53d95e2d3,Lyon,24.0,23.7,50.0,403.0,5.2
+f7a03e5c5dd7,Gorges du Verdon,23.0,22.6,47.3,435.0,5.8
+e5fcdbaf84c4,Bormes les Mimosas,26.3,26.4,54.9,141.0,5.9
+9ce2d0d8095b,Cassis,26.0,26.2,55.3,131.0,5.8
+6a5b4d7eaece,Marseille,26.3,26.7,56.7,260.0,5.5
+f7f4b61ca081,Aix en Provence,27.4,26.9,42.0,392.0,5.3
+a76b712fa6fd,Avignon,27.0,26.9,46.0,425.0,5.3
+975923312ee1,Uzes,27.0,26.7,44.7,312.0,5.5
+17b7723e85eb,Nimes,27.8,27.6,45.7,340.0,5.4
+ae45e2f863bb,Aigues Mortes,25.3,25.6,60.6,269.0,5.4
+a24e1bba5fd4,Saintes Maries de la mer,24.5,24.8,65.6,238.0,5.3
+4cc9af0bda9a,Collioure,28.3,28.2,44.7,394.0,5.6
+90283dbcb014,Carcassonne,27.5,26.9,42.0,422.0,5.9
+6b599cb3b957,Ariege,20.4,20.0,59.0,580.0,5.4
+43b3fa47f36a,Toulouse,25.9,25.4,47.0,480.0,6.4
+eb1591916474,Montauban,25.3,25.0,51.4,496.0,5.8
+156a5a30ee81,Biarritz,22.5,22.7,73.1,453.0,5.8
+25621b1061c4,Bayonne,23.3,23.5,69.6,458.0,6.0
+3a6c4162eb27,La Rochelle,22.9,22.8,58.4,155.0,5.3
