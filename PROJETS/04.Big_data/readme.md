@@ -1,4 +1,32 @@
 
+# Steam Video Game Platform Analysis 
+
+## Contexte du projet
+
+L’objectif est de réaliser une analyse globale des jeux disponibles sur Steam afin de mieux comprendre le marché et les tendances du jeu vidéo.
+
+
+## Goals
+
+- Identifier les facteurs influençant la popularité et les ventes d’un jeu.
+- Analyser le marché mondial du jeu vidéo à différents niveaux (analyse macro, analyse des genres, analyse des plateformes)
+
+## Deliverables
+
+- Notebooks Databricks incluant : Manipulation de données avec PySpark
+- Visualisation de données avec l’outil Databricks Dashboard
+
+## Technologies & outils
+
+Python – Pandas, NumPy
+
+PySpark – DataFrames, fonctions utilitaires, agrégations
+
+Databricks – Visualisations et Dashboard
+
+AWS S3 – Stockage des datasets
+__________________________________________________________________________
+
 # Étape 1 : Préparation des données
 
 Lien databricks : [Notebook - Préparation_des_données](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1757644669073569/811571160453303/3378110399057887/latest.html)
@@ -111,3 +139,8 @@ Lien databricks : [Notebook - visualisation_données](https://databricks-prod-cl
 - **Prix médian par genre** : entre 4 et 6 € par jeu
 
 Voir aussi : [Bilan du marché français 2024](https://www.sell.fr/sites/default/files/essentiel-jeu-video/def_ejv_mars_2025.pdf)
+
+
+## Sources
+
+Dataset : s3://full-stack-bigdata-datasets/Big_Data/Project_Steam/steam_game_output.json
