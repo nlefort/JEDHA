@@ -2,9 +2,10 @@
 
 ## Contexte du projet
 
-##  Objectif du projet
+## Objectif du projet
 
 Le marketing team souhaite créer une application recommandant les meilleures destinations et hôtels basée sur des données réelles :
+
 - Météo des destinations
 - Informations sur les hôtels
 
