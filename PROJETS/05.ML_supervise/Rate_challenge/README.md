@@ -1,34 +1,71 @@
-# Conversion Rate Challenge – Predict Newsletter Subscriptions
+# :dart: Conversion Rate Challenge – Predict Newsletter Subscriptions
 
-## Objectif du projet
+## :rocket: Objectif du projet
 
-- Participer à une compétition d’apprentissage automatique similaire à Kaggle.
+Le projet consiste à participer à une compétition d’apprentissage automatique similaire à Kaggle.
+Les objectifs sont les suivants :
 
-## Goals
+- Analyser et visualiser les données mises à disposition
+- Créer un modèle de base permettant de prédire la souscription à une newsletter
+- Créer d'autres modèles et sélectionner celui qui selon nous est le plus pertinent pour prédire la souscription à une newsletter
 
-- EDA et prétraitements
-- Analyse des données avec visualisations pertinentes
-- Création d’un modèle de base avec data_train.csv
-- Amélioration du modèle
-- Optimisation du score F1 sur l’ensemble de test interne
+## :brain: Pipeline de traitement
 
-## Scope du projet
+La collecte et le traitement des données suivante la progression suivante :
 
-- Dataset : data_train.csv (étiqueté) et data_test.csv (sans cible)
-- Variables explicatives (X) et variable cible (Y) : abonnement à la newsletter
-- Évaluer les performances avec le F1-score
-- Soumettre des prédictions pour un classement mondial simulé
+```text
+Import des données test
+↓
+Analyses et statistiques descriptives
+↓
+Création d'un modèle de base (fourni)
+↓
+Amélioration du modèle de base et tests sur de nouveaux modèles
+↓
+Comparaison des modèles
+↓
+Interpréatation des modèles et choix du plus pertinent
+↓
+Prédiction de souscription à partir du modèle choisi
+```
 
-## Deliverables
+## :wheel: Technologies & outils
 
-- Visualisations pertinentes pour l’EDA
-- Modèle prédictif évalué (F1, matrice de confusion)
-- Analyse des paramètres du meilleur modèle et recommandations pour améliorer le taux de conversion
+| Domaine    | Outils                   |
+| ---------- | ---------|
+| Exploitation des données | Pandas, numpy, seabornn plotly |
+| Apprentissage automatique supervisé | Scikit-learn, catboost, XGboost, LightGBM, XGBoost, LogisticRegression |
 
-##  Technologies & outils
+## :compass: Roadmap
 
-Python – Pandas, NumPy
+- [x] Statistiques descriptives globales
 
-Scikit-learn – LogisticRegression, RandomForest, GradientBoosting, GridSearchCV
+- [x] Synthèse et analyse
 
-Visualisation – Matplotlib, Seaborn
+- [x] Test sur le modèle de base fourni
+
+- [x] Amélioration de ce modèle et propositions sur d'autres modèles
+
+- [x] Comparaison des modèles
+
+- [x] Interprétation des modèles et choix du plus performant
+
+- [x] Entraînement du modèle choisi
+
+- [x] Proposition d'actions concrètes
+
+## :arrow_forward: Installation, exécution, tutlisation
+
+### 0. Prérequis
+
+Pas de prérequis
+
+### 1. Lancer le notebook
+
+Depuis votre IDE préféré, lancer le notebook
+
+## :busts_in_silhouette: Auteurs
+
+Projet développé par [Nadège Lefort](https://github.com/nlefort)
+
+*La réalisation de ce projet s'inscrit dans le cadre de la [formation Data Scientist](https://www.jedha.co/formations/formation-data-scientist) développé par [Jedha](https://www.jedha.co/), en vue de l'obtention de la certification professionnelle de niveau 6 (bac+4) enregistrée au RNCP : [Concepteur développeur en science des données](https://www.francecompetences.fr/recherche/rncp/35288/).*

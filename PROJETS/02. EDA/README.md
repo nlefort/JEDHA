@@ -1,49 +1,66 @@
-# Speed Dating Project 🎯
+# :dart: Speed Dating Project
 
-_______________
+## :rocket: Objectif du projet
 
+Le projet consiste à analyser un jeu de données issu d’un speed dating.
+Les objectifs sont les suivants :
 
-## Contexte du projet
+- Etudier les données issues des speed dating
+- Identifier les facteurs inluençant l'intérêt mutuel
+- Comprendre les attributs qui motivent à un second rendez-vous
 
-Le projet consiste à analyser un jeu de données issu d’un speed dating pour comprendre ce qui fait qu’une personne accepte un second rendez-vous.
+## :brain: Pipeline d'analyse
 
-##  Objectif du projet
+L'intégralité du traitement est réalisé dans un unique notebook.
 
-Le marketing team souhaite comprendre pourquoi le nombre de matches diminue et identifier les facteurs qui incitent les utilisateurs à vouloir un second rendez-vous. Le projet consiste à :
-- Étudier les données issues d’expériences de speed dating.
-- Identifier les facteurs influençant l’intérêt mutuel.
+```text
+Contexte et méthode
+    ↓
+Import et lecture du dataset
+    ↓
+Analyse du dataset
+    ↓
+Attributs recherchés par les participans
+    ↓
+Facteurs influençant une décision 
+    ↓
+Conclusion
+```
 
-## Goals
+## :wheel: Technologies & outils
 
-- Comprendre les attributs qui motivent un second rendez-vous.
-- Réaliser des analyses statistiques et des visualisations.
+| Domaine    | Outils                   |
+| ---------- | ---------|
+| Statistiques descriptives | Pandas, numpy |
+| Visualisations | Matplotlib, Seaborn |
 
-Méthodes possibles :
-- Statistiques descriptives, visualisations graphiques, analyse interprétative
+## :compass: Roadmap
 
-## Scope du dataset
+- [x] Lecture du datasset
 
-Données collectées lors de speed dating entre 2002 et 2004. Chaque participant a eu un "first date" de 4 minutes avec tous les participants du sexe opposé. À la fin, les participants indiquaient s’ils voulaient un second rendez-vous. Les notes incluent : Attractiveness, Sincerity, Intelligence, Fun, Ambition, Shared Interests.
+- [x] Nettoyage des données
 
-Le dataset inclut également données démographiques et questionnaires sur habitudes, perception de soi et style de vie.
+- [x] Description des participants
 
-## Deliverables
+- [x] Description des variables de décision
 
-Un notebook avec : Statistiques descriptives, visualisations, interprétation et conclusions sur les facteurs influençant un second rendez-vous
+- [x] Identification des critères recherchés par les participants
 
-## Technologies & outils
+- [x] Identification des facteurs qui influencent une décisions
 
-Python
+## :arrow_forward: Installation, exécution, tutlisation
 
-Pandas, NumPy
+### 0. Prérequis
 
-Matplotlib, Seaborn, Plotly
+Disposer du dataset initial
+Aucun autre prérequis n'est nécessaire
 
-Scikit-Learn
+### 1. Lancer le notebook
 
-Jupyter Notebook
+Depuis votre IDE préféré, lancer le notebook
 
-## Liens utiles
+## :busts_in_silhouette: Auteurs
 
-Speed Dating Data Key
-Jedha Bootcamp
+Projet développé par [Nadège Lefort](https://github.com/nlefort)
+
+*La réalisation de ce projet s'inscrit dans le cadre de la [formation Data Scientist](https://www.jedha.co/formations/formation-data-scientist) développé par [Jedha](https://www.jedha.co/), en vue de l'obtention de la certification professionnelle de niveau 6 (bac+4) enregistrée au RNCP : [Concepteur développeur en science des données](https://www.francecompetences.fr/recherche/rncp/35288/).*
