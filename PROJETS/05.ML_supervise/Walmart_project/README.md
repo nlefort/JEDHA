@@ -1,30 +1,72 @@
-# Walmart Sales Forecasting – Supervised Machine Learning
+# :dart: Prédire le montant des ventes hebdomadaires des magasins
 
+## :rocket: Objectif du projet
 
-## Contexte du projet
+L'objectif de ce projet est de comprendre et de modéliser l'influence des indicateurs économiques et autres facteurs sur les ventes hebdomadaires des magasins Walmart. Les principaux objectifs sont :
 
-Le service marketing de Walmart souhaite créer un modèle d’apprentissage automatique capable d’estimer les ventes hebdomadaires avec la plus grande précision.
+- Explorer et visualiser les données mises à disposition pour identifier les tendances et les relations.
+- Construire un modèle de régression linéaire pour prédire les ventes des supermarchés.
+- Évaluer et interpréter le modèle pour identifier les caractéristiques les plus influentes.
+- Proposer des modèles alternatifs (Ridge, Lasso) pour améliorer les performances et réduire le surapprentissage.
+- Normaliser les ventes par magasin afin de comprendre l’effet purement économique, indépendamment des différences structurelles entre magasins.
 
-## Goals
+## :brain: Pipeline de traitement
 
-- Exploratory Data Analysis (EDA) et prétraitement
-- Créer un modèle de référence – Régression linéaire
-- Entraîner un modèle régularisé (Ridge ou Lasso)
+La collecte et le traitement des données suivante la progression suivante :
 
-## Scope du projet
+```text
+Import des données 
+↓
+Analyse exploratoire (EDA) et statistiques descriptives
+↓
+Prétraitement des données (gestion des NaN, conversion des dates, suppression des outliers)
+↓
+Création d'un modèle de régression linéaire de référence
+↓
+Évaluation et interprétation des coefficients du modèle
+↓
+Amélioration du modèle avec régularisation (Ridge, Lasso) et optimisation des hyperparamètres
+↓
+Normalisation des ventes par magasin pour analyser l’influence économique pure
+↓
+Analyse finale des performances et des variables influentes
+```
 
-Dataset contenant : Ventes hebdomadaires par magasin, indicateurs économiques, variables temporelles 
+## :wheel: Technologies & outils
 
-## Deliverables
+| Domaine    | Outils                   |
+| ---------- | ---------|
+| Exploitation et visualisation des données | Pandas, NumPy, Seaborn, Matplotlib, Plotly |
+| Apprentissage automatique supervisé | Scikit-learn, LinearRegression, Ridge, Lasso, GridSearchCV, KFold |
 
-- Visualisations pour explorer les données
-- Modèle de régression linéaire simple et régularisé
-- Analyse et interprétation des variables influençant les ventes
+## :compass: Roadmap
 
-## Technologies & outils
+- [x]  Statistiques descriptives globales et visualisations
 
-Python – Pandas, NumPy
+- [x] Analyse exploratoire et synthèse des tendances
 
-Scikit-learn – LinearRegression, Ridge, Lasso, GridSearchCV
+- [x] Test sur un premier modèle de régression linéaire
 
-Visualisation – Matplotlib, Seaborn
+- [x] Interpréation des coefficents du modèle
+
+- [x] Proposition d’un modèle régularisé (Ridge/Lasso)
+
+- [x] Analyse des ventes normalisées par magasin
+
+- [x] Évaluation finale des performances et interprétation des variables économiques
+
+## :arrow_forward: Installation, exécution, tutlisation
+
+### 0. Prérequis
+
+Python 3.x
+
+### 1. Lancer le notebook
+
+Depuis votre IDE préféré, lancer le notebook
+
+## :busts_in_silhouette: Auteurs
+
+Projet développé par [Nadège Lefort](https://github.com/nlefort)
+
+*La réalisation de ce projet s'inscrit dans le cadre de la [formation Data Scientist](https://www.jedha.co/formations/formation-data-scientist) développé par [Jedha](https://www.jedha.co/), en vue de l'obtention de la certification professionnelle de niveau 6 (bac+4) enregistrée au RNCP : [Concepteur développeur en science des données](https://www.francecompetences.fr/recherche/rncp/35288/).*

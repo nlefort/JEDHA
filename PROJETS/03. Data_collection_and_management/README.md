@@ -1,29 +1,34 @@
-# :dart: Plan Your Trip
+# :airplane: Plan Your Trip
 
 ## :rocket: Objectif du projet
 
-Le projet consiste à collecter des données issues de sources différentes.
-Les objectifs sont les suivants :
+Ce projet vise à créer une application de recommandation de destinations en France en se basant sur des données réelles de localisation, météo et hôtels.
+Les principaux objectifs sont :
 
-- Collecter des données de localisation et de météo
-- Agglomérer ces données pour proposer un top destinations
+- Collecter les coordonnées géographiques des villes (latitude/longitude).
+
+- Récupérer les données météorologiques pour chaque ville.
+
+- Extraire certaines informations sur les hôtels via Booking.com.
+
+- Fusionner toutes ces données pour générer un dataset enrichi et créer des visualisations.
 
 ## :brain: Pipeline de traitement
 
 La collecte et le traitement des données suivante la progression suivante :
 
 ```text
-Collecte des données de localisation
+Collecte des données de localisation (géococage Nominatim)
     ↓
-Collecte des données météos
+Collecte des données météos (OpenWeather API)
     ↓
-Collecte des données hôtels
+Collecte des données hôtels (Booking.com)
     ↓
-Fusion des données et chargement dans un S3
+Fusion des données et chargement dans un S3 (datalake)
     ↓
-Conversion des données en table sql et création d'une table enrichie
+Conversion des données en table SQL (RDS)
     ↓
-Création de cartes météo et top 20 hotels
+Création de cartes interactives
 ```
 
 ### Arborescence
@@ -32,12 +37,12 @@ Le projet a été découpé en scripts. **A des fins pédagogiques, un notebook 
 
 ```text
 03. Data
-|   .env # Variable d'environnements
+|   .env # Variable d'environnements (API keys, AWS credentials)
 |   arborescence.md # Arborescence détaillée du projet
 |   Plan_your_trip.ipynb # Notebook du projet
 |   README.md # Documentation générale du projet
 |   
-+---data # Fichiers générés
++---data # Fichiers générés (CSV, HTML)
 |       
 +---scripts # Code source principale (main.py, script principal)
 |   |   cartes.py
@@ -59,40 +64,46 @@ Le projet a été découpé en scripts. **A des fins pédagogiques, un notebook 
 
 | Domaine    | Outils                   |
 | ---------- | ---------|
-| Collecter des données sur le web | Requests, time, asyncio |
-| Charger des données dans un datalake | boto3 |
-| Créer une table sql | MySQL |
-| Visualiser | Plotly, pandas |
+| Collecte de données web | Requests, time, asyncio |
+| Stockage dans un datalake | boto3 |
+| Base de données relationnelle | MySQL |
+| Visualisation | Plotly, pandas |
 
 ## :compass: Roadmap
 
-- [x] Collecter les latitudes et longitudes des villes concernées
+- [x] Collecter les latitudes et longitudes des villes ciblées
 
-- [x] Collecter les données météo des villes concernées
+- [x] Récupérer les données météo des villes
 
-- [x] Collecter certaines données hôtels de ces villes sur Booking.com
+- [x] Extraire les informations des hôtels sur Booking.com
 
-- [x] Agglomérer ces données en un dataset final
+- [x] Fusionner toutes les données en un dataset final
 
 - [x] Charger ce dataset final sur un s3
 
-- [x] Créer une table SQL
+- [x] Créer une table SQL avec les données nettoyées
 
-- [x] Visualiser sur des cartes les résultats de ces données
+- [x] Générer des cartes interactives pour les meilleures destinations et hôtels
 
 ## :arrow_forward: Installation, exécution, tutlisation
 
 ### 0. Prérequis
 
-Avoir un fichier à la racine .env qui contient :
+- Python 3.9+
 
-La clé API Nominatim pour collecter les données météo.
+- Fichier ``.env`` à la racine contenant :
 
-Les identifiants (credentials) d'AWS.
+  - Clé API Nominatim (géocodage) et OpenWeather
+
+  - Identifiants AWS pour S3
+
+Installer les dépendances
 
 ### 1. Lancer le notebook
 
-Depuis votre IDE préféré, lancer le notebook
+Ouvrir ``Plan_your_trip.ipynb`` dans votre IDE préféré (VSCode, Jupyter Lab, Colab…).
+
+Exécuter les cellules étape par étape pour récupérer les données et visualiser les résultats.
 
 ## :busts_in_silhouette: Auteurs
 

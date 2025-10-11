@@ -127,7 +127,7 @@ Résultat : une ligne = 1 catégorie du jeu. si le jeu a 4 catégories, 4 lignes
 
 - [x] Réalisation de quatre datasets secondaires
 
-- [x] Ananlyse et visualisation les résultats sur les dashboards Databricks
+- [x] Analyse et visualisation les résultats sur les dashboards Databricks
 
 ## :arrow_forward: Installation, exécution, tutlisation
 

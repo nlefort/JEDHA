@@ -2,12 +2,16 @@
 
 ## :rocket: Objectif du projet
 
-Le projet consiste à analyser un jeu de données issu d’un speed dating.
-Les objectifs sont les suivants :
+Ce projet vise à analyser un jeu de données issu d’expériences de speed dating menées entre 2002 et 2004.
+L’objectif est de comprendre quels facteurs influencent l’intérêt mutuel entre deux personnes et quels attributs motivent la décision d’un second rendez-vous.
 
-- Etudier les données issues des speed dating
-- Identifier les facteurs inluençant l'intérêt mutuel
-- Comprendre les attributs qui motivent à un second rendez-vous
+- Plus précisément, l’analyse cherche à répondre aux questions suivantes :
+
+- Quels sont les critères les plus déterminants pour un second rendez-vous ?
+
+- Ces critères diffèrent-ils selon le genre ?
+
+- Existe-t-il un écart entre ce que les participants pensent rechercher et ce qu’ils choisissent réellement ?
 
 ## :brain: Pipeline d'analyse
 
@@ -18,46 +22,65 @@ Contexte et méthode
     ↓
 Import et lecture du dataset
     ↓
-Analyse du dataset
+Nettoyage et exploration des données
     ↓
-Attributs recherchés par les participans
+Description des participants
     ↓
-Facteurs influençant une décision 
+Attributs recherchés par les participants
     ↓
-Conclusion
+Facteurs influençant la décision finale
+    ↓
+Conclusion et perspectives
 ```
 
 ## :wheel: Technologies & outils
 
 | Domaine    | Outils                   |
 | ---------- | ---------|
-| Statistiques descriptives | Pandas, numpy |
+| Traitement et statistiques | Pandas, NumPy |
 | Visualisations | Matplotlib, Seaborn |
 
 ## :compass: Roadmap
 
-- [x] Lecture du datasset
+- [x] Lecture et compréhension du dataset
 
-- [x] Nettoyage des données
+- [x] Nettoyage et traitement des données manquantes
 
-- [x] Description des participants
+- [x] Analyse descriptive des participants
 
-- [x] Description des variables de décision
+- [x] Exploration des critères d’attractivité et de préférence
 
-- [x] Identification des critères recherchés par les participants
+- [x] Étude des facteurs influençant la décision de second rendez-vous
 
-- [x] Identification des facteurs qui influencent une décisions
+- [x] Visualisations et interprétations des résultats
+
+- [ ] Mettre en place une analyse prédictive (régression logistique) pour estimer la probabilité d’un match.
+
+## :key: Résultats princpaux
+
+- L’attractivité physique et le fun sont les critères les plus corrélés à la décision d’un second rendez-vous.
+
+- Les intérêts communs jouent un rôle significatif, mais moins fort que l’apparence.
+
+- Les femmes accordent plus d’importance à la sincérité et à la compatibilité, tandis que les hommes valorisent davantage l’attractivité.
+
+- On observe un décalage entre les intentions déclarées et les choix réels : les participants surestiment souvent l’importance de l’intelligence ou de la sincérité.
 
 ## :arrow_forward: Installation, exécution, tutlisation
 
 ### 0. Prérequis
 
-Disposer du dataset initial
-Aucun autre prérequis n'est nécessaire
+- Disposer du dataset Speed Dating Data.csv
+
+- Avoir installé Python ≥ 3.9 et les librairies suivantes :
+
+```bash
+pip install pandas numpy matplotlib seaborn 
+```
 
 ### 1. Lancer le notebook
 
-Depuis votre IDE préféré, lancer le notebook
+Ouvrir le notebook dans votre IDE préféré (JupyterLab, VSCode, Google Colab, etc.) puis exécuter les cellules séquentiellement.k
 
 ## :busts_in_silhouette: Auteurs
 
