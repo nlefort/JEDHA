@@ -38,3 +38,5 @@ PROJETS/10.Final_project/token
 catboost_info/
 results/
 *.tfevents
+logs/
+learn/
