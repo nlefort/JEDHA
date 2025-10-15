@@ -33,3 +33,8 @@ PROJETS/10.Final_project/credentials3.json
 PROJETS/10.Final_project/token.pickle
 PROJETS/10.Final_project/token
 .env
+*.events.out.tfevents
+*.tsv
+catboost_info/
+results/
+*.tfevents
