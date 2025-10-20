@@ -48,7 +48,19 @@ Evaluation du modèle et comparaisons avec les autres modèles
 
 ## :key: Résultats clés
 
+Tests sur 3 modèles : Logistique Regression, CNN et apprentissage par transfert.
+Apprentissage par transfert, le plus performant (0 prédiction de spams pour un vrai message):
 
+- 99.5 % des prédictions de la classe 0 (ham) sont correctes
+- 100 % des prédictions de la classe 1 (spam) sont correctes
+
+- 100% des vrais 'ham' de la classe 'ham' ont été correctement prédits
+- 96.64 % des vrais 'spams' de la classe 'spams' ont été correctement prédits
+
+Métriques globales :
+
+- Accuracy = 0.9955 -> 99,5 % des prédictions correctes.
+- ROC-AUC = 0.998 -> modèle quasi parfait pour séparer les classes.
 
 ## :compass: Roadmap
 

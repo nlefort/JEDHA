@@ -96,7 +96,7 @@ jupyter notebook Best_place_to_be.ipynb
 
 ### 2. Visualiser les résultats
 
-Les cartes interactives s’affichent directement dans le notebook.
+Les cartes interactives sont éditées sur des fichiers html annexes, classés par ordre croissant.
 
 ## :busts_in_silhouette: Auteurs
 
