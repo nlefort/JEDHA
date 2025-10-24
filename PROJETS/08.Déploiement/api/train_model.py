@@ -105,7 +105,7 @@ print(importance_df)
 # ----------------------------
 # 7. Sauvegarde du modèle
 # ----------------------------
-joblib.dump(model, "D:/Profils/NLefort/Desktop/JEDHA/PROJETS/08.Déploiement/app/model_auto.pkl")
+joblib.dump(model, "D:/Profils/NLefort/Desktop/JEDHA/PROJETS/08.Déploiement/api/model_auto.pkl")
 print("Modèle sauvegardé dans model_auto.pkl")
 
 # ----------------------------
