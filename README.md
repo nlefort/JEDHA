@@ -24,7 +24,7 @@ La réalisation des projets décris ci-dessous s'inscrivent dans le cadre de la 
 | Challenge taux de conversion | *Créer un modèle d'apprentissage automatique permettant de prédire les souscriptions à une newsletter* | Machine Learning :      |
 | Best place to be | *Créer un algorithme permettant d'identifier les zones chaudes de demandes de chauffeurs*, *Visualiser les résulats sur un tableau de bord* | HDBSCAN, Kmeans |
 | Spam | *Créer un algorithme permettant de signaler automatiquement les spams* | PyTorch |
-| Déploiement | ** | Streamlit, Docker |
+| Déploiement | ** | FastApi, Streamlit, Docker |
 | Bonus : coding challenge | *Evaluer mes connaissances en Python et data science* | Python |
 
 ## Contact
