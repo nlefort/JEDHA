@@ -4,6 +4,7 @@ from pydantic import BaseModel
 import joblib
 import pandas as pd
 import os
+import pickle
 
 # ----------------------------
 # 1. Initialisation FastAPI
@@ -20,8 +21,18 @@ app = FastAPI(
 # ----------------------------
 # model = joblib.load("D:/Profils/NLefort/Desktop/JEDHA/PROJETS/08.Déploiement/api/model_auto.pkl") --> ne va pas fonctionner avec Docker
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "model_auto.pkl")
-model = joblib.load(MODEL_PATH)
+# Définir le chemin absolu du modèle
+model_path = os.path.join(os.path.dirname(__file__), '..', 'model', 'model_auto.pkl') 
+# os.path.dirname(__file__) permet de partir du dossier où se trouve app.py.
+# .. remonte d’un niveau pour atteindre la racine du projet.
+# Toujours utiliser rb pour lire un fichier pickle.
+
+# Charger le modèle
+with open(model_path, 'rb') as f:
+    model = pickle.load(f)
+
+# Vérification
+print("Modèle chargé avec succès :", model)
 
 # ----------------------------
 # 3. Schéma d'entrée

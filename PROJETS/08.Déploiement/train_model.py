@@ -1,7 +1,7 @@
 # ===============================================
 #  Getaround - Pricing Model Training Script
 
-
+import os
 import pandas as pd
 import numpy as np
 import joblib
@@ -13,8 +13,14 @@ from sklearn.metrics import r2_score, root_mean_squared_error
 # 1. Lecture du dataset
 # ----------------------------
 print(" Chargement du dataset...")
-dataset_price = pd.read_csv("D:/Profils/NLefort/Desktop/JEDHA/PROJETS/08.Déploiement/data/get_around_pricing_project.csv", index_col=0)
-print(" Dataset chargé :", dataset_price.shape)
+
+dataset_path = os.path.join(os.path.dirname(__file__), 'data', 'get_around_pricing_project.csv')
+dataset_path = os.path.abspath(dataset_path)  # transforme en chemin absolu
+
+print("Chemin du dataset :", dataset_path)
+
+dataset_price = pd.read_csv(dataset_path, index_col=0)
+print("Dataset chargé :", dataset_price.shape)
 
 # ----------------------------
 # 2. Préparation des données
@@ -105,8 +111,13 @@ print(importance_df)
 # ----------------------------
 # 7. Sauvegarde du modèle
 # ----------------------------
-joblib.dump(model, "D:/Profils/NLefort/Desktop/JEDHA/PROJETS/08.Déploiement/api/model_auto.pkl")
-print("Modèle sauvegardé dans model_auto.pkl")
+
+ROOT= os.path.abspath(os.path.dirname(__file__)) #dossier racine du projet
+model_path = os.path.join(ROOT, 'model', 'model_auto.pkl') # chemin pour sauvegarder le modèle
+
+# Sauvegarde du modèle avec joblib
+joblib.dump(model, model_path)
+print(f"Modèle sauvegardé dans {model_path}")
 
 # ----------------------------
 # 8. Fonction prédiction avec fourchette

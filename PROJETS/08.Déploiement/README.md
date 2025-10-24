@@ -26,6 +26,15 @@ Création d'un modèle de régression linéaire de référence
 
 ```
 
+| Étape            | Commande                         | Description                    |
+| ---------------- | -------------------------------- | ------------------------------ |
+| Entraînement | `python train_model.py`          | Enregistre modèle + run MLflow |
+| Suivi MLflow | `mlflow ui`                      | Ouvre ton tableau de bord      |
+| API          | `uvicorn api.app:app --reload`   | Démarre ton service local      |
+| Dashboard    | `streamlit run streamlit/app.py` | Teste ton front Streamlit      |
+| Déploiement  | Docker, Hugging Face           | Met tout en ligne          |
+
+
 ## :wheel: Technologies & outils
 
 | Domaine    | Outils                   |
