@@ -131,7 +131,7 @@ def predict_price(model, example_dict, interval=0.1):
 
 # Exemple d'utilisation
 example = {
-    'model_key': 'citroen_c3',
+    'model_key': 'Reanult',
     'fuel': 'diesel',
     'paint_color': 'noir',
     'car_type': 'compact',

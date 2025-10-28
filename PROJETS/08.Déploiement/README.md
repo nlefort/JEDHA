@@ -71,9 +71,9 @@ Création d'un modèle de régression linéaire de référence
 
 ### 0. Prérequis
 
-Python 3.x
+Disposer de l'applcication Docker
 
-### 1. Lancer le notebook
+### 1. Lancer Docker
 
 Depuis votre IDE préféré, lancer le notebook
 

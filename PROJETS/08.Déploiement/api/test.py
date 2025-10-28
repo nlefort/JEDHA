@@ -2,7 +2,7 @@ import requests
 
 url = "http://127.0.0.1:8000/predict"
 data = {
-  "model_key": "citroen_c3",
+  "model_key": "Renault",
   "fuel": "diesel",
   "paint_color": "noir",
   "car_type": "compact",
