@@ -1,5 +1,6 @@
 # ===============================================
 #  Getaround - Pricing Model Training Script
+# ===============================================
 
 import os
 import pandas as pd
@@ -8,6 +9,8 @@ import joblib
 from catboost import CatBoostRegressor, Pool
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, root_mean_squared_error
+import mlflow
+import mlflow.catboost
 
 # ----------------------------
 # 1. Lecture du dataset
@@ -62,7 +65,7 @@ print(dataset_price.dtypes)
 train_pool = Pool(X, y, cat_features=cat_features)
 
 # ----------------------------
-# 3. Définition du modèle avec les meilleurs hyperparamètres
+# 4. Définition du modèle avec les meilleurs hyperparamètres
 # ----------------------------
 best_params = {
     'random_strength': 0.5,
@@ -83,41 +86,54 @@ model = CatBoostRegressor(
 )
 
 # ----------------------------
-# 4. Entraînement
+# 5. Entraînement avec MLflow
 # ----------------------------
-print("Entraînement du modèle CatBoost...")
-model.fit(X, y)
-print("Entraînement terminé.")
+mlflow.set_experiment("Getaround_CatBoost_Pricing")
 
-# ----------------------------
-# 5. Évaluation
-# ----------------------------
-y_pred = model.predict(X)
-rmse = root_mean_squared_error(y, y_pred)
-r2 = r2_score(y, y_pred)
+with mlflow.start_run(run_name="catboost_pricing_model"):
 
-print(f"RMSE: {rmse:.2f} €")
-print(f"R2: {r2:.2f}")
+    print("Entraînement du modèle CatBoost...")
+    model.fit(X, y)
+    print("Entraînement terminé.")
 
-# ----------------------------
-# 6. Feature importance
-# ----------------------------
-fi = model.get_feature_importance(train_pool)
-features = X.columns
-importance_df = pd.DataFrame({'Feature': features, 'Importance': fi}).sort_values(by='Importance', ascending=False)
-print("\nFeature Importance :")
-print(importance_df)
+    # ----------------------------
+    # 6. Évaluation
+    # ----------------------------
+    y_pred = model.predict(X)
+    rmse = root_mean_squared_error(y, y_pred)
+    r2 = r2_score(y, y_pred)
 
-# ----------------------------
-# 7. Sauvegarde du modèle
-# ----------------------------
+    print(f"RMSE: {rmse:.2f} €")
+    print(f"R2: {r2:.2f}")
 
-ROOT= os.path.abspath(os.path.dirname(__file__)) #dossier racine du projet
-model_path = os.path.join(ROOT, 'model', 'model_auto.pkl') # chemin pour sauvegarder le modèle
+    # Log des hyperparamètres et métriques
+    mlflow.log_params(best_params)
+    mlflow.log_metric("RMSE", rmse)
+    mlflow.log_metric("R2", r2)
 
-# Sauvegarde du modèle avec joblib
-joblib.dump(model, model_path)
-print(f"Modèle sauvegardé dans {model_path}")
+    # Log du modèle
+    mlflow.catboost.log_model(model, name="model_catboost")
+    print("Modèle loggé dans MLflow.")
+
+    # ----------------------------
+    # 7. Feature importance
+    # ----------------------------
+    fi = model.get_feature_importance(train_pool)
+    features = X.columns
+    importance_df = pd.DataFrame({'Feature': features, 'Importance': fi}).sort_values(by='Importance', ascending=False)
+    print("\nFeature Importance :")
+    print(importance_df)
+
+    # ----------------------------
+    # 7. Sauvegarde du modèle
+    # ----------------------------
+
+    ROOT= os.path.abspath(os.path.dirname(__file__)) #dossier racine du projet
+    model_path = os.path.join(ROOT, 'model', 'model_auto.pkl') # chemin pour sauvegarder le modèle
+
+    # Sauvegarde du modèle avec joblib
+    joblib.dump(model, model_path)
+    print(f"Modèle sauvegardé dans {model_path}")
 
 # ----------------------------
 # 8. Fonction prédiction avec fourchette
