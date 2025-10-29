@@ -1,168 +1,146 @@
-# :dart: Déploiement d'une API de prédiction de prix
+# :dart: Déploiement d'une API de prédiction de prix de location
 
 ## :rocket: Objectif du projet
 
-L'objectif de ce projet est de déployer une API  :
+Le projet consiste à déterminer un seuil entre deux locations de voitures qui serait le meilleur compromis entre baisse de revenus pour les propriétaires de véhicules et conflits évités pour l'entreprise. Le second volet du projet consiste à estimer le prix de la location d'un véhicule en fonctione de plusieurs caractéristiques.
+Les objectifs de ce projet sont les suivants  :
+
+- Analyser les retards de retour de location,
+- Déterminer un délai minimum entre deux locations,
+- Optimiser les prix via un modèle de Machine Learning,
+- Créer un tableau de bord interactif
+
+## :deciduous_tree: Arborescence du projet
+
+```text
+08.Déploiement
+|   .Dockerignore # Fichiers ignorés par le conteneur Docker
+|   README.md
+|   requirements.txt # Dépendances globales
+|   train_model.py # Script d'entraînement avec MLflow
++---api # API FastAPI déployée sur Hugging Face
++---data # Données sources
++---mlruns
++---model # Modèle final sauvegardé
++---notebooks # EDA et ML
+\---streamlit # Dashborad web interactif
+ ```
 
 ## :brain: Pipeline de traitement
 
 La collecte et le traitement des données suivante la progression suivante :
 
 ```text
-Import des données 
+Importation des données
 ↓
-Analyse exploratoire (EDA) et statistiques descriptives
+Analyse exploratoire (EDA)
 ↓
-Prétraitement des données (gestion des NaN, conversion des dates, suppression des outliers)
+Prétraitement (nettoyage, dates, outliers)
 ↓
-Création d'un modèle de régression linéaire de référence
+Entraînement d’un modèle CatBoost
 ↓
-Évaluation et interprétation des coefficients du modèle
+Évaluation et interprétation
 ↓
-
+Enregistrement du modèle avec MLflow
 ↓
-
-↓
+Déploiement via FastAPI et Streamlit
 
 ```
 
-## :wheel: Technologies & outils
+| Étape                    | Description                                             |
+| ------------------------ | ------------------------------------------------------- |
+| **Données sources**      | Fichiers `.csv` & `.xlsx` fournis par Getaround         |
+| **EDA / Prétraitement**  | Analyse exploratoire, nettoyage, encodage des features  |
+| **Modèle ML (CatBoost)** | Régression du prix de location journalier               |
+| **MLflow Tracking**      | Suivi complet : hyperparamètres, RMSE, R², modèle loggé |
+| **Export modèle**        | Sauvegarde en `.pkl` pour intégration API               |
+| **API FastAPI**          | Endpoint `/predict` pour servir le modèle               |
+| **Dashboard Streamlit**  | Visualisation des retards, impact du seuil & revenus    |
+| **Décision finale**      | Trouver le bon compromis entre délai & rentabilité      |
 
-| Domaine    | Outils                   |
-| ---------- | ---------|
-| Exploitation et visualisation des données | Pandas, NumPy, Seaborn, Matplotlib, Plotly |
-| Apprentissage automatique supervisé | Scikit-learn, LinearRegression, Ridge, Lasso, GridSearchCV, KFold |
+### Commandes principales
 
-## Méthodes de l'API
+| Étape            | Commande                         | Description                                  |
+| ---------------- | -------------------------------- | -------------------------------------------- |
+| **Entraînement** | `python train_model.py`          | Entraîne et enregistre le modèle dans MLflow |
+| **MLflow UI**    | `mlflow ui`                      | Démarre l’interface de suivi                 |
+| **API (local)**  | `uvicorn api.app:app --reload`   | Lance le serveur FastAPI local               |
+| **Dashboard**    | `streamlit run streamlit/app.py` | Lance le tableau de bord Streamlit           |
+| **Déploiement**  | Docker + Hugging Face            | Met l’ensemble en production                 |
 
-| Endpoint | Méthode | Description |
-| -------- | ------- | ----------- |
-| / | GET | Message d’accueil |
-| /health | GET | Vérifie si l’API et le modèle fonctionnent |
-| /predict | POST | Prend un JSON et renvoie une prédiction |
-| /docs | GET| Interface Swagger pour tester visuellement |
+### Technologies & outils
 
-## :compass: Roadmap
+| Domaine                     | Outils                                      |
+| --------------------------- | ------------------------------------------- |
+| **Analyse & Visualisation** | Pandas, NumPy, Seaborn, Matplotlib, Plotly  |
+| **Machine Learning**        | CatBoost, Scikit-learn, GridSearchCV        |
+| **Déploiement**             | FastAPI, Streamlit, Uvicorn, Docker, MLflow |
+| **Testing & Requêtes**      | cURL, Requests                              |
 
-- [x]
+### Méthodes de l'API
 
-- [x]
+| Endpoint   | Méthode | Description                               |
+| ---------- | ------- | ----------------------------------------- |
+| `/`        | GET     | Message d’accueil                         |
+| `/health`  | GET     | Vérifie si l’API fonctionne               |
+| `/predict` | POST    | Renvoie une prédiction à partir d’un JSON |
+| `/docs`    | GET     | Interface Swagger interactive             |
 
-- [x]
+## :test_tube: Exemple de test de l'API
 
-- [x]
+1.Lancer le serveur à la racine du projet
 
-- [x]
+```bash
+uvicorn api.app:app --reload
+```
 
-- [x]
+Sortie attendue :
 
-- [x] uvicorn app:app --reload
-
-## :arrow_forward: Installation, exécution, tutlisation
-
-### 0. Prérequis
-
-Python 3.x
-
-### 1. Lancer le notebook
-
-Depuis votre IDE préféré, lancer le notebook
-
-## :busts_in_silhouette: Auteurs
-
-Projet développé par [Nadège Lefort](https://github.com/nlefort)
-
-*La réalisation de ce projet s'inscrit dans le cadre de la [formation Data Scientist](https://www.jedha.co/formations/formation-data-scientist) développé par [Jedha](https://www.jedha.co/), en vue de l'obtention de la certification professionnelle de niveau 6 (bac+4) enregistrée au RNCP : [Concepteur développeur en science des données](https://www.francecompetences.fr/recherche/rncp/35288/).*
-
-0 ) Préparations rapides (une seule fois)
-
-Ouvrir PowerShell et se placer dans le dossier de ton API :
-
-cd "D:\Profils\NLefort\Desktop\JEDHA\PROJETS\08.Déploiement\api"
-
-Activer l'environnement si besoin (conda)
-conda activate base
-
-Vérifier que les dépendances sont installées :
-pip install fastapi uvicorn joblib pandas catboost requests
-(les paquets déjà installés apparaîtront comme « Requirement already satisfied »)
-
-1) Lancer le serveur (uvicorn)
-Dans le dossier contenant app.py, lancer :
-uvicorn app:app --reload
-
-Explications :
-app:app → module:app_object (ton fichier app.py doit définir app = FastAPI()).
---reload redémarre automatiquement quand tu modifies app.py (utile en dev).
-
-Ce que je dois voir dans le terminal
-
-Messages d’info uvicorn, par ex :
-
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [...]
-INFO:     Started server process [...]
+```bash
+INFO:     Uvicorn running on http://127.0.0.1:8000
 INFO:     Application startup complete.
+```
 
-Si une erreur d’import apparaît (Could not import module "app"), vérifier que je suis dans le bon dossier et que le fichier s’appelle bien app.py.
+2.Tester dans le navigateur
 
-2 ) Vérifier l’API dans le navigateur
+- <http://127.0.0.1:8000> → message d’accueil
+- <http://127.0.0.1:8000/docs>  → interface Swagger
 
-Ouvrir le navigateur :
-http://127.0.0.1:8000/ → je dois voir le JSON d’accueil ({"message":"Bienvenue ..."}).
-http://127.0.0.1:8000/docs → Swagger UI interactif (documentation auto).
+3.Exemple de requête POST (curl)
 
-je peux tester /predict directement dans l’interface (bouton Try it out).
+```bash
+curl -X POST "http://127.0.0.1:8000/predict" \
+-H "Content-Type: application/json" \
+-d "{\"model_key\":\"Renault\",\"fuel\":\"diesel\",\"paint_color\":\"noir\",\"car_type\":\"compact\",\"private_parking_available\":1,\"has_gps\":1,\"has_air_conditioning\":0,\"automatic_car\":0,\"has_getaround_connect\":1,\"has_speed_regulator\":0,\"winter_tires\":0,\"mileage\":50000,\"engine_power\":110}"
+```
 
-3 ) Tester /predict depuis le terminal (curl) — exemple
+Réponse attendue :
 
-Si je veux tester sans navigateur, en PowerShell (curl ou Invoke-RestMethod) :
-
-Exemple JSON complet attendu (adapté au schéma CarInput déjà défini) :
-
+```bash
 {
-  "model_key": "citroen_c3",
-  "fuel": "diesel",
-  "paint_color": "noir",
-  "car_type": "compact",
-  "private_parking_available": 1,
-  "has_gps": 1,
-  "has_air_conditioning": 0,
-  "automatic_car": 0,
-  "has_getaround_connect": 1,
-  "has_speed_regulator": 0,
-  "winter_tires": 0,
-  "mileage": 50000,
-  "engine_power": 110
+  "prediction": 141.17,
+  "interval": [127.06, 155.29]
 }
+```
 
-Commande curl (PowerShell) :
+4.Exemple avec Python
 
-curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d "{\"model_key\":\"citroen_c3\",\"fuel\":\"diesel\",\"paint_color\":\"noir\",\"car_type\":\"compact\",\"private_parking_available\":1,\"has_gps\":1,\"has_air_conditioning\":0,\"automatic_car\":0,\"has_getaround_connect\":1,\"has_speed_regulator\":0,\"winter_tires\":0,\"mileage\":50000,\"engine_power\":110}"
-
-Réponse attendue (exemple) :
-
-{"prediction":141.17,"interval":[127.06,155.29]}
-
-4 ) Tester /predict depuis Python (script test.py)
-
-Crée un fichier test.py dans le même dossier avec ce contenu :
-
+``` python
 import requests
 
 url = "http://127.0.0.1:8000/predict"
 data = {
-  "model_key": "citroen_c3",
+  "model_key": "Renault",
   "fuel": "diesel",
   "paint_color": "noir",
   "car_type": "compact",
-  "private_parking_available": 1,
-  "has_gps": 1,
-  "has_air_conditioning": 0,
-  "automatic_car": 0,
-  "has_getaround_connect": 1,
-  "has_speed_regulator": 0,
-  "winter_tires": 0,
+  "private_parking_available": "Oui",
+  "has_gps": "Oui",
+  "has_air_conditioning": "Non",
+  "automatic_car": "Non",
+  "has_getaround_connect": "Oui",
+  "has_speed_regulator": "Non",
+  "winter_tires": "Non",
   "mileage": 50000,
   "engine_power": 110
 }
@@ -170,33 +148,63 @@ data = {
 resp = requests.post(url, json=data)
 print(resp.status_code)
 print(resp.json())
+print(f"Prédiction de prix : {resp.json()['prediction']:.2f} €")
 
-Puis lancer :
+```
 
+Commande attendue (ouvrir un nouveau terminal)
+
+```bash
 python test.py
+```
 
-Je dois voir :
+## :toolbox: Dépannage rapide
 
-200
-{'prediction': 141.17, 'interval': [127.06, 155.29]}
+| Erreur                        | Cause probable                   | Solution                                    |
+| ----------------------------- | -------------------------------- | ------------------------------------------- |
+| 500                           | Mauvais chemin vers le modèle    | Vérifier `joblib.load()`                    |
+| 422                           | JSON invalide                    | Corriger les clés/types du payload          |
+| CatBoostError                 | Valeurs "Oui/Non" au lieu de 0/1 | Convertir avant envoi                       |
+| Could not import module "app" | Mauvais répertoire               | Exécuter dans le dossier contenant `app.py` |
 
-5 ) Erreurs fréquentes et corrections rapides
+## :whale: Déploiement Docker
 
-500 / erreur serveur : regarde les logs dans la console uvicorn — il affichera la trace. Probable cause : modèle introuvable (mauvais chemin) ou données d’entrée mal typées.
+```bash
+docker build -t getaround-all .
+docker run -p 8000:8000 -p 8501:8501 -v ${PWD}:/app getaround-all
 
-Solution : vérifier chemin du joblib.load("...model.pkl").
+```
 
-422 Unprocessable Entity (Pydantic validation) : la requête JSON ne contient pas les champs attendus ou types incorrects.
+## Visualisation MLflow
 
-Solution : envoyer les mêmes clés et types que ton BaseModel (voir JSON d’exemple).
+```bash
+mlflow ui
+```
 
-CatBoostError: Cannot convert 'Non' to float : tu as passé "Oui"/"Non" au lieu de 1/0 ou types attendus.
+Réponse attendue :
 
-Solution : préparer et envoyer 0/1 pour les booléens ou adapter app.py pour effectuer la conversion avant prédiction.
+```bash
+[INFO] Starting MLflow UI at http://127.0.0.1:5000
+```
 
-Could not import module "app" : s'assurer que j'exécute uvicorn depuis le dossier contenant app.py et que app.py contient app = FastAPI().
+Ouvrir dans le navigateur : <http://127.0.0.1:5000>
 
-6 ) Arrêter le serveur
+## :compass: Roadmap
 
-Dans la console où uvicorn tourne, presser CTRL+C. :
-INFO:     Shutting down
+- [x] Analyse exploratoire et nettoyage
+
+- [x] Modélisation CatBoost
+
+- [x] Suivi des expérimentations MLflow
+
+- [x] Déploiement API FastAPI
+
+- [x] Interface Streamlit
+
+- [x] Déploiement final sur Hugging Face
+
+## :busts_in_silhouette: Auteurs
+
+Projet développé par [Nadège Lefort](https://github.com/nlefort)
+
+*La réalisation de ce projet s'inscrit dans le cadre de la [formation Data Scientist](https://www.jedha.co/formations/formation-data-scientist) développé par [Jedha](https://www.jedha.co/), en vue de l'obtention de la certification professionnelle de niveau 6 (bac+4) enregistrée au RNCP : [Concepteur développeur en science des données](https://www.francecompetences.fr/recherche/rncp/35288/).*

@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Profils/NLefort/Desktop/JEDHA/mlruns/756521786495264584/72aeed49a9f74839b0431c9ee6090b3b/artifacts
+end_time: 1761726777362
+entry_point_name: ''
+experiment_id: '756521786495264584'
+lifecycle_stage: active
+run_id: 72aeed49a9f74839b0431c9ee6090b3b
+run_name: catboost_pricing_model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761726760975
+status: 3
+tags: []
+user_id: nlefort

@@ -1,0 +1,10 @@
+artifact_location: file:///D:/Profils/NLefort/Desktop/JEDHA/mlruns/756521786495264584/models/m-3e9688119fa54a1fb642c37b4a1bfca4/artifacts
+creation_timestamp: 1761726772202
+experiment_id: '756521786495264584'
+last_updated_timestamp: 1761726777310
+model_id: m-3e9688119fa54a1fb642c37b4a1bfca4
+model_type: null
+name: model_catboost
+source_run_id: 72aeed49a9f74839b0431c9ee6090b3b
+status: 2
+status_message: null

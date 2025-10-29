@@ -40,3 +40,4 @@ results/
 *.tfevents
 logs/
 learn/
+PROJETS/08.Déploiement/mlruns
