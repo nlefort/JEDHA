@@ -17,10 +17,10 @@
 .aws/
 ~*
 .*lock*
-Analyse_exploratoire_des_donnees/
-Challenge/
+/Analyse_exploratoire_des_donnees/
+/Challenge/ 
 Data_collection_and_management/
-Data_visualization_with_Tableau/
+/Data_visualization_with_Tableau/
 Big_data/
 Deep_learning/
 Deploiement/
