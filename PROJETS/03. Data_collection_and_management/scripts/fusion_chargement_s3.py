@@ -44,7 +44,7 @@ output_path = "data/dataset_final.csv"
 df_final.to_csv(output_path, index=False)
 print(f"Fichier consolidé exporté : {output_path}")
 
-# 4. Upload sur S3 (optionnel)
+# 4. Upload sur S3
 load_dotenv()
 aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
 aws_secret_access_key = os.getenv("AWS_SECRET_ACCESS_KEY")
