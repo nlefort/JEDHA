@@ -66,7 +66,7 @@ Le projet a été découpé en scripts. **A des fins pédagogiques, un notebook 
 | ---------- | ---------|
 | Collecte de données web | Requests, time, asyncio |
 | Stockage dans un datalake | boto3 |
-| Base de données relationnelle | MySQL |
+| Base de données relationnelle | MySQL, amazon RDS |
 | Visualisation | Plotly, pandas |
 
 ## :compass: Roadmap
@@ -96,6 +96,8 @@ Le projet a été découpé en scripts. **A des fins pédagogiques, un notebook 
   - Clé API Nominatim (géocodage) et OpenWeather
 
   - Identifiants AWS pour S3
+
+  - Identifiants AWS pour RDS
 
 Installer les dépendances
 
