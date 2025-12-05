@@ -1,120 +1,133 @@
 import pandas as pd
-import mysql.connector
 import plotly.express as px
-import webbrowser
-from dotenv import load_dotenv
 import os
-
+from dotenv import load_dotenv
+import mysql.connector
+from IPython.display import display
 
 # -----------------------------
-# Connexion et chargement des données
+# Configuration
 # -----------------------------
-def charger_donnees():
-    load_dotenv()
-    db_host = os.getenv("DB_HOST")
-    db_user = os.getenv("DB_USER")
-    db_password = os.getenv("DB_PASSWORD")
-    db_name = os.getenv("DB_NAME")
+load_dotenv()
 
-    connection = mysql.connector.connect(
-        host=db_host,
-        user=db_user,
-        password=db_password,
-        database=db_name
+DB_HOST = os.getenv("DB_HOST")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_NAME = os.getenv("DB_NAME")
+
+# Dossier de sortie pour les fichiers
+script_dir = os.path.dirname(os.path.abspath(__file__))
+output_dir = os.path.join(script_dir, "..", "data")
+os.makedirs(output_dir, exist_ok=True)
+
+# -----------------------------
+# Charger le dataset depuis RDS
+# -----------------------------
+def charger_dataset_final():
+    conn = mysql.connector.connect(
+        host=DB_HOST,
+        user=DB_USER,
+        password=DB_PASSWORD,
+        database=DB_NAME
     )
-    print("Connecté à MariaDB")
+    print("Connecté à RDS")
 
-    # ---  Récupération des données météo ---
-    query_meteo = """
-    SELECT ville, latitude, longitude, temp_moy, ressenti, humidity_moy, uv_moy
-    FROM hotels_final
-    """
-    df_meteo = pd.read_sql(query_meteo, connection)
+    df = pd.read_sql("SELECT * FROM hotels_final", conn)
+    conn.close()
+    print("Connexion RDS fermée")
 
-    # --- Récupération des données hôtels ---
-    query_hotels = """
-    SELECT nom, ville, latitude, longitude, note
-    FROM hotels_final
-    """
-    df_hotels = pd.read_sql(query_hotels, connection)
+    # Nettoyage des colonnes numériques
+    for col in ["latitude", "longitude", "meteo_score", "note"]:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
 
-    connection.close()
-    print("Connexion MariaDB fermée")
-
-    # --- Nettoyage ---
-    # Météo
-    cols_meteo = ["temp_moy", "ressenti", "humidity_moy", "uv_moy", "latitude", "longitude"]
-    for col in cols_meteo:
-        df_meteo[col] = pd.to_numeric(df_meteo[col], errors='coerce')
-    df_meteo = df_meteo.dropna(subset=["latitude", "longitude", "temp_moy"])
-
-    # Hôtels
-    df_hotels["note"] = pd.to_numeric(df_hotels["note"], errors='coerce')
-    df_hotels["latitude"] = pd.to_numeric(df_hotels["latitude"], errors='coerce')
-    df_hotels["longitude"] = pd.to_numeric(df_hotels["longitude"], errors='coerce')
-    df_hotels = df_hotels.dropna(subset=["latitude", "longitude", "note"])
-
-    return df_meteo, df_hotels
-
+    df = df.dropna(subset=["latitude", "longitude"])
+    return df
 
 # -----------------------------
-# Fonction CARTE METEO
+# Top villes
 # -----------------------------
-def carte_meteo(df_meteo):
-    fig = px.scatter_mapbox(
-        df_meteo,
+def carte_top_villes(df, top_n=5, save_files=True):
+    df_villes = df.drop_duplicates(subset=["nom_ville"])
+    
+    df_top_villes = df_villes.sort_values(
+        "meteo_score", 
+        ascending=False
+    ).head(top_n)
+
+    # Scatter mapbox
+    fig = px.scatter_map(
+        df_top_villes,
         lat="latitude",
         lon="longitude",
-        size=[10] * len(df_meteo),  # taille uniforme
-        color="temp_moy",
-        color_continuous_scale="RdBu_r",
-        hover_name="ville",
-        hover_data={"temp_moy": True, "ressenti": True, "humidity_moy": True, "uv_moy": True,
-                    "latitude": False, "longitude": False},
+        size=[15]*len(df_top_villes),
+        color="meteo_score",
+        hover_name="nom_ville",
+        hover_data={"temp_moy": True, "ressenti": True,
+                    "humidity_moy": True, "prob_pluie_moy": True, "uv_moy": True},
         zoom=5,
-        height=600
+        height=500
     )
     fig.update_layout(mapbox_style="open-street-map", margin={"r":0,"t":30,"l":0,"b":0})
 
-    output = "data/carte_meteo.html"
-    fig.write_html(output)
-    webbrowser.open(output)
-    print("Carte météo générée :", output)
+    display(fig)
 
+    if save_files :
+        png_path = os.path.join(output_dir, "top_villes.png")
+        html_path = os.path.join(output_dir, "top_villes.html")
+        csv_path = os.path.join(output_dir, "top_villes.csv")
+
+        fig.write_image(png_path)
+        fig.write_html(html_path)
+        df_top_villes.to_csv(csv_path, index=False)
+        print(f"Top villes exportées : {png_path}, {html_path}, {csv_path}")
+
+    return df_top_villes
 
 # -----------------------------
-# Fonction CARTE TOP 20 HÔTELS
+# Top hôtels
 # -----------------------------
-def carte_hotel(df_hotels):
-    df_top20 = df_hotels.sort_values("note", ascending=False).head(20)
+def carte_top_hotels(df, df_top_villes, top_n=20, save_files=True):
+    df_hotels = df[df["nom"].notna()]
+    df_hotels_topvilles = df_hotels[df_hotels["ville"].isin(df_top_villes["nom_ville"])]
+    df_top20 = df_hotels_topvilles.sort_values("note", ascending=False).head(top_n)
 
-    fig = px.scatter_mapbox(
+    fig = px.scatter_map(
         df_top20,
         lat="latitude",
         lon="longitude",
         size="note",
         size_max=25,
         color="note",
-        color_continuous_scale="Greens",
         hover_name="nom",
-        hover_data={"ville": True, "note": True, "latitude": False, "longitude": False},
+        hover_data={"ville": True, "note": True},
         zoom=5,
-        height=600
+        height=500
     )
     fig.update_layout(mapbox_style="open-street-map", margin={"r":0,"t":30,"l":0,"b":0})
 
-    output = "data/top20_hotels.html"
-    fig.write_html(output)
-    webbrowser.open(output)
-    print("Carte hôtels générée :", output)
+    display(fig)  # Affiche directement dans le notebook
 
+    if save_files:
+        png_path = os.path.join(output_dir, "top_hotels.png")
+        html_path = os.path.join(output_dir, "top_hotels.html")
+        csv_path = os.path.join(output_dir, "top_hotels.csv")
+
+        fig.write_image(png_path)
+        fig.write_html(html_path)
+        df_top20.to_csv(csv_path, index=False)
+        print(f"Top hôtels exportés : {png_path}, {html_path}, {csv_path}")
 
 # -----------------------------
-# Lancement du script
+# Pipeline complet
+# -----------------------------
+def visualiser_cartes_dataset_final(top_villes=5, top_hotels=20, save_files=True):
+    df = charger_dataset_final()
+    df_top_villes = carte_top_villes(df, top_n=top_villes, save_files=save_files)
+    carte_top_hotels(df, df_top_villes, top_n=top_hotels, save_files=save_files)
+
+# -----------------------------
+# Exécution
 # -----------------------------
 if __name__ == "__main__":
-    df_meteo, df_hotels = charger_donnees()
-
-    # Appels des fonctions
-    carte_meteo(df_meteo)
-    carte_hotel(df_hotels)
+    visualiser_cartes_dataset_final()

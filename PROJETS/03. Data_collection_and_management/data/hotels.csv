@@ -1,421 +1,677 @@
 id,id_ville,ville,nom,url,note,latitude,longitude
-5871c9c2-9404-4068-ae8d-f05aa4a3bde5,fb1372c111d5,Mont Saint Michel,Hôtel Vert,https://www.booking.com/hotel/fr/vert.fr.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9tb250IHNhaW50IG1pY2hlbEgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC9uqQxQbAAgHSAiQ0ZDM0YzE4Yi04ODRiLTQ0NmQtOTllZS03NTM4OGMwZmZlNznYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=52523b7bde4e06b3&srepoch=1755592053&from=searchresults,"Avec une note de 8,1
+bde80ec8-3103-4f83-80f8-c25713e67b1a,fb1372c111d5,Mont Saint Michel,Hôtel Vert,https://www.booking.com/hotel/fr/vert.fr.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9tb250IHNhaW50IG1pY2hlbEgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC443MyQbAAgHSAiRjOTFlOGNiNi1kZDBlLTQ0ZDQtYmRhMS00ZmQ1YzU0MGJiMzDYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=a8c87331aeb901e8&srepoch=1764951774&from=searchresults,"Avec une note de 8,1
 8,1
 Très bien
-6 110 expériences vécues",48.6359541,-1.51146
-d23d3759-3ae2-4ff0-99fe-d3d165bfff3e,fb1372c111d5,Mont Saint Michel,La Mère Poulard,https://www.booking.com/hotel/fr/la-mere-poulard.fr.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9tb250IHNhaW50IG1pY2hlbEgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC9uqQxQbAAgHSAiQ0ZDM0YzE4Yi04ODRiLTQ0NmQtOTllZS03NTM4OGMwZmZlNznYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=52523b7bde4e06b3&srepoch=1755592053&from=searchresults,"Avec une note de 7,6
-7,6
+6 054 expériences vécues",48.6359541,-1.51146
+ffc67f54-9389-43e3-bb0a-30cdb56aab08,fb1372c111d5,Mont Saint Michel,Les Terrasses Poulard,https://www.booking.com/hotel/fr/les-terrasses-poulard.fr.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9tb250IHNhaW50IG1pY2hlbEgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC443MyQbAAgHSAiRjOTFlOGNiNi1kZDBlLTQ0ZDQtYmRhMS00ZmQ1YzU0MGJiMzDYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=a8c87331aeb901e8&srepoch=1764951774&from=searchresults,"Avec une note de 7,4
+7,4
 Bien 
-3 392 expériences vécues",48.6359541,-1.51146
-15a33cda-6780-4216-9a88-591059307b93,fb1372c111d5,Mont Saint Michel,Auberge Saint Pierre,https://www.booking.com/hotel/fr/auberge-saint-pierre.fr.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9tb250IHNhaW50IG1pY2hlbEgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC9uqQxQbAAgHSAiQ0ZDM0YzE4Yi04ODRiLTQ0NmQtOTllZS03NTM4OGMwZmZlNznYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=52523b7bde4e06b3&srepoch=1755592053&from=searchresults,"Avec une note de 8,1
-8,1
+3 597 expériences vécues",48.6359541,-1.51146
+36a40870-31f6-4148-91c0-ecc381676ce0,fb1372c111d5,Mont Saint Michel,Mercure Mont Saint Michel,https://www.booking.com/hotel/fr/mont-saint-michel.fr.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9tb250IHNhaW50IG1pY2hlbEgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC443MyQbAAgHSAiRjOTFlOGNiNi1kZDBlLTQ0ZDQtYmRhMS00ZmQ1YzU0MGJiMzDYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=a8c87331aeb901e8&srepoch=1764951774&from=searchresults,"Avec une note de 8,3
+8,3
 Très bien
-1 216 expériences vécues",48.6359541,-1.51146
-ee61d6ab-fbfb-463c-bfe4-6f2c763d1665,b1926dc4d399,Saint Malo,Hotel des Abers,https://www.booking.com/hotel/fr/des-abers.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zYWludCBtYWxvSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAL76pDFBsACAdICJDAxM2JiYzNlLTliNmEtNDkzYy04ZWZhLWVmY2YyMzJmMzA0OdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=40743b7d6b9707ad&srepoch=1755592057&from=searchresults,"Avec une note de 8,8
-8,8
-Superbe
-516 expériences vécues",48.649518,-2.0260409
-942cbdf7-7b16-4db0-8147-f93ef6e37d9e,b1926dc4d399,Saint Malo,Apartment Les Armateurs by Interhome,https://www.booking.com/hotel/fr/apartment-les-armateurs.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zYWludCBtYWxvSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAL76pDFBsACAdICJDAxM2JiYzNlLTliNmEtNDkzYy04ZWZhLWVmY2YyMzJmMzA0OdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=40743b7d6b9707ad&srepoch=1755592057&from=searchresults,"Avec une note de 8,7
-8,7
-Superbe
-18 expériences vécues",48.649518,-2.0260409
-50a86065-685d-4bd9-a4ba-6da4289abb0e,b1926dc4d399,Saint Malo,Hôtel France et Chateaubriand,https://www.booking.com/hotel/fr/de-france-et-chateaubriand.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zYWludCBtYWxvSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAL76pDFBsACAdICJDAxM2JiYzNlLTliNmEtNDkzYy04ZWZhLWVmY2YyMzJmMzA0OdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=40743b7d6b9707ad&srepoch=1755592057&from=searchresults,"Avec une note de 7,9
-7,9
+3 671 expériences vécues",48.6359541,-1.51146
+cb91ac2b-ae71-40a6-bc0b-d170ed6f8034,fb1372c111d5,Mont Saint Michel,Le Mouton Blanc,https://www.booking.com/hotel/fr/le-mouton-blanc-le-mont-saint-michel.fr.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9tb250IHNhaW50IG1pY2hlbEgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC443MyQbAAgHSAiRjOTFlOGNiNi1kZDBlLTQ0ZDQtYmRhMS00ZmQ1YzU0MGJiMzDYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=a8c87331aeb901e8&srepoch=1764951774&from=searchresults,"Avec une note de 7,2
+7,2
 Bien 
-2 672 expériences vécues",48.649518,-2.0260409
-919e797d-db88-4137-bfb5-5f3ffca3b602,5fd0187b51b2,Bayeux,Château de Monceaux 5mn de Bayeux proche Mer,https://www.booking.com/hotel/fr/le-chateau-de-monceau.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9iYXlldXhIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoLrkMUGwAIB0gIkYWMwYzliMjQtMzc3NS00N2E4LWI3NDAtYTQyNzE4MzJlNjVk2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=01ee3b818cc30568&srepoch=1755592064&from=searchresults,"Avec une note de 9,5
+1 899 expériences vécues",48.6359541,-1.51146
+47868ca6-74d6-4323-88a6-895b74045851,fb1372c111d5,Mont Saint Michel,Le Relais Saint Michel,https://www.booking.com/hotel/fr/le-relais-saint-michel.fr.html?aid=304142&label=gen173nr-10CAQoggJCGHNlYXJjaF9tb250IHNhaW50IG1pY2hlbEgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC443MyQbAAgHSAiRjOTFlOGNiNi1kZDBlLTQ0ZDQtYmRhMS00ZmQ1YzU0MGJiMzDYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=a8c87331aeb901e8&srepoch=1764951774&from=searchresults,"Avec une note de 8,3
+8,3
+Très bien
+4 278 expériences vécues",48.6359541,-1.51146
+6ec9d6f9-3352-45ae-8c3e-e5b8205be3f2,b1926dc4d399,Saint Malo,T2 terrasse de charme à Rochebonne 400 m plage,https://www.booking.com/hotel/fr/t2-de-charme-a-rochebonne.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zYWludCBtYWxvSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALojczJBsACAdICJDAxNjU3OTFiLTVmZjItNDdkOS1hM2QxLWYwODBhMjUxZjEzONgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=befc7334b79e00dc&srepoch=1764951780&from=searchresults,"Avec une note de 9,5
 9,5
 Exceptionnel
-59 expériences vécues",49.2764624,-0.7024738
-8f6803bf-8986-492f-a5b5-ee0aacabb73c,5fd0187b51b2,Bayeux,B&B Nathalie,https://www.booking.com/hotel/fr/imagine-bayeux.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9iYXlldXhIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoLrkMUGwAIB0gIkYWMwYzliMjQtMzc3NS00N2E4LWI3NDAtYTQyNzE4MzJlNjVk2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=01ee3b818cc30568&srepoch=1755592064&from=searchresults,"Avec une note de 9,6
+70 expériences vécues",48.649518,-2.0260409
+3aabd967-03f8-4c96-9fa0-dbec75e22f27,b1926dc4d399,Saint Malo,Les Bois Flottés,https://www.booking.com/hotel/fr/les-bois-flottes-saint-malo.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zYWludCBtYWxvSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALojczJBsACAdICJDAxNjU3OTFiLTVmZjItNDdkOS1hM2QxLWYwODBhMjUxZjEzONgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=befc7334b79e00dc&srepoch=1764951780&from=searchresults,"Avec une note de 9,1
+9,1
+Fabuleux 
+99 expériences vécues",48.649518,-2.0260409
+e202055e-070e-4774-9ad5-8b906e226a36,b1926dc4d399,Saint Malo,Kyriad Prestige Saint-Malo,https://www.booking.com/hotel/fr/kyriad-prestige-saint-malo-xml.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zYWludCBtYWxvSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALojczJBsACAdICJDAxNjU3OTFiLTVmZjItNDdkOS1hM2QxLWYwODBhMjUxZjEzONgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=befc7334b79e00dc&srepoch=1764951780&from=searchresults,"Avec une note de 8,8
+8,8
+Superbe
+6 221 expériences vécues",48.649518,-2.0260409
+5d068388-2a92-4773-ac36-b51c091f0093,b1926dc4d399,Saint Malo,Résidence Pierre & Vacances Ty Mat,https://www.booking.com/hotel/fr/maevatymat.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zYWludCBtYWxvSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALojczJBsACAdICJDAxNjU3OTFiLTVmZjItNDdkOS1hM2QxLWYwODBhMjUxZjEzONgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=befc7334b79e00dc&srepoch=1764951780&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,1
+8,1
+Très bien
+2 736 expériences vécues",48.649518,-2.0260409
+55cfd779-1904-4d65-9e0e-722f84abc746,b1926dc4d399,Saint Malo,Bonne rencontre,https://www.booking.com/hotel/fr/bonne-rencontre.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zYWludCBtYWxvSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALojczJBsACAdICJDAxNjU3OTFiLTVmZjItNDdkOS1hM2QxLWYwODBhMjUxZjEzONgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=befc7334b79e00dc&srepoch=1764951780&from=searchresults,"Avec une note de 9,6
 9,6
 Exceptionnel
-266 expériences vécues",49.2764624,-0.7024738
-9ce04f13-90fb-4db8-b860-8fa76d823b1b,5fd0187b51b2,Bayeux,"Apt duplex ou plain pied tout confort plein centre ville Bayeux proche commerces, restaurants, avec terrasse privative ou jardin commun aménagé clos, parking gratuit à proximité, proche plages du débarquement",https://www.booking.com/hotel/fr/immolidays.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9iYXlldXhIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoLrkMUGwAIB0gIkYWMwYzliMjQtMzc3NS00N2E4LWI3NDAtYTQyNzE4MzJlNjVk2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=01ee3b818cc30568&srepoch=1755592064&from=searchresults,"Avec une note de 8,0
+9 expériences vécues",48.649518,-2.0260409
+23e56c8d-38fc-4992-b488-b0c3c80072d3,5fd0187b51b2,Bayeux,Ibis Budget Bayeux,https://www.booking.com/hotel/fr/etap-bayeux.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9iYXlldXhIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AvCNzMkGwAIB0gIkYjk0ZDdmZTYtMDkxZi00MDkzLTg4ZGItZTMyZTZhMzI4ZThi2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=d3497338960c1188&srepoch=1764951787&from=searchresults,"Avec une note de 8,0
 8,0
 Très bien
-414 expériences vécues",49.2764624,-0.7024738
-a8f2354e-31af-41b7-b3e6-499ef1627900,4e9b8cad09f6,Le Havre,Le Havre Superbe appartement avec grande terrasse,https://www.booking.com/hotel/fr/le-havre-superbe-appartement-avec-grande-terrasse.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9sZSBoYXZyZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCieuQxQbAAgHSAiRiM2JjNjk0My05YjkyLTQ2ODYtYjY0Zi1iMWVhNTc4NDAwY2HYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=e19b3b843b9a0323&srepoch=1755592072&from=searchresults,"Avec une note de 7,4
-7,4
-Bien 
-9 expériences vécues",49.4938975,0.1079732
-8fbd056a-b7e9-48d5-a0ab-cec8bc8403d2,4e9b8cad09f6,Le Havre,Les Gîtes Havrais,https://www.booking.com/hotel/fr/les-gites-havrais.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9sZSBoYXZyZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCieuQxQbAAgHSAiRiM2JjNjk0My05YjkyLTQ2ODYtYjY0Zi1iMWVhNTc4NDAwY2HYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=e19b3b843b9a0323&srepoch=1755592072&from=searchresults,"Avec une note de 8,3
-8,3
-Très bien
-24 expériences vécues",49.4938975,0.1079732
-8a1c7efe-0c97-4aec-ae7f-96c8790a7e93,4e9b8cad09f6,Le Havre,Hotel Spa Le Pasino,https://www.booking.com/hotel/fr/pasino.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9sZSBoYXZyZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCieuQxQbAAgHSAiRiM2JjNjk0My05YjkyLTQ2ODYtYjY0Zi1iMWVhNTc4NDAwY2HYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=e19b3b843b9a0323&srepoch=1755592072&from=searchresults,"Avec une note de 8,2
-8,2
-Très bien
-1 067 expériences vécues",49.4938975,0.1079732
-80e22501-4544-4d2a-8c81-2f78618c8626,e76e9773c33d,Rouen,SPACIEUX DUPLEX PRES DES QUAIS DE SEINE LINGE MAISON FOURNI PARKING GRATUIT 4 CHAMBRES bienvenue à vous,https://www.booking.com/hotel/fr/spacieux-duplex-pret-des-quais-de-seine.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9yb3VlbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCkOuQxQbAAgHSAiQ4NzI5ZWU3Yy0yYWZhLTQwMDgtODZhOC0xYTJkZTUwMzNjYWbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=90123b88e60607c5&srepoch=1755592079&from=searchresults,"Avec une note de 9,2
-9,2
-Fabuleux 
-248 expériences vécues",49.4404591,1.0939658
-b9042b99-0788-4484-8a78-39855cfea660,e76e9773c33d,Rouen,Appart'HomeCity - Rouen Marne Impressionniste,https://www.booking.com/hotel/fr/appart-homecity-rouen-marne-impressionniste.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9yb3VlbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCkOuQxQbAAgHSAiQ4NzI5ZWU3Yy0yYWZhLTQwMDgtODZhOC0xYTJkZTUwMzNjYWbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=90123b88e60607c5&srepoch=1755592079&from=searchresults,"Avec une note de 7,7
-7,7
-Bien 
-20 expériences vécues",49.4404591,1.0939658
-4238c741-f7f3-452a-8c0b-6356e905209d,e76e9773c33d,Rouen,Eco-Appart'hôtel Rouen - JDP,https://www.booking.com/hotel/fr/eco-appart-jardin-des-plantes.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9yb3VlbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCkOuQxQbAAgHSAiQ4NzI5ZWU3Yy0yYWZhLTQwMDgtODZhOC0xYTJkZTUwMzNjYWbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=90123b88e60607c5&srepoch=1755592079&from=searchresults,"Avec une note de 8,7
-8,7
-Superbe
-112 expériences vécues",49.4404591,1.0939658
-bb446d17-510a-4365-8aaa-7760eb5fdbf7,ccbee73cd81c,Paris,Vivez au coeur du centre de Paris! Métro à 1min - Proche Republique,https://www.booking.com/hotel/fr/1min-from-the-metro-live-in-the-heart-of-paris.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9wYXJpc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCmOuQxQbAAgHSAiQ1OThjODBkOS1mYzA4LTQ2MGYtYTU5My0yMjNiZjAxZWUyZDXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=27c03b8bd0310d76&srepoch=1755592086&from=searchresults,"Avec une note de 7,9
-7,9
-Bien 
-8 expériences vécues",48.8534951,2.3483915
-676589c4-c1d9-4a7c-bbfc-104fcdbbd3b8,ccbee73cd81c,Paris,Merveil - Luxury Suite - Louvre - Opera II,https://www.booking.com/hotel/fr/luxury-3-bedrooms-2-bathrooms-apartment-opera-louvre.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9wYXJpc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCmOuQxQbAAgHSAiQ1OThjODBkOS1mYzA4LTQ2MGYtYTU5My0yMjNiZjAxZWUyZDXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=27c03b8bd0310d76&srepoch=1755592086&from=searchresults,"Avec une note de 9,0
-9,0
-Fabuleux 
-66 expériences vécues",48.8534951,2.3483915
-0addd824-2d25-43f1-909b-f17855c154a0,ccbee73cd81c,Paris,Hôtel Saint-Pétersbourg Opéra & Spa,https://www.booking.com/hotel/fr/saintpetersbourg.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9wYXJpc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCmOuQxQbAAgHSAiQ1OThjODBkOS1mYzA4LTQ2MGYtYTU5My0yMjNiZjAxZWUyZDXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=27c03b8bd0310d76&srepoch=1755592086&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,9
-8,9
-Superbe
-4 684 expériences vécues",48.8534951,2.3483915
-dc16ca81-35c8-4645-a27c-663bebfbe833,ebffa599f435,Amiens,SPA - 4 Pers - NETFLIX - Gare - Parking,https://www.booking.com/hotel/fr/unique-spa-4-pers-netflix-gare.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbWllbnNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap_rkMUGwAIB0gIkZDkxNmQzNGQtYTllZC00OGI3LTljNjEtMGNjYzc3OTAxNDBi2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=01ee3b8f22e908e8&srepoch=1755592093&from=searchresults,"Avec une note de 8,2
-8,2
-Très bien
-87 expériences vécues",49.8941708,2.2956951
-a4a11dd0-46cd-498c-b87b-3bd3525d7d65,ebffa599f435,Amiens,duplex proche gare vue tour Perret avec parking gratuit,https://www.booking.com/hotel/fr/duplex-proche-gare-amiens.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbWllbnNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap_rkMUGwAIB0gIkZDkxNmQzNGQtYTllZC00OGI3LTljNjEtMGNjYzc3OTAxNDBi2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=01ee3b8f22e908e8&srepoch=1755592093&from=searchresults,"Avec une note de 8,4
-8,4
-Très bien
-98 expériences vécues",49.8941708,2.2956951
-0a9bf125-08da-4077-8422-ef631bffc94d,ebffa599f435,Amiens,Holiday Inn Express Amiens by IHG,https://www.booking.com/hotel/fr/express-by-holiday-inn.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbWllbnNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap_rkMUGwAIB0gIkZDkxNmQzNGQtYTllZC00OGI3LTljNjEtMGNjYzc3OTAxNDBi2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=01ee3b8f22e908e8&srepoch=1755592093&from=searchresults,"Avec une note de 8,0
-8,0
-Très bien
-3 380 expériences vécues",49.8941708,2.2956951
-51a624be-3a50-4375-81ef-6b49c48559cf,964a8bed31d6,Lille,Paddy's Place,https://www.booking.com/hotel/fr/paddy-39-s-place.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9saWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCpuuQxQbAAgHSAiQ1ZmFlYTZkYS1lNjEwLTQ3NDMtYTFmOS03Yjk3NTdkNTFkNTXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=29063b937ad80575&srepoch=1755592101&from=searchresults,"Avec une note de 8,6
-8,6
-Superbe
-56 expériences vécues",50.6365654,3.0635282
-5e33a2d2-101d-4a2c-9f83-3eb8a3e65cce,964a8bed31d6,Lille,Chez Georges - Auberge Contemporaine,https://www.booking.com/hotel/fr/chez-georges-auberge-contemporaine.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9saWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCpuuQxQbAAgHSAiQ1ZmFlYTZkYS1lNjEwLTQ3NDMtYTFmOS03Yjk3NTdkNTFkNTXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=29063b937ad80575&srepoch=1755592101&from=searchresults,"Avec une note de 8,7
-8,7
-Superbe
-36 expériences vécues",50.6365654,3.0635282
-796b47c7-5c36-477b-ab5d-d17252a48fc3,964a8bed31d6,Lille,Campanile Lille Euralille,https://www.booking.com/hotel/fr/campanile-lille-euralille-xml.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9saWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCpuuQxQbAAgHSAiQ1ZmFlYTZkYS1lNjEwLTQ3NDMtYTFmOS03Yjk3NTdkNTFkNTXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=29063b937ad80575&srepoch=1755592101&from=searchresults,"Avec une note de 8,1
-8,1
-Très bien
-4 352 expériences vécues",50.6365654,3.0635282
-8acdd255-edba-4dca-9f2b-58d5580d31c1,bb29bb72d5fe,Strasbourg,Townhouse - Strasbourg Robertsau,https://www.booking.com/hotel/fr/townhouse-strasbourg-robertsau.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zdHJhc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKt65DFBsACAdICJDg4ZjNkODRhLWI0NWQtNGEwZC04MDE4LTQ4ODViNmM5ZDZiNNgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=b72a3b96c6af12b3&srepoch=1755592108&from=searchresults,"Avec une note de 9,6
-9,6
-Exceptionnel
-35 expériences vécues",48.584614,7.7507127
-96c7c7bb-6847-48ef-be2e-8bd12439b0b8,bb29bb72d5fe,Strasbourg,Aparthotel Adagio Strasbourg Place Kleber,https://www.booking.com/hotel/fr/adagio-city-aparthotel-strasbourg-place-kleber.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zdHJhc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKt65DFBsACAdICJDg4ZjNkODRhLWI0NWQtNGEwZC04MDE4LTQ4ODViNmM5ZDZiNNgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=b72a3b96c6af12b3&srepoch=1755592108&from=searchresults,"Avec une note de 8,1
-8,1
-Très bien
-884 expériences vécues",48.584614,7.7507127
-701f6fca-c56e-4ec8-8a66-0c62765a580a,bb29bb72d5fe,Strasbourg,Ciarus,https://www.booking.com/hotel/fr/ciarus.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zdHJhc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKt65DFBsACAdICJDg4ZjNkODRhLWI0NWQtNGEwZC04MDE4LTQ4ODViNmM5ZDZiNNgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=b72a3b96c6af12b3&srepoch=1755592108&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,1
-8,1
-Très bien
-3 668 expériences vécues",48.584614,7.7507127
-3b359d2f-6c52-4da1-a99d-24ba39039809,794f211090be,Chateau du Haut Koenigsbourg,Domaine du Haut-Koenigsbourg,https://www.booking.com/hotel/fr/les-chambres-du-haut-koenigsbourg.fr.html?aid=304142&label=gen173nr-10CAQoggJCI3NlYXJjaF9jaGF0ZWF1IGR1IGhhdXQga29lbmlnc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAK165DFBsACAdICJDRkMzFkMTk0LTkxYjEtNDQwOS05ZmU4LTgzNTI0OTUxZTlmYtgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=c62b3b9a78c60334&srepoch=1755592115&from=searchresults,"Avec une note de 8,2
-8,2
-Très bien
-708 expériences vécues",48.2494107,7.3443202
-1d0bf5d4-2ac0-4c04-a613-f5259865f31a,794f211090be,Chateau du Haut Koenigsbourg,La forêt Enchantée - Cozy Immo,https://www.booking.com/hotel/fr/la-foret-enchantee-cozy-immo.fr.html?aid=304142&label=gen173nr-10CAQoggJCI3NlYXJjaF9jaGF0ZWF1IGR1IGhhdXQga29lbmlnc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAK165DFBsACAdICJDRkMzFkMTk0LTkxYjEtNDQwOS05ZmU4LTgzNTI0OTUxZTlmYtgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=c62b3b9a78c60334&srepoch=1755592115&from=searchresults,"Avec une note de 9,7
+2 314 expériences vécues",49.2764624,-0.7024738
+83215fea-1aea-4a85-aa8c-bbb707c1da01,5fd0187b51b2,Bayeux,Tiny house au cœur de Bayeux,https://www.booking.com/hotel/fr/tiny-house-au-coeur-de-bayeux.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9iYXlldXhIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AvCNzMkGwAIB0gIkYjk0ZDdmZTYtMDkxZi00MDkzLTg4ZGItZTMyZTZhMzI4ZThi2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=d3497338960c1188&srepoch=1764951787&from=searchresults,"Avec une note de 9,7
 9,7
 Exceptionnel
-36 expériences vécues",48.2494107,7.3443202
-b41eb2c9-2091-4625-a8f9-a255f6f9c176,794f211090be,Chateau du Haut Koenigsbourg,Au pied du Château,https://www.booking.com/hotel/fr/au-pied-du-chateau-orschwiller.fr.html?aid=304142&label=gen173nr-10CAQoggJCI3NlYXJjaF9jaGF0ZWF1IGR1IGhhdXQga29lbmlnc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAK165DFBsACAdICJDRkMzFkMTk0LTkxYjEtNDQwOS05ZmU4LTgzNTI0OTUxZTlmYtgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=c62b3b9a78c60334&srepoch=1755592115&from=searchresults,"Avec une note de 10
-10
+78 expériences vécues",49.2764624,-0.7024738
+9dc76432-3829-4dd1-a2a8-f74bcd02e35d,5fd0187b51b2,Bayeux,B&B Nathalie,https://www.booking.com/hotel/fr/imagine-bayeux.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9iYXlldXhIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AvCNzMkGwAIB0gIkYjk0ZDdmZTYtMDkxZi00MDkzLTg4ZGItZTMyZTZhMzI4ZThi2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=d3497338960c1188&srepoch=1764951787&from=searchresults,"Avec une note de 9,5
+9,5
 Exceptionnel
-1 expérience vécue",48.2494107,7.3443202
-af8e3146-1377-4a87-be7e-99d3ae5aedcf,83b47b11c640,Colmar,HAPPY HOME COLMAR with PRIVATE PARKING,https://www.booking.com/hotel/fr/happy-mama-colmar.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jb2xtYXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ArzrkMUGwAIB0gIkYTljMTdmZjktMjYzMi00MjExLWIwOWYtYmQ0YTI1OGRiZjk52AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=54b43b9ee4a60782&srepoch=1755592122&from=searchresults,"Avec une note de 8,3
-8,3
-Très bien
-315 expériences vécues",48.0777517,7.3579641
-08f53bf5-35da-4732-9ead-f3e129a59427,83b47b11c640,Colmar,Au Bonheur des Anges Appartement 2 chambres avec terrasse,https://www.booking.com/hotel/fr/au-bonheur-des-anges-colmar.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jb2xtYXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ArzrkMUGwAIB0gIkYTljMTdmZjktMjYzMi00MjExLWIwOWYtYmQ0YTI1OGRiZjk52AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=54b43b9ee4a60782&srepoch=1755592122&from=searchresults,"Avec une note de 8,1
-8,1
-Très bien
-165 expériences vécues",48.0777517,7.3579641
-f97124af-1334-4c85-b859-494bd0c2efd8,83b47b11c640,Colmar,L'ambassadeur - Colmar centre,https://www.booking.com/hotel/fr/l-39-ambassadeur-rdc-colmar.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jb2xtYXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ArzrkMUGwAIB0gIkYTljMTdmZjktMjYzMi00MjExLWIwOWYtYmQ0YTI1OGRiZjk52AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=54b43b9ee4a60782&srepoch=1755592122&from=searchresults,"Avec une note de 7,7
-7,7
-Bien 
-2 137 expériences vécues",48.0777517,7.3579641
-1550538a-6363-4ad1-a680-6390444b199a,b33bc6c3bd6e,Eguisheim,Hotel SPA Husseren Collections - Proche Colmar - Eguisheim,https://www.booking.com/hotel/fr/husseren-les-chateaux.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9lZ3Vpc2hlaW1IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsPrkMUGwAIB0gIkYzk2NTZhZGUtZGIwNS00NWVmLTljYjYtMDJiNGM5YzAxNGY22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=4bff3ba14ddc0127&srepoch=1755592129&from=searchresults,"Avec une note de 8,9
-8,9
-Superbe
-6 551 expériences vécues",48.0447968,7.3079618
-5349f9f5-6768-4a2a-8a8b-891f4e9ec981,b33bc6c3bd6e,Eguisheim,Les pensées d'Anne & Marie duplex 4/6 Personnes,https://www.booking.com/hotel/fr/les-pensees-d-anne-amp-marie-duplex-4-6-personnes.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9lZ3Vpc2hlaW1IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsPrkMUGwAIB0gIkYzk2NTZhZGUtZGIwNS00NWVmLTljYjYtMDJiNGM5YzAxNGY22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=4bff3ba14ddc0127&srepoch=1755592129&from=searchresults,"Avec une note de 9,7
-9,7
-Exceptionnel
-27 expériences vécues",48.0447968,7.3079618
-8ac2bac8-af5d-43a1-9266-cd30f0d614f7,b33bc6c3bd6e,Eguisheim,"James Vignoble Hôtel, Eguisheim",https://www.booking.com/hotel/fr/james-vignoble-eguisheim.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9lZ3Vpc2hlaW1IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsPrkMUGwAIB0gIkYzk2NTZhZGUtZGIwNS00NWVmLTljYjYtMDJiNGM5YzAxNGY22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=4bff3ba14ddc0127&srepoch=1755592129&from=searchresults,"Avec une note de 8,6
-8,6
-Superbe
-2 018 expériences vécues",48.0447968,7.3079618
-bede28c4-0ebe-44ea-91b2-1355dabce2cd,ac3fbabf43fd,Besancon,Ave de la vaite,https://www.booking.com/hotel/fr/ave-de-la-vaite.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iZXNhbmNvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCyuuQxQbAAgHSAiRlNzYwYmYwNi1mNWMwLTQ1Y2EtYjkxYS0zOWZiMTJjN2Y5ZWLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=8df83ba5cef21a08&srepoch=1755592136&from=searchresults,"Avec une note de 8,2
-8,2
-Très bien
-71 expériences vécues",47.2380222,6.0243622
-9b356629-e3f8-4ddc-978d-ba128231e1cd,ac3fbabf43fd,Besancon,Hôtel Restaurant Spa Le Sauvage,https://www.booking.com/hotel/fr/ho-tel-le-sauvage-besanasson.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iZXNhbmNvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCyuuQxQbAAgHSAiRlNzYwYmYwNi1mNWMwLTQ1Y2EtYjkxYS0zOWZiMTJjN2Y5ZWLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=8df83ba5cef21a08&srepoch=1755592136&from=searchresults,"Avec une note de 8,6
-8,6
-Superbe
-1 347 expériences vécues",47.2380222,6.0243622
-8ec77a4b-4ae5-4c6d-a764-b87bdf4783cf,ac3fbabf43fd,Besancon,ibis Styles Besançon,https://www.booking.com/hotel/fr/besancon.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iZXNhbmNvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCyuuQxQbAAgHSAiRlNzYwYmYwNi1mNWMwLTQ1Y2EtYjkxYS0zOWZiMTJjN2Y5ZWLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=8df83ba5cef21a08&srepoch=1755592136&from=searchresults,"Avec une note de 7,8
-7,8
-Bien 
-5 958 expériences vécues",47.2380222,6.0243622
-84b76106-a86a-4de8-8b34-d98a34522f66,7c978763ccd2,Dijon,Suite - Le Monge - Dijon Centre Historique,https://www.booking.com/hotel/fr/le-monge.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9kaWpvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC0euQxQbAAgHSAiRmMGEwZmNiMi05Y2E5LTQxMzctODM2NC0zNWUyNmY1YjE0MWXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=91353ba8967613cf&srepoch=1755592143&from=searchresults,"Avec une note de 9,3
-9,3
+337 expériences vécues",49.2764624,-0.7024738
+27fbde38-7a9a-4a3b-b3f3-5c698cb43174,5fd0187b51b2,Bayeux,Gites les Pourquoi Pas - Résidence de Tourisme DSV Bayeux,https://www.booking.com/hotel/fr/gites-les-pourquoi-pas-residence-de-tourisme-dsv-bayeux.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9iYXlldXhIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AvCNzMkGwAIB0gIkYjk0ZDdmZTYtMDkxZi00MDkzLTg4ZGItZTMyZTZhMzI4ZThi2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=d3497338960c1188&srepoch=1764951787&from=searchresults,"Avec une note de 9,1
+9,1
 Fabuleux 
-59 expériences vécues",47.3215806,5.0414701
-a14c6d3a-df48-4fc4-b060-6ce5ceed0f5e,7c978763ccd2,Dijon,Appartement Climatisé 7mn Centre Ville 95M2 4 Adultes Bébé Garage Sous sol Arrivée Autonome,https://www.booking.com/hotel/fr/bel-appartement-place-saint-joseph-4-a-5-pers-95m2-dijon.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9kaWpvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC0euQxQbAAgHSAiRmMGEwZmNiMi05Y2E5LTQxMzctODM2NC0zNWUyNmY1YjE0MWXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=91353ba8967613cf&srepoch=1755592143&from=searchresults,"Avec une note de 9,4
+565 expériences vécues",49.2764624,-0.7024738
+d9a3b7d4-082d-4908-b48c-352bc36f2608,5fd0187b51b2,Bayeux,Le Petit Matin,https://www.booking.com/hotel/fr/le-petit-matin.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9iYXlldXhIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AvCNzMkGwAIB0gIkYjk0ZDdmZTYtMDkxZi00MDkzLTg4ZGItZTMyZTZhMzI4ZThi2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=d3497338960c1188&srepoch=1764951787&from=searchresults,"Avec une note de 9,4
 9,4
 Fabuleux 
-63 expériences vécues",47.3215806,5.0414701
-7f2d8224-2423-422d-a5ad-874f39437805,7c978763ccd2,Dijon,Le Moutardier : chaleureux T2 au coeur de ville,https://www.booking.com/hotel/fr/le-moutardier-chaleureux-t2-au-coeur-de-ville.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9kaWpvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC0euQxQbAAgHSAiRmMGEwZmNiMi05Y2E5LTQxMzctODM2NC0zNWUyNmY1YjE0MWXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=91353ba8967613cf&srepoch=1755592143&from=searchresults,"Avec une note de 9,0
-9,0
-Fabuleux 
-113 expériences vécues",47.3215806,5.0414701
-0ad3be6f-eb09-4be0-8e3e-68e3b37bc9fc,6d78f94327fe,Annecy,LE LYRIQUE,https://www.booking.com/hotel/fr/le-lyrique.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbm5lY3lIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AtjrkMUGwAIB0gIkNjg0MGIxYmQtOThjNS00NGIzLTk1ZjAtZjc4NDYzMTNhZTg22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=898c3bac9f44090c&srepoch=1755592150&from=searchresults,"Avec une note de 8,8
-8,8
-Superbe
-59 expériences vécues",45.8992348,6.1288847
-571f27c4-8806-4f84-b657-d9f1c2e4f294,6d78f94327fe,Annecy,Les Capucines - Appartement moderne proche centre d'Annecy,https://www.booking.com/hotel/fr/appartement-gabin-annecy.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbm5lY3lIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AtjrkMUGwAIB0gIkNjg0MGIxYmQtOThjNS00NGIzLTk1ZjAtZjc4NDYzMTNhZTg22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=898c3bac9f44090c&srepoch=1755592150&from=searchresults,"Avec une note de 7,4
-7,4
-Bien 
-25 expériences vécues",45.8992348,6.1288847
-8bf8e6c9-8c79-4219-a02d-ef117675135a,6d78f94327fe,Annecy,Appartement Annecy Green,https://www.booking.com/hotel/fr/appartement-annecy-green.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbm5lY3lIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AtjrkMUGwAIB0gIkNjg0MGIxYmQtOThjNS00NGIzLTk1ZjAtZjc4NDYzMTNhZTg22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=898c3bac9f44090c&srepoch=1755592150&from=searchresults,"Avec une note de 8,5
-8,5
-Très bien
-35 expériences vécues",45.8992348,6.1288847
-d90d78be-b330-4264-80ea-0f3fc8d79f43,5fdd7011632d,Grenoble,Esprit Bistrot / Rent4night Grenoble,https://www.booking.com/hotel/fr/esprit-bistrot-rent4night-grenoble.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9ncmVub2JsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC3-uQxQbAAgHSAiRiOWMyZjRmMC05NzgxLTRmYjctOGRlZS0yNWM4ZmZmYzBhMWPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=661c3bafbae801a1&srepoch=1755592158&from=searchresults,"Avec une note de 8,1
-8,1
-Très bien
-165 expériences vécues",45.1875602,5.7357819
-faa7cac3-0e8d-4ed0-ad7c-aa994a078e61,5fdd7011632d,Grenoble,Sweet Loft Grenoble-Love Room avec jacuzzi & sauna,https://www.booking.com/hotel/fr/sweet-loft-grenoble.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9ncmVub2JsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC3-uQxQbAAgHSAiRiOWMyZjRmMC05NzgxLTRmYjctOGRlZS0yNWM4ZmZmYzBhMWPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=661c3bafbae801a1&srepoch=1755592158&from=searchresults,"Avec une note de 8,2
+370 expériences vécues",49.2764624,-0.7024738
+51494b16-7668-4b61-91d4-3841322aef8b,4e9b8cad09f6,Le Havre,Beautiful Apartment - Lecesne F2,https://www.booking.com/hotel/fr/beautiful-apartment-lecesne-f2.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9sZSBoYXZyZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC-I3MyQbAAgHSAiQ1ZGQyNTM5MS04YTk4LTQzMWMtYjU0Yi04ODEzOTAzNjhlZGPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=3fbf733ceddd0063&srepoch=1764951795&from=searchresults,N/A,49.4938975,0.1079732
+05307c8a-9e04-4ec1-aa1a-27b073424510,4e9b8cad09f6,Le Havre,Hotel Spa Le Pasino,https://www.booking.com/hotel/fr/pasino.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9sZSBoYXZyZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC-I3MyQbAAgHSAiQ1ZGQyNTM5MS04YTk4LTQzMWMtYjU0Yi04ODEzOTAzNjhlZGPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=3fbf733ceddd0063&srepoch=1764951795&from=searchresults,"Avec une note de 8,2
 8,2
 Très bien
-104 expériences vécues",45.1875602,5.7357819
-5dfe99f1-511e-426b-a583-2ecca8facde2,5fdd7011632d,Grenoble,Appartéa Grenoble Alpexpo,https://www.booking.com/hotel/fr/adagio-access-grenoble.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9ncmVub2JsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC3-uQxQbAAgHSAiRiOWMyZjRmMC05NzgxLTRmYjctOGRlZS0yNWM4ZmZmYzBhMWPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=661c3bafbae801a1&srepoch=1755592158&from=searchresults,"Avec une note de 7,0
-7,0
-Bien 
-1 421 expériences vécues",45.1875602,5.7357819
-58bc46bf-bd67-4c47-ada6-274d42c60215,10b53d95e2d3,Lyon,le XVI de la Rose,https://www.booking.com/hotel/fr/le-xvi-de-la-rose.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF9seW9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALm65DFBsACAdICJDU1NzA0NzhmLWY3Y2ItNDU0My1iZGFhLWI4YjdiM2YwMDU0YdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=a3d43bb330b0053a&srepoch=1755592165&from=searchresults,"Avec une note de 8,0
-8,0
-Très bien
-118 expériences vécues",45.7578137,4.8320114
-774f22b0-67e9-4388-9266-ad50becba30e,10b53d95e2d3,Lyon,Honorê - Suites Bellecour,https://www.booking.com/hotel/fr/appartements-bellecour-a-riva-lofts-amp-suites.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF9seW9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALm65DFBsACAdICJDU1NzA0NzhmLWY3Y2ItNDU0My1iZGFhLWI4YjdiM2YwMDU0YdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=a3d43bb330b0053a&srepoch=1755592165&from=searchresults,"Avec une note de 8,5
+975 expériences vécues",49.4938975,0.1079732
+41448780-32ec-4ff6-829d-95f7874f478a,4e9b8cad09f6,Le Havre,L'instant Havrais avec garage privatif - Hypercentre,https://www.booking.com/hotel/fr/instant-havrais.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9sZSBoYXZyZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC-I3MyQbAAgHSAiQ1ZGQyNTM5MS04YTk4LTQzMWMtYjU0Yi04ODEzOTAzNjhlZGPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=3fbf733ceddd0063&srepoch=1764951795&from=searchresults,N/A,49.4938975,0.1079732
+6c35caa3-bd73-43f3-a9db-c454ff6ecbf4,4e9b8cad09f6,Le Havre,All Suites Appart Hôtel - Le Havre Centre - Les docks,https://www.booking.com/hotel/fr/all-suites-appart-le-havre.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9sZSBoYXZyZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC-I3MyQbAAgHSAiQ1ZGQyNTM5MS04YTk4LTQzMWMtYjU0Yi04ODEzOTAzNjhlZGPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=3fbf733ceddd0063&srepoch=1764951795&from=searchresults,"Avec une note de 8,6
+8,6
+Superbe
+3 211 expériences vécues",49.4938975,0.1079732
+ba78fa3d-b25d-478d-910c-9a0b644418a0,4e9b8cad09f6,Le Havre,Appart Hotel Odalys City Le Havre Centre Les Docks,https://www.booking.com/hotel/fr/odalys-city-le-havre-centre-les-docks.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9sZSBoYXZyZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC-I3MyQbAAgHSAiQ1ZGQyNTM5MS04YTk4LTQzMWMtYjU0Yi04ODEzOTAzNjhlZGPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=3fbf733ceddd0063&srepoch=1764951795&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,5
 8,5
 Très bien
-198 expériences vécues",45.7578137,4.8320114
-f650f007-0501-4805-9460-8c463b2adf7d,10b53d95e2d3,Lyon,Pur bonheur Hôtel de ville - clim et balnéo AIL,https://www.booking.com/hotel/fr/charme-traditionnel-et-design-moderne-en-plein-centre-de-lyon.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF9seW9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALm65DFBsACAdICJDU1NzA0NzhmLWY3Y2ItNDU0My1iZGFhLWI4YjdiM2YwMDU0YdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=a3d43bb330b0053a&srepoch=1755592165&from=searchresults,"Avec une note de 8,9
+2 249 expériences vécues",49.4938975,0.1079732
+7dda9393-5a54-44af-8904-9eb8b05010db,e76e9773c33d,Rouen,"Radisson Blu Hotel, Rouen Centre",https://www.booking.com/hotel/fr/radisson-blu-rouen-centre.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9yb3VlbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCvI7MyQbAAgHSAiRlMjQ0ZmJjZS00NTZkLTQ3YTgtYTU4MC05OGM3MDRhMmU4ZjbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=42cc735e4ce50284&srepoch=1764951863&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,9
 8,9
 Superbe
-34 expériences vécues",45.7578137,4.8320114
-0b1baea5-12d4-4031-989f-a747636b5147,f7a03e5c5dd7,Gorges du Verdon,Résidence Lou Cigaloun - ANA LOCATION,https://www.booking.com/hotel/fr/residence-lou-cigaloun-greoux-les-bains.fr.html?aid=304142&label=gen173nr-10CAQoggJCF3NlYXJjaF9nb3JnZXMgZHUgdmVyZG9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALu65DFBsACAdICJDYzZmI5NGMwLWNiZGUtNDU4Ni1hMmE4LWUxYTc5MDc2NzA2NtgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=3a593bb7a2410116&srepoch=1755592172&from=searchresults,"Avec une note de 9,2
+4 957 expériences vécues",49.4404591,1.0939658
+4e2f3b2d-4894-4178-b8ed-ea491a1a03d4,e76e9773c33d,Rouen,ibis budget Rouen Centre Rive Gauche,https://www.booking.com/hotel/fr/ibis-budget-rouen-centre-rive-gauche.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9yb3VlbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCvI7MyQbAAgHSAiRlMjQ0ZmJjZS00NTZkLTQ3YTgtYTU4MC05OGM3MDRhMmU4ZjbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=42cc735e4ce50284&srepoch=1764951863&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+4 470 expériences vécues",49.4404591,1.0939658
+6392e125-08ac-41f2-8eb7-37238815a124,e76e9773c33d,Rouen,Hyatt Place Rouen,https://www.booking.com/hotel/fr/hyatt-place-rouen.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9yb3VlbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCvI7MyQbAAgHSAiRlMjQ0ZmJjZS00NTZkLTQ3YTgtYTU4MC05OGM3MDRhMmU4ZjbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=42cc735e4ce50284&srepoch=1764951863&from=searchresults,"Avec une note de 8,6
+8,6
+Superbe
+1 364 expériences vécues",49.4404591,1.0939658
+12328da6-f5d6-48f6-a819-e1795dba0fe3,e76e9773c33d,Rouen,Novotel Rouen Centre Cathédrale,https://www.booking.com/hotel/fr/novotel-rouen-centre-cathedrale.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9yb3VlbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCvI7MyQbAAgHSAiRlMjQ0ZmJjZS00NTZkLTQ3YTgtYTU4MC05OGM3MDRhMmU4ZjbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=42cc735e4ce50284&srepoch=1764951863&from=searchresults,"Avec une note de 8,5
+8,5
+Très bien
+1 141 expériences vécues",49.4404591,1.0939658
+1b083840-2a1c-47f9-92ea-e26a730fdfab,e76e9773c33d,Rouen,Mercure Rouen Centre Cathédrale,https://www.booking.com/hotel/fr/mercure-rouen-centre.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9yb3VlbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCvI7MyQbAAgHSAiRlMjQ0ZmJjZS00NTZkLTQ3YTgtYTU4MC05OGM3MDRhMmU4ZjbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=42cc735e4ce50284&srepoch=1764951863&from=searchresults,"Avec une note de 8,5
+8,5
+Très bien
+3 336 expériences vécues",49.4404591,1.0939658
+e4c80c88-f275-4a7b-b932-a3b985fb6acc,ccbee73cd81c,Paris,Moxy Paris Bastille,https://www.booking.com/hotel/fr/moxy-paris-bastille.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9wYXJpc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCw47MyQbAAgHSAiQ4ZDI4N2FjMC0yZmI5LTRhNTctOGI3Yy04Njk3ZDI0MmVhNDbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=ab307361a5900708&srepoch=1764951870&from=searchresults,"Avec une note de 8,0
+8,0
+Très bien
+798 expériences vécues",48.8588897,2.320041
+3c0681e6-bdfa-4072-8122-444a78e8f003,ccbee73cd81c,Paris,Hotel Cluny Square,https://www.booking.com/hotel/fr/clunysquareparis.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9wYXJpc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCw47MyQbAAgHSAiQ4ZDI4N2FjMC0yZmI5LTRhNTctOGI3Yy04Njk3ZDI0MmVhNDbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=ab307361a5900708&srepoch=1764951870&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+2 546 expériences vécues",48.8588897,2.320041
+892d59ed-a2d1-4529-b6c6-8be9fb5edb9b,ccbee73cd81c,Paris,Hilton Garden Inn Paris La Villette,https://www.booking.com/hotel/fr/hilton-garden-inn-paris-la-villette.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9wYXJpc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCw47MyQbAAgHSAiQ4ZDI4N2FjMC0yZmI5LTRhNTctOGI3Yy04Njk3ZDI0MmVhNDbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=ab307361a5900708&srepoch=1764951870&from=searchresults,"Avec une note de 8,5
+8,5
+Très bien
+678 expériences vécues",48.8588897,2.320041
+e087908a-9a6c-41d3-8ea8-9488a6e4f54a,ccbee73cd81c,Paris,Studio - Saint-Germain-des-Près and Luxembourg,https://www.booking.com/hotel/fr/studio-saint-germain-des-pres-and-luxembourg.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9wYXJpc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCw47MyQbAAgHSAiQ4ZDI4N2FjMC0yZmI5LTRhNTctOGI3Yy04Njk3ZDI0MmVhNDbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=ab307361a5900708&srepoch=1764951870&from=searchresults,N/A,48.8588897,2.320041
+915fed55-3179-4056-a965-27a8059167c1,ccbee73cd81c,Paris,Bradford Elysées - Astotel,https://www.booking.com/hotel/fr/bradfordelysees.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9wYXJpc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCw47MyQbAAgHSAiQ4ZDI4N2FjMC0yZmI5LTRhNTctOGI3Yy04Njk3ZDI0MmVhNDbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=ab307361a5900708&srepoch=1764951870&from=searchresults,"Avec une note de 8,9
+8,9
+Superbe
+1 114 expériences vécues",48.8588897,2.320041
+91a75398-d0c7-4c7c-890d-23a68d6a2eda,ebffa599f435,Amiens,Bienvenue à la réderie d’Amiens,https://www.booking.com/hotel/fr/bienvenue-a-la-rederie-d-amiens.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbWllbnNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AumOzMkGwAIB0gIkMWRlYzRkNWEtNjA4MC00ZjI0LTk3MDgtYTU0MjM1MDhmYTUw2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=distance_from_search&srpvid=58bf7374b8570761&srepoch=1764951908&from=searchresults,"Avec une note de 7,8
+7,8
+Bien 
+82 expériences vécues",49.8941708,2.2956951
+ef8b1117-d71d-4746-8e86-9fbc2f3be6f7,ebffa599f435,Amiens,Hypercentre : vue cathédrale - verrière - cosy,https://www.booking.com/hotel/fr/hypercentre-vue-cathedrale-verriere-cosy.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbWllbnNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AumOzMkGwAIB0gIkMWRlYzRkNWEtNjA4MC00ZjI0LTk3MDgtYTU0MjM1MDhmYTUw2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=distance_from_search&srpvid=58bf7374b8570761&srepoch=1764951908&from=searchresults,"Avec une note de 9,2
 9,2
 Fabuleux 
-178 expériences vécues",43.7496562,6.3285616
-fd3ab737-e9db-48c4-bac8-de1bb0d98e1e,f7a03e5c5dd7,Gorges du Verdon,Hôtel Sainte Anne,https://www.booking.com/hotel/fr/ha-tel-sainte-anne.fr.html?aid=304142&label=gen173nr-10CAQoggJCF3NlYXJjaF9nb3JnZXMgZHUgdmVyZG9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALu65DFBsACAdICJDYzZmI5NGMwLWNiZGUtNDU4Ni1hMmE4LWUxYTc5MDc2NzA2NtgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=3a593bb7a2410116&srepoch=1755592172&from=searchresults,"Avec une note de 7,7
-7,7
-Bien 
-333 expériences vécues",43.7496562,6.3285616
-ebbc401c-eee5-41eb-94c9-4f26c7169e63,f7a03e5c5dd7,Gorges du Verdon,Hôtel & Résidence Lou Paradou Gréoux Les Bains,https://www.booking.com/hotel/fr/hotellouparadou.fr.html?aid=304142&label=gen173nr-10CAQoggJCF3NlYXJjaF9nb3JnZXMgZHUgdmVyZG9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALu65DFBsACAdICJDYzZmI5NGMwLWNiZGUtNDU4Ni1hMmE4LWUxYTc5MDc2NzA2NtgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=3a593bb7a2410116&srepoch=1755592172&from=searchresults,"Avec une note de 8,8
+60 expériences vécues",49.8941708,2.2956951
+e23359fd-37f6-4f4a-b83a-32ae0f89d5c5,ebffa599f435,Amiens,Magnifique 3 Chambres - Parking - Hyper Centre - Gare,https://www.booking.com/hotel/fr/magnifique-3-chambres-hyper-centre-gare.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbWllbnNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AumOzMkGwAIB0gIkMWRlYzRkNWEtNjA4MC00ZjI0LTk3MDgtYTU0MjM1MDhmYTUw2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=distance_from_search&srpvid=58bf7374b8570761&srepoch=1764951908&from=searchresults,"Avec une note de 8,8
 8,8
 Superbe
-1 197 expériences vécues",43.7496562,6.3285616
-379320ea-3914-4334-b78b-b25606517827,e5fcdbaf84c4,Bormes les Mimosas,Le Hameau de la Nicolinière,https://www.booking.com/hotel/fr/le-hameau-de-la-nicolinia-re.fr.html?aid=304142&label=gen173nr-10CAQoggJCGXNlYXJjaF9ib3JtZXMgbGVzIG1pbW9zYXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AvXrkMUGwAIB0gIkYjMwYTBkYzUtY2JmOS00NWU0LWIwMjItNDZmOTQwZjAzM2Zl2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=52a93bba162f020e&srepoch=1755592179&from=searchresults,"Avec une note de 9,2
-9,2
+15 expériences vécues",49.8941708,2.2956951
+8de28979-40da-4949-99f5-f86aaa0235c8,ebffa599f435,Amiens,"Hyper Centre, balcon, emplacement & vue incroyable, spacieux",https://www.booking.com/hotel/fr/hyper-centre-balcon-vue-incroyable-spacieux.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbWllbnNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AumOzMkGwAIB0gIkMWRlYzRkNWEtNjA4MC00ZjI0LTk3MDgtYTU0MjM1MDhmYTUw2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=distance_from_search&srpvid=58bf7374b8570761&srepoch=1764951908&from=searchresults,"Avec une note de 8,6
+8,6
+Superbe
+59 expériences vécues",49.8941708,2.2956951
+33514ec7-905f-4f71-a52e-087119812749,ebffa599f435,Amiens,Le Gresset Entre Calme Et Centre D'Amiens,https://www.booking.com/hotel/fr/le-gresset-entre-calme-et-centre-d-amiens.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbWllbnNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AumOzMkGwAIB0gIkMWRlYzRkNWEtNjA4MC00ZjI0LTk3MDgtYTU0MjM1MDhmYTUw2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=distance_from_search&srpvid=58bf7374b8570761&srepoch=1764951908&from=searchresults,N/A,49.8941708,2.2956951
+4443c1e0-d121-4198-b0d8-5a479db39f3a,964a8bed31d6,Lille,CENTRAL Hostel Lille Centre,https://www.booking.com/hotel/fr/central-hostel-lille-centre.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9saWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCj4_MyQbAAgHSAiQ4ZTE1NjhlOC0wM2YwLTQ2MGMtOGI4MC03ZWEwM2FmYjUzNDPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=2327738759ae03a9&srepoch=1764951945&from=searchresults,"Avec une note de 9,1
+9,1
 Fabuleux 
-9 expériences vécues",43.1506968,6.3419285
-613b5036-cf13-4137-8282-92ab655d6125,e5fcdbaf84c4,Bormes les Mimosas,Les Eucalyptus,https://www.booking.com/hotel/fr/les-eucalyptus-bormes-les-mimosas.fr.html?aid=304142&label=gen173nr-10CAQoggJCGXNlYXJjaF9ib3JtZXMgbGVzIG1pbW9zYXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AvXrkMUGwAIB0gIkYjMwYTBkYzUtY2JmOS00NWU0LWIwMjItNDZmOTQwZjAzM2Zl2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=52a93bba162f020e&srepoch=1755592179&from=searchresults,"Avec une note de 9,0
+895 expériences vécues",50.6365654,3.0635282
+8a58fbe6-ca91-4aa5-a8c9-af6d53ceb8ec,964a8bed31d6,Lille,Moxy Lille City,https://www.booking.com/hotel/fr/moxy-lille-city-center-france.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9saWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCj4_MyQbAAgHSAiQ4ZTE1NjhlOC0wM2YwLTQ2MGMtOGI4MC03ZWEwM2FmYjUzNDPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=2327738759ae03a9&srepoch=1764951945&from=searchresults,"Avec une note de 8,2
+8,2
+Très bien
+4 849 expériences vécues",50.6365654,3.0635282
+053d50d2-55dd-4ea8-82fb-3e9e8a0686b4,964a8bed31d6,Lille,ibis Lille Centre Grand Palais,https://www.booking.com/hotel/fr/ibis-lille-centre-grand-palais.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9saWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCj4_MyQbAAgHSAiQ4ZTE1NjhlOC0wM2YwLTQ2MGMtOGI4MC03ZWEwM2FmYjUzNDPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=2327738759ae03a9&srepoch=1764951945&from=searchresults,"Avec une note de 8,3
+8,3
+Très bien
+2 217 expériences vécues",50.6365654,3.0635282
+e6f8042c-a850-4e4e-8b9a-86bf40b7630e,964a8bed31d6,Lille,Hotel Lille Europe,https://www.booking.com/hotel/fr/lille-europe.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9saWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCj4_MyQbAAgHSAiQ4ZTE1NjhlOC0wM2YwLTQ2MGMtOGI4MC03ZWEwM2FmYjUzNDPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=2327738759ae03a9&srepoch=1764951945&from=searchresults,"Avec une note de 8,1
+8,1
+Très bien
+7 417 expériences vécues",50.6365654,3.0635282
+9e4f85ab-43e7-4916-b2ae-ae175c04520c,964a8bed31d6,Lille,Grand Hotel Bellevue - Grand Place,https://www.booking.com/hotel/fr/grandhotelbellevue.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9saWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCj4_MyQbAAgHSAiQ4ZTE1NjhlOC0wM2YwLTQ2MGMtOGI4MC03ZWEwM2FmYjUzNDPYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=2327738759ae03a9&srepoch=1764951945&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,3
+8,3
+Très bien
+3 151 expériences vécues",50.6365654,3.0635282
+df5db7e2-0a5c-44d5-8f25-4e3d220fe737,bb29bb72d5fe,Strasbourg,Hotel ARC EN CIEL,https://www.booking.com/hotel/fr/arc-en-ciel-strasbourg.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zdHJhc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKWj8zJBsACAdICJDQwY2VjOGY4LTM4ZjgtNDQwNC05YTA4LTM3MTAyZGQxNjZmN9gCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=dc57738b9e350043&srepoch=1764951953&from=searchresults,N/A,48.584614,7.7507127
+c87c134f-0330-4412-9762-01272f3a5cb2,bb29bb72d5fe,Strasbourg,Chambre proche du campus n2,https://www.booking.com/hotel/fr/chambre-2-avec-balcon.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zdHJhc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKWj8zJBsACAdICJDQwY2VjOGY4LTM4ZjgtNDQwNC05YTA4LTM3MTAyZGQxNjZmN9gCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=dc57738b9e350043&srepoch=1764951953&from=searchresults,"Avec une note de 8,2
+8,2
+Très bien
+10 expériences vécues",48.584614,7.7507127
+156bd5a5-7d35-4283-9a20-cba0fb6551ab,bb29bb72d5fe,Strasbourg,Chambre 2 avec un lit simple,https://www.booking.com/hotel/fr/chambre-3-bis.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zdHJhc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKWj8zJBsACAdICJDQwY2VjOGY4LTM4ZjgtNDQwNC05YTA4LTM3MTAyZGQxNjZmN9gCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=dc57738b9e350043&srepoch=1764951953&from=searchresults,"Avec une note de 8,6
+8,6
+Superbe
+10 expériences vécues",48.584614,7.7507127
+63fc67d6-ca51-4b1d-acdf-e18d099043ef,bb29bb72d5fe,Strasbourg,The People - Strasbourg,https://www.booking.com/hotel/fr/the-people-hostel-strasbourg.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zdHJhc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKWj8zJBsACAdICJDQwY2VjOGY4LTM4ZjgtNDQwNC05YTA4LTM3MTAyZGQxNjZmN9gCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=dc57738b9e350043&srepoch=1764951953&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 7,9
+7,9
+Bien 
+6 037 expériences vécues",48.584614,7.7507127
+53d59bc6-cc41-4bf6-a46f-9aea8e708468,bb29bb72d5fe,Strasbourg,City Residence Access Strasbourg,https://www.booking.com/hotel/fr/city-residence-access-strasbourg-strasbourg.fr.html?aid=304142&label=gen173nr-10CAQoggJCEXNlYXJjaF9zdHJhc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKWj8zJBsACAdICJDQwY2VjOGY4LTM4ZjgtNDQwNC05YTA4LTM3MTAyZGQxNjZmN9gCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=dc57738b9e350043&srepoch=1764951953&from=searchresults,"Avec une note de 7,1
+7,1
+Bien 
+6 436 expériences vécues",48.584614,7.7507127
+a7bb6928-d468-46b6-bee0-9dd4d0bfd988,794f211090be,Chateau du Haut Koenigsbourg,Domaine du Haut-Koenigsbourg,https://www.booking.com/hotel/fr/les-chambres-du-haut-koenigsbourg.fr.html?aid=304142&label=gen173nr-10CAQoggJCI3NlYXJjaF9jaGF0ZWF1IGR1IGhhdXQga29lbmlnc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAK8j8zJBsACAdICJDNmOTQ5ZWUyLWRjYjMtNDY4NC04NTFmLWI1YWEyMTA3YzRjONgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=8062739e142100d8&srepoch=1764951991&from=searchresults,"Avec une note de 8,3
+8,3
+Très bien
+719 expériences vécues",48.2494107,7.3443202
+da0e0c4d-d7a3-4fc9-b468-3deb678f26b9,794f211090be,Chateau du Haut Koenigsbourg,La forêt Enchantée - Cozy Immo,https://www.booking.com/hotel/fr/la-foret-enchantee-cozy-immo.fr.html?aid=304142&label=gen173nr-10CAQoggJCI3NlYXJjaF9jaGF0ZWF1IGR1IGhhdXQga29lbmlnc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAK8j8zJBsACAdICJDNmOTQ5ZWUyLWRjYjMtNDY4NC04NTFmLWI1YWEyMTA3YzRjONgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=8062739e142100d8&srepoch=1764951991&from=searchresults,"Avec une note de 9,3
+9,3
+Fabuleux 
+39 expériences vécues",48.2494107,7.3443202
+53ecc0b0-2fb0-4558-8194-fca5af9c1260,794f211090be,Chateau du Haut Koenigsbourg,Au pied du Château,https://www.booking.com/hotel/fr/au-pied-du-chateau-orschwiller.fr.html?aid=304142&label=gen173nr-10CAQoggJCI3NlYXJjaF9jaGF0ZWF1IGR1IGhhdXQga29lbmlnc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAK8j8zJBsACAdICJDNmOTQ5ZWUyLWRjYjMtNDY4NC04NTFmLWI1YWEyMTA3YzRjONgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=8062739e142100d8&srepoch=1764951991&from=searchresults,"Avec une note de 10
+10
+Exceptionnel
+2 expériences vécues",48.2494107,7.3443202
+00c796f7-74ce-4e76-ad53-a5d1540c9857,794f211090be,Chateau du Haut Koenigsbourg,Logis Hotel Le Parc & Spa,https://www.booking.com/hotel/fr/logis-le-parc-st-hippolyte.fr.html?aid=304142&label=gen173nr-10CAQoggJCI3NlYXJjaF9jaGF0ZWF1IGR1IGhhdXQga29lbmlnc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAK8j8zJBsACAdICJDNmOTQ5ZWUyLWRjYjMtNDY4NC04NTFmLWI1YWEyMTA3YzRjONgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=8062739e142100d8&srepoch=1764951991&from=searchresults,"Avec une note de 8,8
+8,8
+Superbe
+1 640 expériences vécues",48.2494107,7.3443202
+f31e4860-a976-4c34-a92c-3b9f14d7489a,794f211090be,Chateau du Haut Koenigsbourg,"Gîte ""AU CADRAN SOLAIRE""",https://www.booking.com/hotel/fr/gite-au-cadran-solaire.fr.html?aid=304142&label=gen173nr-10CAQoggJCI3NlYXJjaF9jaGF0ZWF1IGR1IGhhdXQga29lbmlnc2JvdXJnSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAK8j8zJBsACAdICJDNmOTQ5ZWUyLWRjYjMtNDY4NC04NTFmLWI1YWEyMTA3YzRjONgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=8062739e142100d8&srepoch=1764951991&from=searchresults,"Avec une note de 9,1
+9,1
+Fabuleux 
+43 expériences vécues",48.2494107,7.3443202
+284446db-c7f9-4ff0-95ec-2beb3a0a4b29,83b47b11c640,Colmar,Colmar Hotel,https://www.booking.com/hotel/fr/colmar.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jb2xtYXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsOPzMkGwAIB0gIkYTgxOTVkZWQtYmVmMS00MjUxLWI4YTgtOTk0NGFmY2I0NDQ12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=bd9173a12cf4028f&srepoch=1764951998&from=searchresults,"Avec une note de 9,0
+9,0
+Fabuleux 
+9 611 expériences vécues",48.0777517,7.3579641
+4f50caee-180c-4f59-a36a-8d1be0114899,83b47b11c640,Colmar,Appartements centre ville Colmar 4 familles,https://www.booking.com/hotel/fr/appartement-centre-ville-colmar-2-colmar.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jb2xtYXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsOPzMkGwAIB0gIkYTgxOTVkZWQtYmVmMS00MjUxLWI4YTgtOTk0NGFmY2I0NDQ12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=bd9173a12cf4028f&srepoch=1764951998&from=searchresults,"Avec une note de 9,6
+9,6
+Exceptionnel
+313 expériences vécues",48.0777517,7.3579641
+91140ea5-86f5-4833-bf7e-2aded91e1a54,83b47b11c640,Colmar,Hôtel Maison Turenne,https://www.booking.com/hotel/fr/turenne-colmar.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jb2xtYXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsOPzMkGwAIB0gIkYTgxOTVkZWQtYmVmMS00MjUxLWI4YTgtOTk0NGFmY2I0NDQ12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=bd9173a12cf4028f&srepoch=1764951998&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,6
+8,6
+Superbe
+5 535 expériences vécues",48.0777517,7.3579641
+efc11c3a-885b-4d7c-a86b-2b6350c04286,83b47b11c640,Colmar,Appartement Duplex 2a Rue d'Alspach,https://www.booking.com/hotel/fr/appartement-duplex-2a-rue-d-39-alspach.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jb2xtYXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsOPzMkGwAIB0gIkYTgxOTVkZWQtYmVmMS00MjUxLWI4YTgtOTk0NGFmY2I0NDQ12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=bd9173a12cf4028f&srepoch=1764951998&from=searchresults,"Avec une note de 8,7
+8,7
+Superbe
+79 expériences vécues",48.0777517,7.3579641
+ad1a45b9-7374-490e-be8e-7ac0be29b968,83b47b11c640,Colmar,B&B HOTEL Colmar Lumière,https://www.booking.com/hotel/fr/roi-soleil.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jb2xtYXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsOPzMkGwAIB0gIkYTgxOTVkZWQtYmVmMS00MjUxLWI4YTgtOTk0NGFmY2I0NDQ12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=bd9173a12cf4028f&srepoch=1764951998&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 7,9
+7,9
+Bien 
+4 592 expériences vécues",48.0777517,7.3579641
+9bad3bcf-8661-4a65-a98d-4df50f2b161c,b33bc6c3bd6e,Eguisheim,Hotel SPA Husseren Collections - Proche Colmar - Eguisheim,https://www.booking.com/hotel/fr/husseren-les-chateaux.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9lZ3Vpc2hlaW1IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsuPzMkGwAIB0gIkNGJjZWYxYWMtOGQ1Zi00OWFiLTg3ODgtNTljYjM1ODhmNTAy2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=d4b273a545d907a6&srepoch=1764952006&from=searchresults,"Avec une note de 8,9
+8,9
+Superbe
+6 585 expériences vécues",48.0447968,7.3079618
+62edbc85-6299-495c-a881-b52923368c65,b33bc6c3bd6e,Eguisheim,Résidence Pierre & Vacances Le Clos d'Eguisheim,https://www.booking.com/hotel/fr/residence-pierre-et-vacances-le-clos-d-eguisheim.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9lZ3Vpc2hlaW1IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsuPzMkGwAIB0gIkNGJjZWYxYWMtOGQ1Zi00OWFiLTg3ODgtNTljYjM1ODhmNTAy2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=d4b273a545d907a6&srepoch=1764952006&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,0
+8,0
+Très bien
+1 295 expériences vécues",48.0447968,7.3079618
+8d571712-3f49-4da4-9b32-60b0bd9d6cf6,b33bc6c3bd6e,Eguisheim,La petite tuilerie d Eguisheim,https://www.booking.com/hotel/fr/les-tuileries-eguisheim.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9lZ3Vpc2hlaW1IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsuPzMkGwAIB0gIkNGJjZWYxYWMtOGQ1Zi00OWFiLTg3ODgtNTljYjM1ODhmNTAy2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=d4b273a545d907a6&srepoch=1764952006&from=searchresults,"Avec une note de 9,0
+9,0
+Fabuleux 
+76 expériences vécues",48.0447968,7.3079618
+087901c8-6735-49cc-a51e-4e8357e64d0c,b33bc6c3bd6e,Eguisheim,Hotel Colmar Vignes Eguisheim,https://www.booking.com/hotel/fr/auberge-des-comtes.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9lZ3Vpc2hlaW1IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsuPzMkGwAIB0gIkNGJjZWYxYWMtOGQ1Zi00OWFiLTg3ODgtNTljYjM1ODhmNTAy2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=d4b273a545d907a6&srepoch=1764952006&from=searchresults,"Avec une note de 9,1
+9,1
+Fabuleux 
+1 698 expériences vécues",48.0447968,7.3079618
+2a81db99-c2ce-47a1-a6cb-409c735cee3f,b33bc6c3bd6e,Eguisheim,Chez Jade et Ambre,https://www.booking.com/hotel/fr/chez-jade-et-ambre.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9lZ3Vpc2hlaW1IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsuPzMkGwAIB0gIkNGJjZWYxYWMtOGQ1Zi00OWFiLTg3ODgtNTljYjM1ODhmNTAy2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=d4b273a545d907a6&srepoch=1764952006&from=searchresults,"Avec une note de 8,5
+8,5
+Très bien
+152 expériences vécues",48.0447968,7.3079618
+4749a37a-74f4-4dcb-8e4e-b08fd18c042a,ac3fbabf43fd,Besancon,ibis Styles Besançon,https://www.booking.com/hotel/fr/besancon.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iZXNhbmNvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC0o_MyQbAAgHSAiQyN2FjMzEyMi0yZTgwLTRiYjgtYmZlNS04YTVmYTFmZGY0MmXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=804673a9c6cb01d5&srepoch=1764952013&from=searchresults,"Avec une note de 7,8
+7,8
+Bien 
+5 623 expériences vécues",47.2380222,6.0243622
+9acc79d8-1e19-46d9-b7be-cd34b0c10339,ac3fbabf43fd,Besancon,Best Western Citadelle,https://www.booking.com/hotel/fr/bestwesterncitadelle.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iZXNhbmNvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC0o_MyQbAAgHSAiQyN2FjMzEyMi0yZTgwLTRiYjgtYmZlNS04YTVmYTFmZGY0MmXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=804673a9c6cb01d5&srepoch=1764952013&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,0
+8,0
+Très bien
+2 090 expériences vécues",47.2380222,6.0243622
+3959ccac-f2d1-475c-922b-310e6f5c2cbd,ac3fbabf43fd,Besancon,Temis hôtel Besançon,https://www.booking.com/hotel/fr/all-suites-besancon.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iZXNhbmNvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC0o_MyQbAAgHSAiQyN2FjMzEyMi0yZTgwLTRiYjgtYmZlNS04YTVmYTFmZGY0MmXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=804673a9c6cb01d5&srepoch=1764952013&from=searchresults,"Avec une note de 8,0
+8,0
+Très bien
+2 187 expériences vécues",47.2380222,6.0243622
+e10e8ff1-3abf-4b35-b028-021d365eb729,ac3fbabf43fd,Besancon,B&B HOTEL Besançon Valentin,https://www.booking.com/hotel/fr/b-amp-b-besancon-valentin.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iZXNhbmNvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC0o_MyQbAAgHSAiQyN2FjMzEyMi0yZTgwLTRiYjgtYmZlNS04YTVmYTFmZGY0MmXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=804673a9c6cb01d5&srepoch=1764952013&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+2 230 expériences vécues",47.2380222,6.0243622
+1d1bada3-f576-408d-b576-9e60d6d2dfa3,ac3fbabf43fd,Besancon,Hôtel de Paris,https://www.booking.com/hotel/fr/de-paris-besanasson.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iZXNhbmNvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC0o_MyQbAAgHSAiQyN2FjMzEyMi0yZTgwLTRiYjgtYmZlNS04YTVmYTFmZGY0MmXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=804673a9c6cb01d5&srepoch=1764952013&from=searchresults,"Avec une note de 8,5
+8,5
+Très bien
+1 973 expériences vécues",47.2380222,6.0243622
+c70a11e0-ca6d-4182-ba68-f65bfe74282e,7c978763ccd2,Dijon,Kyriad Hotel Dijon Gare,https://www.booking.com/hotel/fr/kyriad-gare.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9kaWpvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2o_MyQbAAgHSAiQyNjY1Mjc0MC1iN2Y1LTRlYzQtYmZhNy0zZTlhYWQ4YTBjODnYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=f0df73ad47b8053d&srepoch=1764952020&from=searchresults,"Avec une note de 7,2
+7,2
+Bien 
+2 706 expériences vécues",47.3215806,5.0414701
+b76f6fae-92cf-4271-bee9-053bc0a07cf8,7c978763ccd2,Dijon,Holiday Inn Dijon Sud - Longvic by IHG,https://www.booking.com/hotel/fr/holiday-inn-dijon-sud-longvic-an-ihg.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9kaWpvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2o_MyQbAAgHSAiQyNjY1Mjc0MC1iN2Y1LTRlYzQtYmZhNy0zZTlhYWQ4YTBjODnYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=f0df73ad47b8053d&srepoch=1764952020&from=searchresults,"Avec une note de 8,7
+8,7
+Superbe
+5 676 expériences vécues",47.3215806,5.0414701
+40cfab93-e905-4d61-ab50-bc38efa20f69,7c978763ccd2,Dijon,Oceania Le Jura Dijon,https://www.booking.com/hotel/fr/tidijon.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9kaWpvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2o_MyQbAAgHSAiQyNjY1Mjc0MC1iN2Y1LTRlYzQtYmZhNy0zZTlhYWQ4YTBjODnYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=f0df73ad47b8053d&srepoch=1764952020&from=searchresults,"Avec une note de 8,7
+8,7
+Superbe
+1 679 expériences vécues",47.3215806,5.0414701
+2fca90e1-c1ca-487d-ac0b-9eb1da783579,7c978763ccd2,Dijon,Holiday Inn Dijon Toison D'or by IHG,https://www.booking.com/hotel/fr/holiday-inn-dijon.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9kaWpvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2o_MyQbAAgHSAiQyNjY1Mjc0MC1iN2Y1LTRlYzQtYmZhNy0zZTlhYWQ4YTBjODnYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=f0df73ad47b8053d&srepoch=1764952020&from=searchresults,"Avec une note de 8,2
+8,2
+Très bien
+4 988 expériences vécues",47.3215806,5.0414701
+a00506a5-efe8-4bda-b04d-9cf35e9523b8,7c978763ccd2,Dijon,Mustard Hostel,https://www.booking.com/hotel/fr/mustard-hostel.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9kaWpvbkgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2o_MyQbAAgHSAiQyNjY1Mjc0MC1iN2Y1LTRlYzQtYmZhNy0zZTlhYWQ4YTBjODnYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=f0df73ad47b8053d&srepoch=1764952020&from=searchresults,"Avec une note de 8,7
+8,7
+Superbe
+6 expériences vécues",47.3215806,5.0414701
+f5dc527d-ae9c-412c-87ea-76100de5aa9c,6d78f94327fe,Annecy,Hôtel des Alpes,https://www.booking.com/hotel/fr/hotel-des-alpes.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbm5lY3lIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AuGPzMkGwAIB0gIkZWJmOTk5YWMtODE0OC00MTkyLTliZGMtZTk4Mjg3MTg5ZjU22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=ce3973b075b20498&srepoch=1764952028&from=searchresults,"Avec une note de 8,2
+8,2
+Très bien
+2 324 expériences vécues",45.8992348,6.1288847
+642155d9-ee2d-445c-ab4b-04267b47399e,6d78f94327fe,Annecy,Icône Hôtel - Annecy,https://www.booking.com/hotel/fr/ica-ne.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbm5lY3lIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AuGPzMkGwAIB0gIkZWJmOTk5YWMtODE0OC00MTkyLTliZGMtZTk4Mjg3MTg5ZjU22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=ce3973b075b20498&srepoch=1764952028&from=searchresults,"Avec une note de 7,6
+7,6
+Bien 
+3 655 expériences vécues",45.8992348,6.1288847
+cb03c2f3-9b08-48d2-89b1-490c3d981d41,6d78f94327fe,Annecy,Reflets du Lac Annecy,https://www.booking.com/hotel/fr/veronese-annecy.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbm5lY3lIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AuGPzMkGwAIB0gIkZWJmOTk5YWMtODE0OC00MTkyLTliZGMtZTk4Mjg3MTg5ZjU22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=ce3973b075b20498&srepoch=1764952028&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+5 expériences vécues",45.8992348,6.1288847
+8c5afa2e-5b17-4311-8c01-9d515460fe70,6d78f94327fe,Annecy,Le Pélican,https://www.booking.com/hotel/fr/le-pelican-annecy1.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbm5lY3lIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AuGPzMkGwAIB0gIkZWJmOTk5YWMtODE0OC00MTkyLTliZGMtZTk4Mjg3MTg5ZjU22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=ce3973b075b20498&srepoch=1764952028&from=searchresults,"Avec une note de 8,8
+8,8
+Superbe
+4 907 expériences vécues",45.8992348,6.1288847
+09d8358c-3626-4445-a0c6-501309fda91f,6d78f94327fe,Annecy,Ace Hotel Annecy,https://www.booking.com/hotel/fr/ace-annecy.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hbm5lY3lIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AuGPzMkGwAIB0gIkZWJmOTk5YWMtODE0OC00MTkyLTliZGMtZTk4Mjg3MTg5ZjU22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=ce3973b075b20498&srepoch=1764952028&from=searchresults,"Avec une note de 8,2
+8,2
+Très bien
+5 138 expériences vécues",45.8992348,6.1288847
+0b719b19-3fc7-4d21-88ec-60f51579136e,5fdd7011632d,Grenoble,Hôtel Terminus,https://www.booking.com/hotel/fr/hotelterminus.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9ncmVub2JsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC6Y_MyQbAAgHSAiQ4YjY1MDlmMy1iZGQxLTQwYTctOWZmYi02ZTI5NWU3YjVlZWLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=38a473b403250662&srepoch=1764952035&from=searchresults,"Avec une note de 8,6
+8,6
+Superbe
+921 expériences vécues",45.1875602,5.7357819
+634420e0-b577-455b-864b-dc0ad47c8a1f,5fdd7011632d,Grenoble,Campanile Grenoble Centre Gare,https://www.booking.com/hotel/fr/campanile-grenoble-centre-gare.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9ncmVub2JsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC6Y_MyQbAAgHSAiQ4YjY1MDlmMy1iZGQxLTQwYTctOWZmYi02ZTI5NWU3YjVlZWLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=38a473b403250662&srepoch=1764952035&from=searchresults,"Avec une note de 7,4
+7,4
+Bien 
+1 493 expériences vécues",45.1875602,5.7357819
+de288984-590f-40e2-a3b6-ab64fb4f0aa7,5fdd7011632d,Grenoble,superbe duplex avec parking gratuit,https://www.booking.com/hotel/fr/superbe-duplex-avec-parking-gratuit.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9ncmVub2JsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC6Y_MyQbAAgHSAiQ4YjY1MDlmMy1iZGQxLTQwYTctOWZmYi02ZTI5NWU3YjVlZWLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=38a473b403250662&srepoch=1764952035&from=searchresults,"Avec une note de 8,8
+8,8
+Superbe
+113 expériences vécues",45.1875602,5.7357819
+e1b3998f-6e2f-4cd4-9075-48bffe6195e4,5fdd7011632d,Grenoble,B&B HOTEL Grenoble Centre Alpexpo,https://www.booking.com/hotel/fr/b-amp-b-grenoble-centre-alpexpo.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9ncmVub2JsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC6Y_MyQbAAgHSAiQ4YjY1MDlmMy1iZGQxLTQwYTctOWZmYi02ZTI5NWU3YjVlZWLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=38a473b403250662&srepoch=1764952035&from=searchresults,"Avec une note de 7,6
+7,6
+Bien 
+1 983 expériences vécues",45.1875602,5.7357819
+fcce2274-db09-4703-a913-79cc527bffd9,5fdd7011632d,Grenoble,Tempologis Grenoble,https://www.booking.com/hotel/fr/tempologis-grenoble.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9ncmVub2JsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC6Y_MyQbAAgHSAiQ4YjY1MDlmMy1iZGQxLTQwYTctOWZmYi02ZTI5NWU3YjVlZWLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=38a473b403250662&srepoch=1764952035&from=searchresults,"Avec une note de 8,2
+8,2
+Très bien
+175 expériences vécues",45.1875602,5.7357819
+eab78011-4671-4853-aa61-0d4ab6322f15,10b53d95e2d3,Lyon,Campanile PRIME Lyon Centre Gare Part-Dieu,https://www.booking.com/hotel/fr/campanile-lyon-centre-forum-part-dieu.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF9seW9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALwj8zJBsACAdICJGE3MzY4ZGNjLWQxN2QtNGNjMC1iYzI3LTUzYjEyNzQzNDhlZtgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=5f3673b8905f00c7&srepoch=1764952043&from=searchresults,"Avec une note de 8,5
+8,5
+Très bien
+3 736 expériences vécues",45.7578137,4.8320114
+bce0ef66-e326-4414-a3ff-e7dc89e5a07b,10b53d95e2d3,Lyon,MEININGER Hotel Lyon Centre Berthelot,https://www.booking.com/hotel/fr/meininger-lyon-centre-berthelot.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF9seW9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALwj8zJBsACAdICJGE3MzY4ZGNjLWQxN2QtNGNjMC1iYzI3LTUzYjEyNzQzNDhlZtgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=5f3673b8905f00c7&srepoch=1764952043&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+11 027 expériences vécues",45.7578137,4.8320114
+c6631932-fd6b-4ace-91c6-b7b7168886d9,10b53d95e2d3,Lyon,Séjours & Affaires Lyon Saint-Nicolas,https://www.booking.com/hotel/fr/sejours-affaires-lyon-saint-nicolas.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF9seW9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALwj8zJBsACAdICJGE3MzY4ZGNjLWQxN2QtNGNjMC1iYzI3LTUzYjEyNzQzNDhlZtgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=5f3673b8905f00c7&srepoch=1764952043&from=searchresults,"Avec une note de 7,2
+7,2
+Bien 
+646 expériences vécues",45.7578137,4.8320114
+eda53688-049f-4a7b-af67-044ee9c7959d,10b53d95e2d3,Lyon,Residence Montempo Appart'Hôtel Lyon Cite Internationale,https://www.booking.com/hotel/fr/residence-hoteliere-temporim-cite-internationale.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF9seW9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALwj8zJBsACAdICJGE3MzY4ZGNjLWQxN2QtNGNjMC1iYzI3LTUzYjEyNzQzNDhlZtgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=5f3673b8905f00c7&srepoch=1764952043&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,1
+8,1
+Très bien
+6 224 expériences vécues",45.7578137,4.8320114
+5b1b2f06-25c9-436f-87bd-735638dea2f7,10b53d95e2d3,Lyon,YASI Hostel,https://www.booking.com/hotel/fr/yasi-hostel.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF9seW9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALwj8zJBsACAdICJGE3MzY4ZGNjLWQxN2QtNGNjMC1iYzI3LTUzYjEyNzQzNDhlZtgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=5f3673b8905f00c7&srepoch=1764952043&from=searchresults,"Avec une note de 8,6
+8,6
+Superbe
+3 894 expériences vécues",45.7578137,4.8320114
+ea0df8a2-2afb-47d4-90eb-de8c15c7a685,f7a03e5c5dd7,Gorges du Verdon,Beautiful studio terrace with Esparron lake view 4 people,https://www.booking.com/hotel/fr/beautiful-studio-terrace-with-esparron-lake-view-4-people.fr.html?aid=304142&label=gen173nr-10CAQoggJCF3NlYXJjaF9nb3JnZXMgZHUgdmVyZG9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAL4j8zJBsACAdICJDdlZTllM2NkLWJiNTEtNGJlYS1hMjQ0LWZhMjQ4ZTRhY2MzMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=e26e73bcee6104af&srepoch=1764952050&from=searchresults,"Avec une note de 8,8
+8,8
+Superbe
+31 expériences vécues",43.7496562,6.3285616
+d5e6af4b-5bec-4e47-86e6-746c29d2f67b,f7a03e5c5dd7,Gorges du Verdon,Résidence Odalys La Licorne de Haute Provence,https://www.booking.com/hotel/fr/la-licorne-de-haute-provence.fr.html?aid=304142&label=gen173nr-10CAQoggJCF3NlYXJjaF9nb3JnZXMgZHUgdmVyZG9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAL4j8zJBsACAdICJDdlZTllM2NkLWJiNTEtNGJlYS1hMjQ0LWZhMjQ4ZTRhY2MzMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=e26e73bcee6104af&srepoch=1764952050&from=searchresults,"Avec une note de 7,3
+7,3
+Bien 
+662 expériences vécues",43.7496562,6.3285616
+75a8730a-7392-407f-8b27-514dcbcfbc14,f7a03e5c5dd7,Gorges du Verdon,"LES BASTIDES DE CHANTERAINE Bungalows, Lodges & Spa",https://www.booking.com/hotel/fr/les-bastides-de-chanteraine.fr.html?aid=304142&label=gen173nr-10CAQoggJCF3NlYXJjaF9nb3JnZXMgZHUgdmVyZG9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAL4j8zJBsACAdICJDdlZTllM2NkLWJiNTEtNGJlYS1hMjQ0LWZhMjQ4ZTRhY2MzMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=e26e73bcee6104af&srepoch=1764952050&from=searchresults,"Avec une note de 8,6
+8,6
+Superbe
+483 expériences vécues",43.7496562,6.3285616
+63bc1dbb-022f-4440-afcd-19c18ce64992,f7a03e5c5dd7,Gorges du Verdon,Le gite du grand cèdre - proche des gorges du Verdon,https://www.booking.com/hotel/fr/le-gite-du-grand-cedre.fr.html?aid=304142&label=gen173nr-10CAQoggJCF3NlYXJjaF9nb3JnZXMgZHUgdmVyZG9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAL4j8zJBsACAdICJDdlZTllM2NkLWJiNTEtNGJlYS1hMjQ0LWZhMjQ4ZTRhY2MzMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=e26e73bcee6104af&srepoch=1764952050&from=searchresults,"Avec une note de 9,4
+9,4
+Fabuleux 
+59 expériences vécues",43.7496562,6.3285616
+387ac08d-a716-4b87-bb1b-e3fd74ece50e,f7a03e5c5dd7,Gorges du Verdon,La Clorinde,https://www.booking.com/hotel/fr/holiday-home-la-clorinde.fr.html?aid=304142&label=gen173nr-10CAQoggJCF3NlYXJjaF9nb3JnZXMgZHUgdmVyZG9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAL4j8zJBsACAdICJDdlZTllM2NkLWJiNTEtNGJlYS1hMjQ0LWZhMjQ4ZTRhY2MzMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=e26e73bcee6104af&srepoch=1764952050&from=searchresults,"Avec une note de 9,1
+9,1
+Fabuleux 
+408 expériences vécues",43.7496562,6.3285616
+05d13bdb-66c6-4c87-bf8e-9f30eedc7596,e5fcdbaf84c4,Bormes les Mimosas,Hostellerie du Cigalou,https://www.booking.com/hotel/fr/hostellerie-du-cigalou.fr.html?aid=304142&label=gen173nr-10CAQoggJCGXNlYXJjaF9ib3JtZXMgbGVzIG1pbW9zYXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Av-PzMkGwAIB0gIkMGI3N2YyMjMtZTc1My00MzA1LWIzNzItYzNhYWY0NGRlNDIw2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=4bff73bff7f501dd&srepoch=1764952058&from=searchresults,"Avec une note de 8,6
+8,6
+Superbe
+274 expériences vécues",43.1506968,6.3419285
+9783f519-92ab-405a-889a-4165a150f1de,e5fcdbaf84c4,Bormes les Mimosas,Hotel La Voile,https://www.booking.com/hotel/fr/hotel-la-voile-fr.fr.html?aid=304142&label=gen173nr-10CAQoggJCGXNlYXJjaF9ib3JtZXMgbGVzIG1pbW9zYXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Av-PzMkGwAIB0gIkMGI3N2YyMjMtZTc1My00MzA1LWIzNzItYzNhYWY0NGRlNDIw2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=4bff73bff7f501dd&srepoch=1764952058&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+808 expériences vécues",43.1506968,6.3419285
+b65fab09-a7cb-4c36-bb68-fc0a564e9150,e5fcdbaf84c4,Bormes les Mimosas,Studio idéal séjour en amoureux rez de jardin proche plage,https://www.booking.com/hotel/fr/studio-ideal-sejour-en-amoureux-rez-de-jardin-proche-plage.fr.html?aid=304142&label=gen173nr-10CAQoggJCGXNlYXJjaF9ib3JtZXMgbGVzIG1pbW9zYXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Av-PzMkGwAIB0gIkMGI3N2YyMjMtZTc1My00MzA1LWIzNzItYzNhYWY0NGRlNDIw2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=4bff73bff7f501dd&srepoch=1764952058&from=searchresults,"Avec une note de 8,5
+8,5
+Très bien
+25 expériences vécues",43.1506968,6.3419285
+de6c4edb-15d8-4596-8911-38dd024d0d9d,e5fcdbaf84c4,Bormes les Mimosas,Le Mas de la Palmeraie - Appartement dans propriété privée au calme avec piscine et tennis,https://www.booking.com/hotel/fr/le-mas-de-la-palmeraie-appartement-dans-propriete-privee-au-calme-avec-piscine-e.fr.html?aid=304142&label=gen173nr-10CAQoggJCGXNlYXJjaF9ib3JtZXMgbGVzIG1pbW9zYXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Av-PzMkGwAIB0gIkMGI3N2YyMjMtZTc1My00MzA1LWIzNzItYzNhYWY0NGRlNDIw2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=4bff73bff7f501dd&srepoch=1764952058&from=searchresults,"Avec une note de 9,6
+9,6
+Exceptionnel
+6 expériences vécues",43.1506968,6.3419285
+36379f8d-1775-49e3-9f09-4ebd8866317d,e5fcdbaf84c4,Bormes les Mimosas,Les Eucalyptus,https://www.booking.com/hotel/fr/les-eucalyptus-bormes-les-mimosas.fr.html?aid=304142&label=gen173nr-10CAQoggJCGXNlYXJjaF9ib3JtZXMgbGVzIG1pbW9zYXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Av-PzMkGwAIB0gIkMGI3N2YyMjMtZTc1My00MzA1LWIzNzItYzNhYWY0NGRlNDIw2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=4bff73bff7f501dd&srepoch=1764952058&from=searchresults,"Avec une note de 9,0
 9,0
 Fabuleux 
 1 expérience vécue",43.1506968,6.3419285
-5a3e1bf4-2f5d-4d3e-88a2-a82831be9e20,e5fcdbaf84c4,Bormes les Mimosas,"L'Odyssée provençale, un duplex de charme de 2 chambres au pied du village médiéval de Bormes-les-Mimosas, offrant des prestations haut de gamme et une superbe vue sur le Massif des Maures",https://www.booking.com/hotel/fr/duplex-de-charme-t3-dernier-etage-vue-collines.fr.html?aid=304142&label=gen173nr-10CAQoggJCGXNlYXJjaF9ib3JtZXMgbGVzIG1pbW9zYXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AvXrkMUGwAIB0gIkYjMwYTBkYzUtY2JmOS00NWU0LWIwMjItNDZmOTQwZjAzM2Zl2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=52a93bba162f020e&srepoch=1755592179&from=searchresults,"Avec une note de 9,6
+db49cf6d-eb67-4f25-b730-8046d674d603,9ce2d0d8095b,Cassis,Home Cassis - Maison Les Calanques - Piscine chauffée à 30c,https://www.booking.com/hotel/fr/home-cassis.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jYXNzaXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoaQzMkGwAIB0gIkMGI2MGI5YzItNmE5MC00ODhiLTlmZTAtZWRjYmE1YmQ0ZWNh2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=dc5773c370ef0389&srepoch=1764952065&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+189 expériences vécues",43.2140359,5.5396318
+8724d46c-4cf5-4323-a55f-0f148ece8acd,9ce2d0d8095b,Cassis,Seaview.Cassis,https://www.booking.com/hotel/fr/seaview-cassis.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jYXNzaXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoaQzMkGwAIB0gIkMGI2MGI5YzItNmE5MC00ODhiLTlmZTAtZWRjYmE1YmQ0ZWNh2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=dc5773c370ef0389&srepoch=1764952065&from=searchresults,"Avec une note de 9,6
 9,6
 Exceptionnel
-45 expériences vécues",43.1506968,6.3419285
-654b1cdc-1702-41f1-aa67-b6d2fa813d4f,9ce2d0d8095b,Cassis,La suite du clos de la tour Cassis,https://www.booking.com/hotel/fr/le-clos-de-la-tour-cassis-cassis.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jYXNzaXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AvzrkMUGwAIB0gIkMDEwY2VkN2YtYzVmOC00ODE1LWIxZDMtYThjYjZiMjIyZWM12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=45d93bbe3c960130&srepoch=1755592186&from=searchresults,"Avec une note de 9,2
+38 expériences vécues",43.2140359,5.5396318
+45561d52-06b9-4f0a-af34-47694774e55f,9ce2d0d8095b,Cassis,"L’Aiguade, appartement d'exception à Cassis",https://www.booking.com/hotel/fr/aiguade-appartement-d-exception-a-cassis.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jYXNzaXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoaQzMkGwAIB0gIkMGI2MGI5YzItNmE5MC00ODhiLTlmZTAtZWRjYmE1YmQ0ZWNh2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=dc5773c370ef0389&srepoch=1764952065&from=searchresults,"Avec une note de 9,6
+9,6
+Exceptionnel
+25 expériences vécues",43.2140359,5.5396318
+c18810bb-8ec4-44d7-b5df-5b6263bffb14,9ce2d0d8095b,Cassis,Au son des Cigales,https://www.booking.com/hotel/fr/au-son-des-cigales-cassis.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jYXNzaXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoaQzMkGwAIB0gIkMGI2MGI5YzItNmE5MC00ODhiLTlmZTAtZWRjYmE1YmQ0ZWNh2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=dc5773c370ef0389&srepoch=1764952065&from=searchresults,"Avec une note de 9,2
 9,2
 Fabuleux 
-5 expériences vécues",43.2140359,5.5396318
-b26e7b1c-bd61-4d84-9730-7091023a551a,9ce2d0d8095b,Cassis,Home Cassis - Maison Les Calanques - Piscine chauffée à 30c,https://www.booking.com/hotel/fr/home-cassis.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jYXNzaXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AvzrkMUGwAIB0gIkMDEwY2VkN2YtYzVmOC00ODE1LWIxZDMtYThjYjZiMjIyZWM12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=45d93bbe3c960130&srepoch=1755592186&from=searchresults,"Avec une note de 8,2
-8,2
-Très bien
-197 expériences vécues",43.2140359,5.5396318
-d7f9ed78-ae8a-4c45-b025-1168cd090708,9ce2d0d8095b,Cassis,LOU CIGALOU,https://www.booking.com/hotel/fr/lou-cigalou-cassis.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jYXNzaXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AvzrkMUGwAIB0gIkMDEwY2VkN2YtYzVmOC00ODE1LWIxZDMtYThjYjZiMjIyZWM12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=45d93bbe3c960130&srepoch=1755592186&from=searchresults,"Avec une note de 9,2
-9,2
-Fabuleux 
-33 expériences vécues",43.2140359,5.5396318
-8a820bc8-780b-4818-8ef9-5aa7c5f30724,6a5b4d7eaece,Marseille,"Superbe appart 3 p, 10 mn de la plage avec piscine et parking",https://www.booking.com/hotel/fr/superbe-appart-3-p-10-mn-de-la-plage-avec-piscine.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tYXJzZWlsbGVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoPskMUGwAIB0gIkZjgzNTM1ZjEtMGM0MC00NDQ5LTg3ODctOWZiYzYyMDZlMzkx2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=90123bc11b150613&srepoch=1755592193&from=searchresults,"Avec une note de 8,9
-8,9
-Superbe
-75 expériences vécues",43.2961743,5.3699525
-4e4668c8-04ef-4432-b28a-2308b5065fc3,6a5b4d7eaece,Marseille,La LUNA of MARSEILLE - VILLA D'ARCHITECTE B&B,https://www.booking.com/hotel/fr/la-luna-marseille.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tYXJzZWlsbGVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoPskMUGwAIB0gIkZjgzNTM1ZjEtMGM0MC00NDQ5LTg3ODctOWZiYzYyMDZlMzkx2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=90123bc11b150613&srepoch=1755592193&from=searchresults,"Avec une note de 9,2
-9,2
-Fabuleux 
-91 expériences vécues",43.2961743,5.3699525
-cb13f1b7-6e64-44cf-b527-9abc27848e56,6a5b4d7eaece,Marseille,Auberge de Jeunesse HI Marseille Bois-Luzy,https://www.booking.com/hotel/fr/auberge-de-jeunesse-hi-marseille-bois-luzy.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tYXJzZWlsbGVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoPskMUGwAIB0gIkZjgzNTM1ZjEtMGM0MC00NDQ5LTg3ODctOWZiYzYyMDZlMzkx2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=90123bc11b150613&srepoch=1755592193&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 7,7
-7,7
-Bien 
-792 expériences vécues",43.2961743,5.3699525
-e9973c4e-6acb-4787-83f2-0f7ab3be8fb1,f7f4b61ca081,Aix en Provence,B&B Villa Roumanille,https://www.booking.com/hotel/fr/villa-roumanille.fr.html?aid=304142&label=gen173nr-10CAQoggJCFnNlYXJjaF9haXggZW4gcHJvdmVuY2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AorskMUGwAIB0gIkMTU5N2E2NTQtM2E0ZS00ZGUzLTk5ZGYtNmNmZTg3Nzg5Mjdh2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=dae63bc5427a0eb5&srepoch=1755592201&from=searchresults,"Avec une note de 9,2
-9,2
-Fabuleux 
-256 expériences vécues",43.5298424,5.4474738
-f6a70a5e-8b09-40ad-9ca4-c241bac0f2f5,f7f4b61ca081,Aix en Provence,Villa Tassigny,https://www.booking.com/hotel/fr/maison-centre-d-aix-en-provence.fr.html?aid=304142&label=gen173nr-10CAQoggJCFnNlYXJjaF9haXggZW4gcHJvdmVuY2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AorskMUGwAIB0gIkMTU5N2E2NTQtM2E0ZS00ZGUzLTk5ZGYtNmNmZTg3Nzg5Mjdh2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=dae63bc5427a0eb5&srepoch=1755592201&from=searchresults,"Avec une note de 9,4
+61 expériences vécues",43.2140359,5.5396318
+73db8b17-f60f-47ac-bc39-40b73b1ce8ba,9ce2d0d8095b,Cassis,Appart Bianca T2 - Terrasse - Parking - Calme - 1mn de la mer,https://www.booking.com/hotel/fr/appart-bianca-t2-terrasse-parking-calme-1mn-de-la-mer.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9jYXNzaXNIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AoaQzMkGwAIB0gIkMGI2MGI5YzItNmE5MC00ODhiLTlmZTAtZWRjYmE1YmQ0ZWNh2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=dc5773c370ef0389&srepoch=1764952065&from=searchresults,"Avec une note de 9,4
 9,4
 Fabuleux 
-33 expériences vécues",43.5298424,5.4474738
-73d1b01a-615f-4664-9ee2-0516eae08364,f7f4b61ca081,Aix en Provence,Villa La Source - Location à Aix en Provence,https://www.booking.com/hotel/fr/la-villa-la-source-en-provence.fr.html?aid=304142&label=gen173nr-10CAQoggJCFnNlYXJjaF9haXggZW4gcHJvdmVuY2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AorskMUGwAIB0gIkMTU5N2E2NTQtM2E0ZS00ZGUzLTk5ZGYtNmNmZTg3Nzg5Mjdh2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=dae63bc5427a0eb5&srepoch=1755592201&from=searchresults,"Avec une note de 9,3
-9,3
-Fabuleux 
-4 expériences vécues",43.5298424,5.4474738
-16d08244-664a-4f1c-a3d3-35246d611b64,a76b712fa6fd,Avignon,"Le Cosy du Gal, à 2 Pas du Palais des Papes parking gratuit securisé",https://www.booking.com/hotel/fr/les-2-arbres.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9hdmlnbm9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKR7JDFBsACAdICJGJhMzBiZDYzLWI2NjUtNGVkMi04ZDAzLTM3NmUzMDU3MmM0NNgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=80623bc8060203e9&srepoch=1755592208&from=searchresults,"Avec une note de 8,1
-8,1
+40 expériences vécues",43.2140359,5.5396318
+88af3782-9791-49f2-b7ae-7642d1468bf8,6a5b4d7eaece,Marseille,The People - Marseille,https://www.booking.com/hotel/fr/the-people-hostel-marseille.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tYXJzZWlsbGVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ao6QzMkGwAIB0gIkNTMyYTdkNDQtOTU3Yi00NjQyLWI3ZmUtYTk2YTRmZTU0ODY12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=5cb773c756ba052f&srepoch=1764952073&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,3
+8,3
 Très bien
-12 expériences vécues",43.9492493,4.8059012
-634405f6-89b6-432d-b114-e10f64b7e37a,a76b712fa6fd,Avignon,CLIMATISATION-Hypercentre-PARKING-COSY CARNOT-AVIGNONSMILE,https://www.booking.com/hotel/fr/hypercentre-cosy-carnot-avignonsmile.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9hdmlnbm9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKR7JDFBsACAdICJGJhMzBiZDYzLWI2NjUtNGVkMi04ZDAzLTM3NmUzMDU3MmM0NNgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=80623bc8060203e9&srepoch=1755592208&from=searchresults,"Avec une note de 7,8
-7,8
-Bien 
-74 expériences vécues",43.9492493,4.8059012
-d1ad6a0a-3874-4028-ae59-c00e4c1c8e95,a76b712fa6fd,Avignon,Hotel Mignon,https://www.booking.com/hotel/fr/mignon.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9hdmlnbm9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKR7JDFBsACAdICJGJhMzBiZDYzLWI2NjUtNGVkMi04ZDAzLTM3NmUzMDU3MmM0NNgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=80623bc8060203e9&srepoch=1755592208&from=searchresults,"Avec une note de 7,2
-7,2
-Bien 
-311 expériences vécues",43.9492493,4.8059012
-07b4d433-4510-484b-8223-7c3086827c48,975923312ee1,Uzes,Mazet de la Lavande,https://www.booking.com/hotel/fr/mazet-de-la-lavande.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF91emVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKZ7JDFBsACAdICJDJjODhmNTAzLTUxNjYtNDM2ZC04ZjNmLTA4MmY3NTQxZDk1OdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=e9e03bccc2950727&srepoch=1755592215&from=searchresults,"Avec une note de 9,7
-9,7
-Exceptionnel
-24 expériences vécues",44.0121279,4.4196718
-45dd060c-b307-4191-a342-70d3e71d8534,975923312ee1,Uzes,appartement 3 min a pied du centre d'Uzès parking piscine,https://www.booking.com/hotel/fr/mas-des-oliviers-uzes.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF91emVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKZ7JDFBsACAdICJDJjODhmNTAzLTUxNjYtNDM2ZC04ZjNmLTA4MmY3NTQxZDk1OdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=e9e03bccc2950727&srepoch=1755592215&from=searchresults,"Avec une note de 8,8
-8,8
-Superbe
-119 expériences vécues",44.0121279,4.4196718
-fd7e4b43-f7b9-4772-8371-2f6c314c5bb1,975923312ee1,Uzes,Domaine de Privadière & Spa,https://www.booking.com/hotel/fr/domaine-de-privadiere.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF91emVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKZ7JDFBsACAdICJDJjODhmNTAzLTUxNjYtNDM2ZC04ZjNmLTA4MmY3NTQxZDk1OdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=e9e03bccc2950727&srepoch=1755592215&from=searchresults,"Avec une note de 9,3
-9,3
-Fabuleux 
-100 expériences vécues",44.0121279,4.4196718
-6067a479-16b1-4ceb-aa24-018a47e9bb95,17b7723e85eb,Nimes,Royal Hôtel,https://www.booking.com/hotel/fr/royal.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9uaW1lc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCn-yQxQbAAgHSAiRmZDg5MTIyOS1lZDA2LTQ2YmYtOTM1OS1hYzY0MTU3ZDJjMzfYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=ec813bcfd3a20378&srepoch=1755592222&from=searchresults,"Avec une note de 8,4
-8,4
+6 080 expériences vécues",43.2961743,5.3699525
+0583b82c-1ddf-4dd9-8ac3-5eeb357dbd48,6a5b4d7eaece,Marseille,Novotel Marseille Centre Prado Vélodrome,https://www.booking.com/hotel/fr/novotel-marseille-centre-prado.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tYXJzZWlsbGVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ao6QzMkGwAIB0gIkNTMyYTdkNDQtOTU3Yi00NjQyLWI3ZmUtYTk2YTRmZTU0ODY12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=5cb773c756ba052f&srepoch=1764952073&from=searchresults,"Avec une note de 8,0
+8,0
 Très bien
-3 364 expériences vécues",43.8374249,4.3600687
-0550ef2d-cd81-432a-97c6-ed75c05bee4c,17b7723e85eb,Nimes,Hotel Mas De Galoffre,https://www.booking.com/hotel/fr/mas-de-galoffre.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9uaW1lc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCn-yQxQbAAgHSAiRmZDg5MTIyOS1lZDA2LTQ2YmYtOTM1OS1hYzY0MTU3ZDJjMzfYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=ec813bcfd3a20378&srepoch=1755592222&from=searchresults,"Avec une note de 7,5
-7,5
-Bien 
-514 expériences vécues",43.8374249,4.3600687
-8223963a-33d4-4fd0-b19d-ce9f56be5991,17b7723e85eb,Nimes,Résidence Du Golf,https://www.booking.com/hotel/fr/residence-du-golf.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9uaW1lc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCn-yQxQbAAgHSAiRmZDg5MTIyOS1lZDA2LTQ2YmYtOTM1OS1hYzY0MTU3ZDJjMzfYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=ec813bcfd3a20378&srepoch=1755592222&from=searchresults,"Avec une note de 8,5
+1 321 expériences vécues",43.2961743,5.3699525
+b45ed624-6fc9-45a5-835e-7d5aa41e1863,6a5b4d7eaece,Marseille,MEININGER Marseille Centre la Joliette,https://www.booking.com/hotel/fr/meininger-marseille-centre-la-joliette.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tYXJzZWlsbGVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ao6QzMkGwAIB0gIkNTMyYTdkNDQtOTU3Yi00NjQyLWI3ZmUtYTk2YTRmZTU0ODY12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=5cb773c756ba052f&srepoch=1764952073&from=searchresults,"Avec une note de 8,5
 8,5
 Très bien
-128 expériences vécues",43.8374249,4.3600687
-8741b8e7-2a0c-408f-82fe-83475d6963bf,ae45e2f863bb,Aigues Mortes,La Villa Mazarin,https://www.booking.com/hotel/fr/la-villa-mazarin.fr.html?aid=304142&label=gen173nr-10CAQoggJCFHNlYXJjaF9haWd1ZXMgbW9ydGVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKn7JDFBsACAdICJGVmMTgwZjdiLTk4NWUtNGNmMS1iMGFlLWVjYjc2ZTA1YzVjY9gCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=1c073bd385240b55&srepoch=1755592229&from=searchresults,"Avec une note de 9,2
-9,2
-Fabuleux 
-1 162 expériences vécues",43.5661521,4.19154
-48a341a9-993a-448e-b7b7-c53c9814c048,ae45e2f863bb,Aigues Mortes,Maison chaleureuse à 5 mins des remparts,https://www.booking.com/hotel/fr/maison-chaleureuse-a-5-mins-des-remparts-aigues-mortes.fr.html?aid=304142&label=gen173nr-10CAQoggJCFHNlYXJjaF9haWd1ZXMgbW9ydGVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKn7JDFBsACAdICJGVmMTgwZjdiLTk4NWUtNGNmMS1iMGFlLWVjYjc2ZTA1YzVjY9gCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=1c073bd385240b55&srepoch=1755592229&from=searchresults,"Avec une note de 9,5
-9,5
-Exceptionnel
-13 expériences vécues",43.5661521,4.19154
-b84681ba-9e8b-48b8-b5cd-ff3e7dc2394a,ae45e2f863bb,Aigues Mortes,Artemia Aigues-Mortes - Hotel avec piscine,https://www.booking.com/hotel/fr/le-royal-hotel-aigues-mortes.fr.html?aid=304142&label=gen173nr-10CAQoggJCFHNlYXJjaF9haWd1ZXMgbW9ydGVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKn7JDFBsACAdICJGVmMTgwZjdiLTk4NWUtNGNmMS1iMGFlLWVjYjc2ZTA1YzVjY9gCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=1c073bd385240b55&srepoch=1755592229&from=searchresults,"Avec une note de 8,8
-8,8
-Superbe
-499 expériences vécues",43.5661521,4.19154
-084aa82c-0968-4b4b-8e77-d8cb46eb40b4,a24e1bba5fd4,Saintes Maries de la mer,Mas De Calabrun,https://www.booking.com/hotel/fr/mas-de-calabrun.fr.html?aid=304142&label=gen173nr-10CAQoggJCH3NlYXJjaF9zYWludGVzIG1hcmllcyBkZSBsYSBtZXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Aq3skMUGwAIB0gIkOWIxOTk4Y2MtY2Q4Yi00NTU2LWJkYTctYTZlMzYxODY4ODJk2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=9fc23bd68dad0402&srepoch=1755592236&from=searchresults,"Avec une note de 8,6
+6 936 expériences vécues",43.2961743,5.3699525
+21e303e0-6a2d-42f4-9cfa-9dd4352dccbb,6a5b4d7eaece,Marseille,Novotel Marseille Vieux Port,https://www.booking.com/hotel/fr/novotel-marseille-vieux-port.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tYXJzZWlsbGVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ao6QzMkGwAIB0gIkNTMyYTdkNDQtOTU3Yi00NjQyLWI3ZmUtYTk2YTRmZTU0ODY12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=5cb773c756ba052f&srepoch=1764952073&from=searchresults,"Avec une note de 7,8
+7,8
+Bien 
+824 expériences vécues",43.2961743,5.3699525
+2e7aa85f-d72e-4ee7-a7b9-2a6123cc6ee5,6a5b4d7eaece,Marseille,Golden Tulip Marseille Euromed,https://www.booking.com/hotel/fr/golden-tulip.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tYXJzZWlsbGVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ao6QzMkGwAIB0gIkNTMyYTdkNDQtOTU3Yi00NjQyLWI3ZmUtYTk2YTRmZTU0ODY12AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=5cb773c756ba052f&srepoch=1764952073&from=searchresults,"Avec une note de 7,6
+7,6
+Bien 
+3 920 expériences vécues",43.2961743,5.3699525
+b7c5c93d-355f-48ca-884d-123b976526e8,f7f4b61ca081,Aix en Provence,Séjours & Affaires Aix-en-Provence Mirabeau,https://www.booking.com/hotel/fr/residence-mirabeau.fr.html?aid=304142&label=gen173nr-10CAQoggJCFnNlYXJjaF9haXggZW4gcHJvdmVuY2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ApaQzMkGwAIB0gIkNDk2ZDhhZDAtNTg4Mi00Mjg3LThkOWEtZTkwNjVjNWNiNDM22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=95ff73cb116f0342&srepoch=1764952082&from=searchresults,"Avec une note de 8,0
+8,0
+Très bien
+1 328 expériences vécues",43.5298424,5.4474738
+9964f61c-fe8f-4531-a449-07c661f7b384,f7f4b61ca081,Aix en Provence,Hôtel des Augustins,https://www.booking.com/hotel/fr/les-augustins.fr.html?aid=304142&label=gen173nr-10CAQoggJCFnNlYXJjaF9haXggZW4gcHJvdmVuY2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ApaQzMkGwAIB0gIkNDk2ZDhhZDAtNTg4Mi00Mjg3LThkOWEtZTkwNjVjNWNiNDM22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=95ff73cb116f0342&srepoch=1764952082&from=searchresults,"Avec une note de 8,3
+8,3
+Très bien
+2 178 expériences vécues",43.5298424,5.4474738
+6304f2d0-fadd-4e0e-83e8-a6747424d208,f7f4b61ca081,Aix en Provence,thecamp hôtel - Aix en Provence,https://www.booking.com/hotel/fr/thecamp-amp-lodges.fr.html?aid=304142&label=gen173nr-10CAQoggJCFnNlYXJjaF9haXggZW4gcHJvdmVuY2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ApaQzMkGwAIB0gIkNDk2ZDhhZDAtNTg4Mi00Mjg3LThkOWEtZTkwNjVjNWNiNDM22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=95ff73cb116f0342&srepoch=1764952082&from=searchresults,"Avec une note de 8,3
+8,3
+Très bien
+3 445 expériences vécues",43.5298424,5.4474738
+55a3833c-6dc4-4bca-a3a0-56a9bef20ff0,f7f4b61ca081,Aix en Provence,Radisson Hotel Aix En Provence,https://www.booking.com/hotel/fr/golden-tulip-aix-en-provence.fr.html?aid=304142&label=gen173nr-10CAQoggJCFnNlYXJjaF9haXggZW4gcHJvdmVuY2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ApaQzMkGwAIB0gIkNDk2ZDhhZDAtNTg4Mi00Mjg3LThkOWEtZTkwNjVjNWNiNDM22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=95ff73cb116f0342&srepoch=1764952082&from=searchresults,"Avec une note de 7,9
+7,9
+Bien 
+1 676 expériences vécues",43.5298424,5.4474738
+896aa691-4e58-42d1-9c8f-5ae3766ca366,f7f4b61ca081,Aix en Provence,Appart Hotel Odalys City Aix en Provence L'Atrium,https://www.booking.com/hotel/fr/atrium-d-anaite.fr.html?aid=304142&label=gen173nr-10CAQoggJCFnNlYXJjaF9haXggZW4gcHJvdmVuY2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ApaQzMkGwAIB0gIkNDk2ZDhhZDAtNTg4Mi00Mjg3LThkOWEtZTkwNjVjNWNiNDM22AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=95ff73cb116f0342&srepoch=1764952082&from=searchresults,"Avec une note de 8,0
+8,0
+Très bien
+990 expériences vécues",43.5298424,5.4474738
+1e762353-c73d-4586-8488-1006a9a074c9,a76b712fa6fd,Avignon,Hôtel Le Bristol,https://www.booking.com/hotel/fr/hotel-bristol-avignon.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9hdmlnbm9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKekMzJBsACAdICJDdhM2QxZTU2LTBiYTUtNDJjZS04NTFiLTM2ZDAwYWRmYTY4MNgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=170273cf1e000419&srepoch=1764952089&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,3
+8,3
+Très bien
+4 904 expériences vécues",43.9492493,4.8059012
+ddacd3b7-2f57-4960-a156-b058b0cb870e,a76b712fa6fd,Avignon,Studio cosy en plein cœur du centre-ville,https://www.booking.com/hotel/fr/studio-cosy-en-plein-coeur-du-centre-ville.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9hdmlnbm9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKekMzJBsACAdICJDdhM2QxZTU2LTBiYTUtNDJjZS04NTFiLTM2ZDAwYWRmYTY4MNgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=170273cf1e000419&srepoch=1764952089&from=searchresults,N/A,43.9492493,4.8059012
+be5e6606-0de5-4a1c-9f0b-4a2bb4989991,a76b712fa6fd,Avignon,ibis budget Avignon Centre,https://www.booking.com/hotel/fr/ibis-budget-avignon-centre.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9hdmlnbm9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKekMzJBsACAdICJDdhM2QxZTU2LTBiYTUtNDJjZS04NTFiLTM2ZDAwYWRmYTY4MNgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=170273cf1e000419&srepoch=1764952089&from=searchresults,"Avec une note de 7,8
+7,8
+Bien 
+3 507 expériences vécues",43.9492493,4.8059012
+62142e6d-860c-4017-82eb-05657980151c,a76b712fa6fd,Avignon,Mercure Avignon Gare TGV,https://www.booking.com/hotel/fr/expresshiavignon.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9hdmlnbm9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKekMzJBsACAdICJDdhM2QxZTU2LTBiYTUtNDJjZS04NTFiLTM2ZDAwYWRmYTY4MNgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=170273cf1e000419&srepoch=1764952089&from=searchresults,"Avec une note de 8,6
 8,6
 Superbe
-534 expériences vécues",43.4515922,4.4277202
-2a345a37-3a2f-424c-b694-e94ae88c0f6d,a24e1bba5fd4,Saintes Maries de la mer,Hotel Le Bleu Marine,https://www.booking.com/hotel/fr/le-bleu-marine.fr.html?aid=304142&label=gen173nr-10CAQoggJCH3NlYXJjaF9zYWludGVzIG1hcmllcyBkZSBsYSBtZXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Aq3skMUGwAIB0gIkOWIxOTk4Y2MtY2Q4Yi00NTU2LWJkYTctYTZlMzYxODY4ODJk2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=9fc23bd68dad0402&srepoch=1755592236&from=searchresults,"Avec une note de 7,4
-7,4
-Bien 
-1 798 expériences vécues",43.4515922,4.4277202
-533e2e10-6657-4e92-9841-7e456a34d272,a24e1bba5fd4,Saintes Maries de la mer,Hotel Les Palmiers En Camargue,https://www.booking.com/hotel/fr/les-palmiers-en-camargue.fr.html?aid=304142&label=gen173nr-10CAQoggJCH3NlYXJjaF9zYWludGVzIG1hcmllcyBkZSBsYSBtZXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Aq3skMUGwAIB0gIkOWIxOTk4Y2MtY2Q4Yi00NTU2LWJkYTctYTZlMzYxODY4ODJk2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=9fc23bd68dad0402&srepoch=1755592236&from=searchresults,"Avec une note de 8,2
-8,2
-Très bien
-1 963 expériences vécues",43.4515922,4.4277202
-c0962c1e-9e1d-4d59-88cf-86f3d84f098b,4cc9af0bda9a,Collioure,Résidence St Vincent,https://www.booking.com/hotel/fr/residence-saint-vincent.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9jb2xsaW91cmVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ArXskMUGwAIB0gIkNTZhYzk5MDUtMmY4MS00MzRkLWE0M2MtYzE5ZTgyNTc4ZTc02AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=440f3bdae20c03e0&srepoch=1755592243&from=searchresults,"Avec une note de 8,3
-8,3
-Très bien
-214 expériences vécues",42.52505,3.0831554
-7a027463-f821-456f-a027-d6bf2670e9e0,4cc9af0bda9a,Collioure,Hotel Méditerranée,https://www.booking.com/hotel/fr/mediterranee-collioure.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9jb2xsaW91cmVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ArXskMUGwAIB0gIkNTZhYzk5MDUtMmY4MS00MzRkLWE0M2MtYzE5ZTgyNTc4ZTc02AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=440f3bdae20c03e0&srepoch=1755592243&from=searchresults,"Avec une note de 8,0
-8,0
-Très bien
-1 003 expériences vécues",42.52505,3.0831554
-5ce95bb6-c64a-46aa-a1f1-ff67d1a86517,4cc9af0bda9a,Collioure,La Frégate,https://www.booking.com/hotel/fr/la-fra-c-gate-collioure.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9jb2xsaW91cmVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ArXskMUGwAIB0gIkNTZhYzk5MDUtMmY4MS00MzRkLWE0M2MtYzE5ZTgyNTc4ZTc02AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=440f3bdae20c03e0&srepoch=1755592243&from=searchresults,"Avec une note de 8,3
-8,3
-Très bien
-1 622 expériences vécues",42.52505,3.0831554
-72081a44-408b-471c-bb7e-0fa35ea5f514,90283dbcb014,Carcassonne,"Au pied de La Cité, piscine, vue extraordinaire, gîte La Trivala",https://www.booking.com/hotel/fr/porte-de-la-cite-medievale-carcassonne.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9jYXJjYXNzb25uZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCvOyQxQbAAgHSAiQ1NWNjNjg5NC0xYzA4LTRhZjgtOWRkNy1mMDU2NjZiOGNiODDYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=7c9c3bdeb1ab047d&srepoch=1755592250&from=searchresults,"Avec une note de 9,7
-9,7
-Exceptionnel
-56 expériences vécues",43.2130358,2.3491069
-d00e8b12-af3f-4f5d-877b-335d8fc82494,90283dbcb014,Carcassonne,Le Logis GOUT - L'Oustal,https://www.booking.com/hotel/fr/le-logis-gout-l-39-oustal.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9jYXJjYXNzb25uZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCvOyQxQbAAgHSAiQ1NWNjNjg5NC0xYzA4LTRhZjgtOWRkNy1mMDU2NjZiOGNiODDYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=7c9c3bdeb1ab047d&srepoch=1755592250&from=searchresults,"Avec une note de 8,2
-8,2
-Très bien
-172 expériences vécues",43.2130358,2.3491069
-2f5f8a24-425b-4a4e-b3cd-b0130633d1f4,90283dbcb014,Carcassonne,Appartements Cote pont Vieux-Self Check-In,https://www.booking.com/hotel/fr/cote-pont-vieux.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9jYXJjYXNzb25uZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCvOyQxQbAAgHSAiQ1NWNjNjg5NC0xYzA4LTRhZjgtOWRkNy1mMDU2NjZiOGNiODDYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=7c9c3bdeb1ab047d&srepoch=1755592250&from=searchresults,"Avec une note de 8,3
-8,3
-Très bien
-597 expériences vécues",43.2130358,2.3491069
-c44b023d-1696-401c-9c62-d593e37475f6,6b599cb3b957,Ariege,La Bruyère - chez Martine,https://www.booking.com/hotel/fr/la-bruyere-chez-martine.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hcmllZ2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsPskMUGwAIB0gIkMDIzM2JmNGEtM2M0NC00NDc5LWI1ZWItYzBjM2M1ZDc1NmNm2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=1c073be189240076&srepoch=1755592258&from=searchresults,"Avec une note de 9,1
-9,1
-Fabuleux 
-160 expériences vécues",42.9455368,1.4065544
-67e40edd-198b-44ea-91e4-16164ba83efb,6b599cb3b957,Ariege,"Demeure de la Carmine, sejour bien-etre d'exception, piscine, hammam, champagne",https://www.booking.com/hotel/fr/demeure-de-la-carmine.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hcmllZ2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsPskMUGwAIB0gIkMDIzM2JmNGEtM2M0NC00NDc5LWI1ZWItYzBjM2M1ZDc1NmNm2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=1c073be189240076&srepoch=1755592258&from=searchresults,"Avec une note de 9,7
-9,7
-Exceptionnel
-145 expériences vécues",42.9455368,1.4065544
-90a45897-2267-493a-8fbe-8ee3fdbe3996,6b599cb3b957,Ariege,Bedbreakfastbikespyrenees,https://www.booking.com/hotel/fr/bedbreakfastbikespyrenees.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hcmllZ2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AsPskMUGwAIB0gIkMDIzM2JmNGEtM2M0NC00NDc5LWI1ZWItYzBjM2M1ZDc1NmNm2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=1c073be189240076&srepoch=1755592258&from=searchresults,"Avec une note de 9,2
-9,2
-Fabuleux 
-127 expériences vécues",42.9455368,1.4065544
-60a70773-308a-40bc-afb0-969b1286d3df,43b3fa47f36a,Toulouse,Residhome Toulouse Tolosa,https://www.booking.com/hotel/fr/residhome-toulouse-tolosa.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF90b3Vsb3VzZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCyuyQxQbAAgHSAiRkNThmNTg2YS1lZmU5LTQ1YjYtYWJkZi1mOTBlMDllMDgzN2LYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=1f8e3be5f4710493&srepoch=1755592265&from=searchresults,"Avec une note de 8,4
-8,4
-Très bien
-2 360 expériences vécues",43.6044622,1.4442469
-af553500-d81f-4080-a3a8-b250d25bffa7,43b3fa47f36a,Toulouse,"Henrigolant, studio cosy",https://www.booking.com/hotel/fr/henrigolant-studio-cosy-toulouse.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF90b3Vsb3VzZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCyuyQxQbAAgHSAiRkNThmNTg2YS1lZmU5LTQ1YjYtYWJkZi1mOTBlMDllMDgzN2LYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=1f8e3be5f4710493&srepoch=1755592265&from=searchresults,"Avec une note de 8,0
-8,0
-Très bien
-99 expériences vécues",43.6044622,1.4442469
-f14792a0-c96e-40d1-9c67-1fc0b17853e1,43b3fa47f36a,Toulouse,Le cercle doré,https://www.booking.com/hotel/fr/le-cercle-dore.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF90b3Vsb3VzZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCyuyQxQbAAgHSAiRkNThmNTg2YS1lZmU5LTQ1YjYtYWJkZi1mOTBlMDllMDgzN2LYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=1f8e3be5f4710493&srepoch=1755592265&from=searchresults,"Avec une note de 7,4
-7,4
-Bien 
-86 expériences vécues",43.6044622,1.4442469
-98c11a93-e728-42fd-9527-2ad4606cd95c,eb1591916474,Montauban,Sure Hotel by Best Western Les Portes de Montauban,https://www.booking.com/hotel/fr/sure-by-best-western-les-portes-de-montauban.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tb250YXViYW5IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AtHskMUGwAIB0gIkNjlkOGEyODMtMmY4YS00ZjQ0LWJhMjctYWEzOTc3ZTRmNzkx2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=893e3be85b420836&srepoch=1755592272&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,8
-8,8
-Superbe
-1 539 expériences vécues",44.0175835,1.3549991
-4789d20e-2913-4276-a61b-412a5ffeafcc,eb1591916474,Montauban,Domaine de Belcayre,https://www.booking.com/hotel/fr/domaine-de-belcayre.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tb250YXViYW5IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AtHskMUGwAIB0gIkNjlkOGEyODMtMmY4YS00ZjQ0LWJhMjctYWEzOTc3ZTRmNzkx2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=893e3be85b420836&srepoch=1755592272&from=searchresults,"Avec une note de 8,8
-8,8
-Superbe
-236 expériences vécues",44.0175835,1.3549991
-8b00a53d-513a-456e-8e7d-bebdd6d36ed3,eb1591916474,Montauban,COSYment parfait,https://www.booking.com/hotel/fr/cosyment-parfait.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tb250YXViYW5IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AtHskMUGwAIB0gIkNjlkOGEyODMtMmY4YS00ZjQ0LWJhMjctYWEzOTc3ZTRmNzkx2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=893e3be85b420836&srepoch=1755592272&from=searchresults,"Avec une note de 8,0
-8,0
-Très bien
-136 expériences vécues",44.0175835,1.3549991
-f939108f-5684-43f0-a88f-5899906efb3b,156a5a30ee81,Biarritz,Hôtel PALMITO,https://www.booking.com/hotel/fr/palym-biarritz.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iaWFycml0ekgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2eyQxQbAAgHSAiQyZWYxYWFkMi0yNDdjLTQzNjMtOWU3ZC04NmU5YTRmMjMwYTnYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=bb753becca5806be&srepoch=1755592279&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,5
-8,5
-Très bien
-1 642 expériences vécues",43.4832523,-1.5592776
-323ad120-13b9-46d5-8ceb-ead4e4f4ba35,156a5a30ee81,Biarritz,Sofitel Biarritz Le Miramar Thalassa,https://www.booking.com/hotel/fr/thalassa-miramar-biarritz.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iaWFycml0ekgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2eyQxQbAAgHSAiQyZWYxYWFkMi0yNDdjLTQzNjMtOWU3ZC04NmU5YTRmMjMwYTnYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=bb753becca5806be&srepoch=1755592279&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 7,7
-7,7
-Bien 
-550 expériences vécues",43.4832523,-1.5592776
-77ae3e78-ccd8-42fc-a262-2e7533cbdce6,156a5a30ee81,Biarritz,Lagrange Vacances Les Patios Eugénie,https://www.booking.com/hotel/fr/lagrange-prestige-les-patios-euga-c-nie.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iaWFycml0ekgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2eyQxQbAAgHSAiQyZWYxYWFkMi0yNDdjLTQzNjMtOWU3ZC04NmU5YTRmMjMwYTnYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=bb753becca5806be&srepoch=1755592279&from=searchresults,"Avec une note de 7,8
-7,8
-Bien 
-196 expériences vécues",43.4832523,-1.5592776
-500beda1-85df-4f12-a85d-0146b6e4434b,25621b1061c4,Bayonne,Hotel Cote Basque,https://www.booking.com/hotel/fr/cote-basque.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9iYXlvbm5lSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALg7JDFBsACAdICJDU3M2E3ZWMxLTAxM2ItNGIyZS05MzE0LTAwYjc0NjJkODJmOdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=8f4d3bf083c80629&srepoch=1755592286&from=searchresults,"Avec une note de 8,0
-8,0
-Très bien
-4 536 expériences vécues",43.4945144,-1.4736657
-d003d6aa-aa67-4256-9442-e0949b9d75e3,25621b1061c4,Bayonne,Hotel Loreak,https://www.booking.com/hotel/fr/comfort-bayonne-biarritz.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9iYXlvbm5lSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALg7JDFBsACAdICJDU3M2E3ZWMxLTAxM2ItNGIyZS05MzE0LTAwYjc0NjJkODJmOdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=8f4d3bf083c80629&srepoch=1755592286&from=searchresults,"Avec une note de 8,3
-8,3
-Très bien
-1 490 expériences vécues",43.4945144,-1.4736657
-7192f4bc-04aa-431d-a6fa-650ae276c343,25621b1061c4,Bayonne,Grand Appartement dans une Maison,https://www.booking.com/hotel/fr/abritel-bayonne.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9iYXlvbm5lSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALg7JDFBsACAdICJDU3M2E3ZWMxLTAxM2ItNGIyZS05MzE0LTAwYjc0NjJkODJmOdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=8f4d3bf083c80629&srepoch=1755592286&from=searchresults,"Avec une note de 9,6
-9,6
-Exceptionnel
-6 expériences vécues",43.4945144,-1.4736657
-2b0a67e7-87b1-44fe-b40e-c86d90a5e2ed,3a6c4162eb27,La Rochelle,Maison Caju - La Rochelle,https://www.booking.com/hotel/fr/maison-plume-la-rochelle.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9sYSByb2NoZWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC5-yQxQbAAgHSAiRmZTdhMDc2Mi03OTFhLTQ3ZWQtYTE1Ni03ODkwNzJmNTg2MDbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=977b3bf33cab0367&srepoch=1755592294&from=searchresults,"Avec une note de 8,9
+2 058 expériences vécues",43.9492493,4.8059012
+0773104d-7129-4916-828c-a3386bb67511,a76b712fa6fd,Avignon,Premiere Classe Avignon Courtine Gare TGV,https://www.booking.com/hotel/fr/premiere-classe-avignon-courtine.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9hdmlnbm9uSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKekMzJBsACAdICJDdhM2QxZTU2LTBiYTUtNDJjZS04NTFiLTM2ZDAwYWRmYTY4MNgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=170273cf1e000419&srepoch=1764952089&from=searchresults,"Avec une note de 5,9
+5,9
+Note
+1 984 expériences vécues",43.9492493,4.8059012
+9543c655-ae04-4512-9d2e-9f0f00f60517,975923312ee1,Uzes,Boutique Hôtel Entraigues,https://www.booking.com/hotel/fr/entraigues-uzes2.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF91emVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALDkMzJBsACAdICJDE1ZWI3MjhmLWVlZDgtNGE0Yy1hNGU4LWQzMTBiNDQ5MTFlZdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=8a2573e133de044d&srepoch=1764952126&from=searchresults,"Avec une note de 8,9
 8,9
 Superbe
-283 expériences vécues",46.159732,-1.1515951
-921f1982-644c-4611-aceb-b2bbac213dff,3a6c4162eb27,La Rochelle,Yacht EVASION La Rochelle - Bateau insolite,https://www.booking.com/hotel/fr/yacht-de-luxe-privatif-a-quai-la-rochelle.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9sYSByb2NoZWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC5-yQxQbAAgHSAiRmZTdhMDc2Mi03OTFhLTQ3ZWQtYTE1Ni03ODkwNzJmNTg2MDbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=977b3bf33cab0367&srepoch=1755592294&from=searchresults,"Avec une note de 8,6
-8,6
+1 333 expériences vécues",44.0121279,4.4196718
+e8571deb-3b46-48b1-9551-e4b5027799f1,975923312ee1,Uzes,Appartement 1 chambre avec Piscine,https://www.booking.com/hotel/fr/appartement-1-chambre-avec-piscine.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF91emVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALDkMzJBsACAdICJDE1ZWI3MjhmLWVlZDgtNGE0Yy1hNGU4LWQzMTBiNDQ5MTFlZdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=8a2573e133de044d&srepoch=1764952126&from=searchresults,"Avec une note de 9,0
+9,0
+Fabuleux 
+45 expériences vécues",44.0121279,4.4196718
+27392003-9521-4a52-9a0c-59f3b9f41ce7,975923312ee1,Uzes,Le Pré Aux Cigales,https://www.booking.com/hotel/fr/le-pre-aux-cigales.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF91emVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALDkMzJBsACAdICJDE1ZWI3MjhmLWVlZDgtNGE0Yy1hNGU4LWQzMTBiNDQ5MTFlZdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=8a2573e133de044d&srepoch=1764952126&from=searchresults,"Avec une note de 9,8
+9,8
+Exceptionnel
+37 expériences vécues",44.0121279,4.4196718
+5ece9081-cd92-4b2d-ab5b-659cd1285d43,975923312ee1,Uzes,Hôtel Le SAINT-GENIÈS,https://www.booking.com/hotel/fr/le-saint-genies.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF91emVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALDkMzJBsACAdICJDE1ZWI3MjhmLWVlZDgtNGE0Yy1hNGU4LWQzMTBiNDQ5MTFlZdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=8a2573e133de044d&srepoch=1764952126&from=searchresults,"Avec une note de 9,3
+9,3
+Fabuleux 
+1 235 expériences vécues",44.0121279,4.4196718
+3868c297-8d6c-4bd9-8bec-a04db170869c,975923312ee1,Uzes,La bohème place aux herbes,https://www.booking.com/hotel/fr/la-boheme-uzes.fr.html?aid=304142&label=gen173nr-10CAQoggJCC3NlYXJjaF91emVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALDkMzJBsACAdICJDE1ZWI3MjhmLWVlZDgtNGE0Yy1hNGU4LWQzMTBiNDQ5MTFlZdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=8a2573e133de044d&srepoch=1764952126&from=searchresults,"Avec une note de 9,6
+9,6
+Exceptionnel
+91 expériences vécues",44.0121279,4.4196718
+c0c1ce3f-93de-4088-8855-9525d0f0e75d,17b7723e85eb,Nimes,hotelF1 Nîmes Ouest,https://www.booking.com/hotel/fr/hotelf1-nimes-ouest.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9uaW1lc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCy5DMyQbAAgHSAiRlZjc5ZGViZS01ZmU4LTRmYWMtODE4Ni1hYTFjOTMzZDE0YmLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=7c1773e5f7cc0150&srepoch=1764952133&from=searchresults,"Avec une note de 7,1
+7,1
+Bien 
+2 228 expériences vécues",43.8374249,4.3600687
+5597672b-27c9-4a04-a2f4-82a31791a530,17b7723e85eb,Nimes,Appart'City Collection Nîmes Arènes,https://www.booking.com/hotel/fr/appart-39-city-nimes.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9uaW1lc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCy5DMyQbAAgHSAiRlZjc5ZGViZS01ZmU4LTRmYWMtODE4Ni1hYTFjOTMzZDE0YmLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=7c1773e5f7cc0150&srepoch=1764952133&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,8
+8,8
 Superbe
-63 expériences vécues",46.159732,-1.1515951
-c8ffdd90-e75c-4131-a347-ffa986d764a1,3a6c4162eb27,La Rochelle,"Hôtel Le Yachtman, The Originals Collection",https://www.booking.com/hotel/fr/le-yachtman.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9sYSByb2NoZWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC5-yQxQbAAgHSAiRmZTdhMDc2Mi03OTFhLTQ3ZWQtYTE1Ni03ODkwNzJmNTg2MDbYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=977b3bf33cab0367&srepoch=1755592294&from=searchresults,"Avec une note de 8,0
+3 097 expériences vécues",43.8374249,4.3600687
+b081e51e-3c85-4ca4-b088-8affc18c3cc9,17b7723e85eb,Nimes,Appart'hôtel Odalys City - Nîmes Arènes - Palais des Congrès,https://www.booking.com/hotel/fr/odalys-city-nimes-arenes.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9uaW1lc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCy5DMyQbAAgHSAiRlZjc5ZGViZS01ZmU4LTRmYWMtODE4Ni1hYTFjOTMzZDE0YmLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=7c1773e5f7cc0150&srepoch=1764952133&from=searchresults,"Avec une note de 8,5
+8,5
+Très bien
+2 870 expériences vécues",43.8374249,4.3600687
+f1dcb278-cff4-456f-ac43-dc712a42685f,17b7723e85eb,Nimes,ibis budget Nimes Centre Gare,https://www.booking.com/hotel/fr/ibis-budget-nimes-centre-gare.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9uaW1lc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCy5DMyQbAAgHSAiRlZjc5ZGViZS01ZmU4LTRmYWMtODE4Ni1hYTFjOTMzZDE0YmLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=7c1773e5f7cc0150&srepoch=1764952133&from=searchresults,"Avec une note de 8,1
+8,1
+Très bien
+3 296 expériences vécues",43.8374249,4.3600687
+9a89dd0f-a169-440f-969f-0c753fbc41cc,17b7723e85eb,Nimes,Royal Hôtel,https://www.booking.com/hotel/fr/royal.fr.html?aid=304142&label=gen173nr-10CAQoggJCDHNlYXJjaF9uaW1lc0gNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCy5DMyQbAAgHSAiRlZjc5ZGViZS01ZmU4LTRmYWMtODE4Ni1hYTFjOTMzZDE0YmLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=7c1773e5f7cc0150&srepoch=1764952133&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+3 332 expériences vécues",43.8374249,4.3600687
+0fdab58d-fd99-4f3f-bf47-d70789036b49,ae45e2f863bb,Aigues Mortes,Résidence Odalys Le Mas des Flamants,https://www.booking.com/hotel/fr/residence-le-mas-des-flamants.fr.html?aid=304142&label=gen173nr-10CAQoggJCFHNlYXJjaF9haWd1ZXMgbW9ydGVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALSkMzJBsACAdICJDBmZDZiY2UyLWNhZDEtNGRiYy04YWRmLWM5ZWM3Y2I4NjNmMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=ab3073e9f2de03fe&srepoch=1764952141&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+535 expériences vécues",43.5661521,4.19154
+13896bbb-ec7e-43dc-a166-fbb2e0215ed4,ae45e2f863bb,Aigues Mortes,Artemia Aigues-Mortes - Hôtel avec piscine - Bornes électriques - Parking privé - Local vélo-moto,https://www.booking.com/hotel/fr/le-royal-hotel-aigues-mortes.fr.html?aid=304142&label=gen173nr-10CAQoggJCFHNlYXJjaF9haWd1ZXMgbW9ydGVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALSkMzJBsACAdICJDBmZDZiY2UyLWNhZDEtNGRiYy04YWRmLWM5ZWM3Y2I4NjNmMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=ab3073e9f2de03fe&srepoch=1764952141&from=searchresults,"Avec une note de 8,8
+8,8
+Superbe
+837 expériences vécues",43.5661521,4.19154
+5c444ac6-96e1-41d0-8565-9809df1c1767,ae45e2f863bb,Aigues Mortes,Hôtel les jardins du canal - solaire eco reponsable - piscine - parking - garage - bornes électriques - accueil vélos - kids friendly,https://www.booking.com/hotel/fr/canal-aigues-mortes.fr.html?aid=304142&label=gen173nr-10CAQoggJCFHNlYXJjaF9haWd1ZXMgbW9ydGVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALSkMzJBsACAdICJDBmZDZiY2UyLWNhZDEtNGRiYy04YWRmLWM5ZWM3Y2I4NjNmMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=ab3073e9f2de03fe&srepoch=1764952141&from=searchresults,"Avec une note de 8,8
+8,8
+Superbe
+1 680 expériences vécues",43.5661521,4.19154
+f3fe4595-283c-4974-9d49-2d14627350eb,ae45e2f863bb,Aigues Mortes,Résidence Odalys Fleur de Sel,https://www.booking.com/hotel/fr/residence-odalys-fleur-de-sel.fr.html?aid=304142&label=gen173nr-10CAQoggJCFHNlYXJjaF9haWd1ZXMgbW9ydGVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALSkMzJBsACAdICJDBmZDZiY2UyLWNhZDEtNGRiYy04YWRmLWM5ZWM3Y2I4NjNmMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=ab3073e9f2de03fe&srepoch=1764952141&from=searchresults,"Avec une note de 8,3
+8,3
+Très bien
+680 expériences vécues",43.5661521,4.19154
+e3a21c42-c1fd-4b43-a65a-22defe31dddf,ae45e2f863bb,Aigues Mortes,La Villa Mazarin,https://www.booking.com/hotel/fr/la-villa-mazarin.fr.html?aid=304142&label=gen173nr-10CAQoggJCFHNlYXJjaF9haWd1ZXMgbW9ydGVzSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALSkMzJBsACAdICJDBmZDZiY2UyLWNhZDEtNGRiYy04YWRmLWM5ZWM3Y2I4NjNmMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=ab3073e9f2de03fe&srepoch=1764952141&from=searchresults,"Avec une note de 9,1
+9,1
+Fabuleux 
+1 180 expériences vécues",43.5661521,4.19154
+4a9832f8-5de7-4a95-8abb-96df48cd10e0,a24e1bba5fd4,Saintes Maries de la mer,Hotel Le Bleu Marine,https://www.booking.com/hotel/fr/le-bleu-marine.fr.html?aid=304142&label=gen173nr-10CAQoggJCH3NlYXJjaF9zYWludGVzIG1hcmllcyBkZSBsYSBtZXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AtmQzMkGwAIB0gIkNmE2ODJhZTMtYjQzZS00Y2RhLTg3ZmItZjk3ZmU4ZGNhYjU02AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=ed2173ece1ac025d&srepoch=1764952148&from=searchresults,"Avec une note de 7,3
+7,3
+Bien 
+1 767 expériences vécues",43.4515922,4.4277202
+167cfb9d-ba73-4bee-9ef3-70a1e4ee45d4,a24e1bba5fd4,Saintes Maries de la mer,Hotel Les Palmiers En Camargue,https://www.booking.com/hotel/fr/les-palmiers-en-camargue.fr.html?aid=304142&label=gen173nr-10CAQoggJCH3NlYXJjaF9zYWludGVzIG1hcmllcyBkZSBsYSBtZXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AtmQzMkGwAIB0gIkNmE2ODJhZTMtYjQzZS00Y2RhLTg3ZmItZjk3ZmU4ZGNhYjU02AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=ed2173ece1ac025d&srepoch=1764952148&from=searchresults,"Avec une note de 8,2
+8,2
+Très bien
+1 971 expériences vécues",43.4515922,4.4277202
+8f3e2ccd-0394-485f-a310-81bb42f03a15,a24e1bba5fd4,Saintes Maries de la mer,Oh! Campings - Le Clos du Rhône,https://www.booking.com/hotel/fr/oh-campings.fr.html?aid=304142&label=gen173nr-10CAQoggJCH3NlYXJjaF9zYWludGVzIG1hcmllcyBkZSBsYSBtZXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AtmQzMkGwAIB0gIkNmE2ODJhZTMtYjQzZS00Y2RhLTg3ZmItZjk3ZmU4ZGNhYjU02AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=ed2173ece1ac025d&srepoch=1764952148&from=searchresults,"Avec une note de 8,0
 8,0
 Très bien
-1 830 expériences vécues",46.159732,-1.1515951
+330 expériences vécues",43.4515922,4.4277202
+932a558d-42c6-4c0b-9827-05c2ad3472eb,a24e1bba5fd4,Saintes Maries de la mer,Hôtel Casa Marina,https://www.booking.com/hotel/fr/casa-marina-saintes-maries-de-la-mer.fr.html?aid=304142&label=gen173nr-10CAQoggJCH3NlYXJjaF9zYWludGVzIG1hcmllcyBkZSBsYSBtZXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AtmQzMkGwAIB0gIkNmE2ODJhZTMtYjQzZS00Y2RhLTg3ZmItZjk3ZmU4ZGNhYjU02AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=ed2173ece1ac025d&srepoch=1764952148&from=searchresults,"Avec une note de 8,9
+8,9
+Superbe
+1 455 expériences vécues",43.4515922,4.4277202
+1515b112-bd14-4dbb-9176-1d01dc8d1896,a24e1bba5fd4,Saintes Maries de la mer,Thalacap Camargue,https://www.booking.com/hotel/fr/thalacap-camargue.fr.html?aid=304142&label=gen173nr-10CAQoggJCH3NlYXJjaF9zYWludGVzIG1hcmllcyBkZSBsYSBtZXJIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AtmQzMkGwAIB0gIkNmE2ODJhZTMtYjQzZS00Y2RhLTg3ZmItZjk3ZmU4ZGNhYjU02AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=ed2173ece1ac025d&srepoch=1764952148&from=searchresults,"Avec une note de 7,8
+7,8
+Bien 
+1 002 expériences vécues",43.4515922,4.4277202
+fb2f7637-3662-417c-8487-f4ac5c0c2607,4cc9af0bda9a,Collioure,"Petit Paradis , Le charme de la vieille ville face à la mer",https://www.booking.com/hotel/fr/petit-paradis-le-charme-de-la-vieille-ville-face-a-la-mer.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9jb2xsaW91cmVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AuGQzMkGwAIB0gIkYjY0YmY3YTItZjQyYi00MmZhLWJiNzQtMWE2YTJkYzZhNmRj2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=290b73f0e5cb059d&srepoch=1764952156&from=searchresults,N/A,42.52505,3.0831554
+b3ec8006-1514-4e38-8c92-784546af0dbd,4cc9af0bda9a,Collioure,Charmant Studio près de la Plage,https://www.booking.com/hotel/fr/charmant-studio-pres-de-la-plage-collioure.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9jb2xsaW91cmVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AuGQzMkGwAIB0gIkYjY0YmY3YTItZjQyYi00MmZhLWJiNzQtMWE2YTJkYzZhNmRj2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=290b73f0e5cb059d&srepoch=1764952156&from=searchresults,N/A,42.52505,3.0831554
+dd89b75f-58bd-48ce-8092-26c3aa26ab34,4cc9af0bda9a,Collioure,Studio Centre Plage parking gratuit,https://www.booking.com/hotel/fr/studio-centre-plage-collioure.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9jb2xsaW91cmVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AuGQzMkGwAIB0gIkYjY0YmY3YTItZjQyYi00MmZhLWJiNzQtMWE2YTJkYzZhNmRj2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=290b73f0e5cb059d&srepoch=1764952156&from=searchresults,"Avec une note de 9,1
+9,1
+Fabuleux 
+165 expériences vécues",42.52505,3.0831554
+03179bd2-366d-469b-b7ad-b182494994cf,4cc9af0bda9a,Collioure,Appartement Centre COLLIOURE CLIM PATIO WIFI,https://www.booking.com/hotel/fr/appartement-centre-collioure-patio-wifi-clim.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9jb2xsaW91cmVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AuGQzMkGwAIB0gIkYjY0YmY3YTItZjQyYi00MmZhLWJiNzQtMWE2YTJkYzZhNmRj2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=290b73f0e5cb059d&srepoch=1764952156&from=searchresults,"Avec une note de 9,2
+9,2
+Fabuleux 
+35 expériences vécues",42.52505,3.0831554
+c5c06fbc-dc5a-4001-b412-301ce8dc1406,4cc9af0bda9a,Collioure,Hôtel Princes de Catalogne,https://www.booking.com/hotel/fr/princes-de-catalogne.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9jb2xsaW91cmVIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AuGQzMkGwAIB0gIkYjY0YmY3YTItZjQyYi00MmZhLWJiNzQtMWE2YTJkYzZhNmRj2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=290b73f0e5cb059d&srepoch=1764952156&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+1 666 expériences vécues",42.52505,3.0831554
+603014e8-9a3a-4e48-b4b2-4fca2b5c045a,90283dbcb014,Carcassonne,Tribe Carcassonne,https://www.booking.com/hotel/fr/des-trois-couronnes.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9jYXJjYXNzb25uZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCpZHMyQbAAgHSAiRiZDhhNTdmMS05NDNiLTQ1ZDgtOTkzNS01NTMzZWE1MDZkNzfYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=5aba74125786051a&srepoch=1764952223&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,0
+8,0
+Très bien
+2 930 expériences vécues",43.2130358,2.3491069
+04baf3de-7634-40a1-b6bc-c16cbc1992c6,90283dbcb014,Carcassonne,ibis Styles Carcassonne La Cité,https://www.booking.com/hotel/fr/inter-les-oliviers.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9jYXJjYXNzb25uZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCpZHMyQbAAgHSAiRiZDhhNTdmMS05NDNiLTQ1ZDgtOTkzNS01NTMzZWE1MDZkNzfYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=5aba74125786051a&srepoch=1764952223&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+2 863 expériences vécues",43.2130358,2.3491069
+c217b380-474d-4341-9a42-2b7ca18ad1ec,90283dbcb014,Carcassonne,GOOD KNIGHT,https://www.booking.com/hotel/fr/good-knight.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9jYXJjYXNzb25uZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCpZHMyQbAAgHSAiRiZDhhNTdmMS05NDNiLTQ1ZDgtOTkzNS01NTMzZWE1MDZkNzfYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=5aba74125786051a&srepoch=1764952223&from=searchresults,"Avec une note de 8,7
+8,7
+Superbe
+2 921 expériences vécues",43.2130358,2.3491069
+562a1df7-5be2-4caa-a655-315af8889fdb,90283dbcb014,Carcassonne,Premiere Classe Carcassonne,https://www.booking.com/hotel/fr/premiere-classe-carcassonne.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9jYXJjYXNzb25uZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCpZHMyQbAAgHSAiRiZDhhNTdmMS05NDNiLTQ1ZDgtOTkzNS01NTMzZWE1MDZkNzfYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=5aba74125786051a&srepoch=1764952223&from=searchresults,"Avec une note de 7,0
+7,0
+Bien 
+3 196 expériences vécues",43.2130358,2.3491069
+26ed2785-91b2-4d2e-bb7e-10a1a95871ba,90283dbcb014,Carcassonne,45BB,https://www.booking.com/hotel/fr/45bb.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9jYXJjYXNzb25uZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCpZHMyQbAAgHSAiRiZDhhNTdmMS05NDNiLTQ1ZDgtOTkzNS01NTMzZWE1MDZkNzfYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=5aba74125786051a&srepoch=1764952223&from=searchresults,"Avec une note de 9,6
+9,6
+Exceptionnel
+405 expériences vécues",43.2130358,2.3491069
+8800465e-7a19-481d-93aa-6dddb653e9cd,6b599cb3b957,Ariege,Gite de montagne en Ariège,https://www.booking.com/hotel/fr/gite-de-montagne-en-ariege.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hcmllZ2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AqyRzMkGwAIB0gIkOTcyYWZmMjktOTcyYy00NjZjLThjZTgtOThiOGYzZDJmOGRk2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=accc74169f9e04fd&srepoch=1764952231&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+10 expériences vécues",42.9455368,1.4065544
+bac68f41-3880-4824-9fbb-e3f88b5a3272,6b599cb3b957,Ariege,"Le Valier, T2 résidence Grand Hôtel - Appt 308 - Aulus-les-bains",https://www.booking.com/hotel/fr/t2-residence-grand-appt-308-aulus-les-bains.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hcmllZ2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AqyRzMkGwAIB0gIkOTcyYWZmMjktOTcyYy00NjZjLThjZTgtOThiOGYzZDJmOGRk2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=accc74169f9e04fd&srepoch=1764952231&from=searchresults,"Avec une note de 9,2
+9,2
+Fabuleux 
+14 expériences vécues",42.9455368,1.4065544
+2325aa24-8a2c-4ad0-bcc6-2de2009a8199,6b599cb3b957,Ariege,Maison spacieuse face aux Pyrénées,https://www.booking.com/hotel/fr/maison-familiale-et-spacieuse-face-aux-pyrenees.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hcmllZ2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AqyRzMkGwAIB0gIkOTcyYWZmMjktOTcyYy00NjZjLThjZTgtOThiOGYzZDJmOGRk2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=accc74169f9e04fd&srepoch=1764952231&from=searchresults,"Avec une note de 9,2
+9,2
+Fabuleux 
+23 expériences vécues",42.9455368,1.4065544
+bf3d2d62-a59b-4dbc-a926-f3a8e4909734,6b599cb3b957,Ariege,Appartement Fontargente,https://www.booking.com/hotel/fr/appartement-fontargente.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hcmllZ2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AqyRzMkGwAIB0gIkOTcyYWZmMjktOTcyYy00NjZjLThjZTgtOThiOGYzZDJmOGRk2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=accc74169f9e04fd&srepoch=1764952231&from=searchresults,"Avec une note de 9,6
+9,6
+Exceptionnel
+53 expériences vécues",42.9455368,1.4065544
+15a180cf-46fa-4613-b6eb-a6e7884cfe6d,6b599cb3b957,Ariege,Vacancéole - Le Domaine de la Vallée d'Ax,https://www.booking.com/hotel/fr/mvm-le-domaine-de-la-vallee-d-ax.fr.html?aid=304142&label=gen173nr-10CAQoggJCDXNlYXJjaF9hcmllZ2VIDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AqyRzMkGwAIB0gIkOTcyYWZmMjktOTcyYy00NjZjLThjZTgtOThiOGYzZDJmOGRk2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=accc74169f9e04fd&srepoch=1764952231&from=searchresults,"Avec une note de 8,1
+8,1
+Très bien
+1 683 expériences vécues",42.9455368,1.4065544
+9bdd176a-e616-409d-ac66-a0cb4c8f7c32,43b3fa47f36a,Toulouse,La Petite Auberge de Saint-Sernin,https://www.booking.com/hotel/fr/la-petite-auberge-de-compostelle.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF90b3Vsb3VzZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtJHMyQbAAgHSAiQ4ZDZkMGRlOC1jZmMzLTRkZWEtYmMyOC0yZmRlMWNhY2FhMmHYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=1f8e7419f6e60846&srepoch=1764952238&from=searchresults,"Avec une note de 8,0
+8,0
+Très bien
+1 788 expériences vécues",43.6044638,1.4442433
+0b9afd26-6fac-4cbb-8388-bb3534c7f321,43b3fa47f36a,Toulouse,Plaza Hotel Capitole Toulouse,https://www.booking.com/hotel/fr/crowne-plaza-toulouse-toulouse.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF90b3Vsb3VzZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtJHMyQbAAgHSAiQ4ZDZkMGRlOC1jZmMzLTRkZWEtYmMyOC0yZmRlMWNhY2FhMmHYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=1f8e7419f6e60846&srepoch=1764952238&from=searchresults,"Avec une note de 8,2
+8,2
+Très bien
+7 250 expériences vécues",43.6044638,1.4442433
+208f8a52-b200-471f-b75a-2195b326c5f9,43b3fa47f36a,Toulouse,Appart Hotel Odalys City Toulouse Centre Compans Caffarelli,https://www.booking.com/hotel/fr/odalys-city-centre-compans-caffarelli.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF90b3Vsb3VzZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtJHMyQbAAgHSAiQ4ZDZkMGRlOC1jZmMzLTRkZWEtYmMyOC0yZmRlMWNhY2FhMmHYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=1f8e7419f6e60846&srepoch=1764952238&from=searchresults,"Avec une note de 8,7
+8,7
+Superbe
+6 887 expériences vécues",43.6044638,1.4442433
+bfac4cfc-a762-4349-a806-aaaa04444a7b,43b3fa47f36a,Toulouse,Montempô Appart'Hôtel Toulouse Balma,https://www.booking.com/hotel/fr/montempo-apparthotel-toulouse-balma.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF90b3Vsb3VzZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtJHMyQbAAgHSAiQ4ZDZkMGRlOC1jZmMzLTRkZWEtYmMyOC0yZmRlMWNhY2FhMmHYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=1f8e7419f6e60846&srepoch=1764952238&from=searchresults,"Avec une note de 7,3
+7,3
+Bien 
+1 660 expériences vécues",43.6044638,1.4442433
+a18839e0-84a5-42fe-88e1-d4310817b97b,43b3fa47f36a,Toulouse,The Social Hub Toulouse,https://www.booking.com/hotel/fr/the-social-hub-toulouse.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF90b3Vsb3VzZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCtJHMyQbAAgHSAiQ4ZDZkMGRlOC1jZmMzLTRkZWEtYmMyOC0yZmRlMWNhY2FhMmHYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=1f8e7419f6e60846&srepoch=1764952238&from=searchresults,"Avec une note de 8,7
+8,7
+Superbe
+5 779 expériences vécues",43.6044638,1.4442433
+adaf50a9-83f8-4549-92c8-df505192fab2,eb1591916474,Montauban,Dali Hôtel Montauban,https://www.booking.com/hotel/fr/dali-montauban.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tb250YXViYW5IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AruRzMkGwAIB0gIkOTYzZmU0Y2EtYjI3OC00N2NjLWEzMWYtZTBkMjhmM2U2ODFm2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=525f741dcfbc0408&srepoch=1764952246&from=searchresults,"Avec une note de 8,9
+8,9
+Superbe
+2 112 expériences vécues",44.0175835,1.3549991
+0ef3e969-f6f2-4699-b105-021b1a161ec7,eb1591916474,Montauban,Brit Hotel Confort Montauban,https://www.booking.com/hotel/fr/deltour-montauban-city.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tb250YXViYW5IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AruRzMkGwAIB0gIkOTYzZmU0Y2EtYjI3OC00N2NjLWEzMWYtZTBkMjhmM2U2ODFm2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=525f741dcfbc0408&srepoch=1764952246&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+1 299 expériences vécues",44.0175835,1.3549991
+f508935c-3eb2-43d9-8ad9-2237ab464ae4,eb1591916474,Montauban,Unisotel Montauban EX F1,https://www.booking.com/hotel/fr/hotelf1-montauban.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tb250YXViYW5IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AruRzMkGwAIB0gIkOTYzZmU0Y2EtYjI3OC00N2NjLWEzMWYtZTBkMjhmM2U2ODFm2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=525f741dcfbc0408&srepoch=1764952246&from=searchresults,"Avec une note de 6,1
+6,1
+Note
+1 385 expériences vécues",44.0175835,1.3549991
+dd1a9389-3ff7-47e1-9b76-d2cfed9b65ab,eb1591916474,Montauban,Premiere Classe Montauban,https://www.booking.com/hotel/fr/hotelpremiereclasse.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tb250YXViYW5IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AruRzMkGwAIB0gIkOTYzZmU0Y2EtYjI3OC00N2NjLWEzMWYtZTBkMjhmM2U2ODFm2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=525f741dcfbc0408&srepoch=1764952246&from=searchresults,"Avec une note de 5,9
+5,9
+Note
+2 121 expériences vécues",44.0175835,1.3549991
+6497e77a-25a7-4c10-b0b3-84d531bb6230,eb1591916474,Montauban,Sure Hotel by Best Western Les Portes de Montauban,https://www.booking.com/hotel/fr/sure-by-best-western-les-portes-de-montauban.fr.html?aid=304142&label=gen173nr-10CAQoggJCEHNlYXJjaF9tb250YXViYW5IDVgEaE2IAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4AruRzMkGwAIB0gIkOTYzZmU0Y2EtYjI3OC00N2NjLWEzMWYtZTBkMjhmM2U2ODFm2AIB4AIB&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=525f741dcfbc0408&srepoch=1764952246&from_sustainable_property_sr=1&from=searchresults,"Avec une note de 8,8
+8,8
+Superbe
+1 640 expériences vécues",44.0175835,1.3549991
+e638fd78-bccb-4c73-b6b7-92a7f5415d1a,156a5a30ee81,Biarritz,Hôtel Barnea,https://www.booking.com/hotel/fr/hotelargieder.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iaWFycml0ekgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCw5HMyQbAAgHSAiQwNzAxNmIxNy04ZmYwLTQ0NjktYWZkMC0zN2UyM2EzMjBjMWXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=525f7421cd430428&srepoch=1764952255&from=searchresults,"Avec une note de 9,0
+9,0
+Fabuleux 
+924 expériences vécues",43.4832523,-1.5592776
+39a43c5e-07b9-4200-8fc4-d449c48f43d5,156a5a30ee81,Biarritz,Résidence Pierre & Vacances Premium Haguna,https://www.booking.com/hotel/fr/residence-pierre-vacances-haguna.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iaWFycml0ekgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCw5HMyQbAAgHSAiQwNzAxNmIxNy04ZmYwLTQ0NjktYWZkMC0zN2UyM2EzMjBjMWXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=525f7421cd430428&srepoch=1764952255&from=searchresults,"Avec une note de 8,4
+8,4
+Très bien
+934 expériences vécues",43.4832523,-1.5592776
+49eca773-9e31-4f0c-b660-19a663c3b7f5,156a5a30ee81,Biarritz,Nemea Appart Hotel Les Hauts de Milady Biarritz,https://www.booking.com/hotel/fr/nemea-appart-les-hauts-de-milady.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iaWFycml0ekgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCw5HMyQbAAgHSAiQwNzAxNmIxNy04ZmYwLTQ0NjktYWZkMC0zN2UyM2EzMjBjMWXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=525f7421cd430428&srepoch=1764952255&from=searchresults,"Avec une note de 7,3
+7,3
+Bien 
+3 997 expériences vécues",43.4832523,-1.5592776
+449913bb-fbca-492c-bedc-cff6b64c8250,156a5a30ee81,Biarritz,Résidence Vacances Bleues Le Grand Large,https://www.booking.com/hotel/fr/le-grand-large-biarritz.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iaWFycml0ekgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCw5HMyQbAAgHSAiQwNzAxNmIxNy04ZmYwLTQ0NjktYWZkMC0zN2UyM2EzMjBjMWXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=525f7421cd430428&srepoch=1764952255&from=searchresults,"Avec une note de 8,5
+8,5
+Très bien
+3 839 expériences vécues",43.4832523,-1.5592776
+9ac98432-fbf5-441c-8f41-91176d008868,156a5a30ee81,Biarritz,Coup de Cœur assuré pour ce T2 rénové Hyper centre,https://www.booking.com/hotel/fr/coup-de-coeur-assure-pour-ce-t2-renove-hyper-centre.fr.html?aid=304142&label=gen173nr-10CAQoggJCD3NlYXJjaF9iaWFycml0ekgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCw5HMyQbAAgHSAiQwNzAxNmIxNy04ZmYwLTQ0NjktYWZkMC0zN2UyM2EzMjBjMWXYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=525f7421cd430428&srepoch=1764952255&from=searchresults,"Avec une note de 8,9
+8,9
+Superbe
+57 expériences vécues",43.4832523,-1.5592776
+5e4e18a1-0078-4af9-bffe-e3abdc0c59d5,25621b1061c4,Bayonne,Hotel Cote Basque,https://www.booking.com/hotel/fr/cote-basque.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9iYXlvbm5lSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALMkczJBsACAdICJGI2OTIzYWQzLWYyZjctNDEwNy1hMDYyLTIwZTc3Y2I3ZjVhMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=b23074267e6b0090&srepoch=1764952263&from=searchresults,"Avec une note de 8,0
+8,0
+Très bien
+4 463 expériences vécues",43.4945144,-1.4736657
+1477b349-102f-46fd-a346-9103259205dc,25621b1061c4,Bayonne,ibis budget Bayonne,https://www.booking.com/hotel/fr/ibis-budget-bayonne.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9iYXlvbm5lSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALMkczJBsACAdICJGI2OTIzYWQzLWYyZjctNDEwNy1hMDYyLTIwZTc3Y2I3ZjVhMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=b23074267e6b0090&srepoch=1764952263&from=searchresults,"Avec une note de 7,6
+7,6
+Bien 
+5 849 expériences vécues",43.4945144,-1.4736657
+3ff3fb12-5537-4b21-a540-8ae30a241de7,25621b1061c4,Bayonne,Parc 709 Bayonne,https://www.booking.com/hotel/fr/parc-709-bayonne.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9iYXlvbm5lSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALMkczJBsACAdICJGI2OTIzYWQzLWYyZjctNDEwNy1hMDYyLTIwZTc3Y2I3ZjVhMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=b23074267e6b0090&srepoch=1764952263&from=searchresults,"Avec une note de 9,0
+9,0
+Fabuleux 
+138 expériences vécues",43.4945144,-1.4736657
+53710176-77b4-4000-9dd1-6c6d7a972a1a,25621b1061c4,Bayonne,23 Avenue du 8 Mai 1945,https://www.booking.com/hotel/fr/23-avenue-du-8-mai-1945.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9iYXlvbm5lSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALMkczJBsACAdICJGI2OTIzYWQzLWYyZjctNDEwNy1hMDYyLTIwZTc3Y2I3ZjVhMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=b23074267e6b0090&srepoch=1764952263&from=searchresults,"Avec une note de 9,4
+9,4
+Fabuleux 
+25 expériences vécues",43.4945144,-1.4736657
+d3c343b7-b326-48d0-81b9-84bb3556fc41,25621b1061c4,Bayonne,OKKO Hotels Bayonne Centre,https://www.booking.com/hotel/fr/okko-hotels-bayonne-centre.fr.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9iYXlvbm5lSA1YBGhNiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALMkczJBsACAdICJGI2OTIzYWQzLWYyZjctNDEwNy1hMDYyLTIwZTc3Y2I3ZjVhMdgCAeACAQ&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=b23074267e6b0090&srepoch=1764952263&from=searchresults,"Avec une note de 8,2
+8,2
+Très bien
+2 943 expériences vécues",43.4945144,-1.4736657
+41acdf4c-1e14-4bf9-a64a-6494126f3e33,3a6c4162eb27,La Rochelle,Hôtel Eco La Rochelle Centre les Minimes,https://www.booking.com/hotel/fr/premia-re-classe-la-rochelle-centre-les-minimes.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9sYSByb2NoZWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC1JHMyQbAAgHSAiRjZjczYzc4OC05NTZhLTRiOWQtODJlMC1hZTM3MGYyODk1MDLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=8f4d742af328006e&srepoch=1764952271&from=searchresults,"Avec une note de 7,7
+7,7
+Bien 
+3 898 expériences vécues",46.159732,-1.1515951
+160e7c14-75c6-4e58-9a1d-a1b913ae7f5f,3a6c4162eb27,La Rochelle,CENTRAL Hostel La Rochelle Centre,https://www.booking.com/hotel/fr/central-la-rochelle.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9sYSByb2NoZWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC1JHMyQbAAgHSAiRjZjczYzc4OC05NTZhLTRiOWQtODJlMC1hZTM3MGYyODk1MDLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=8f4d742af328006e&srepoch=1764952271&from=searchresults,"Avec une note de 8,7
+8,7
+Superbe
+812 expériences vécues",46.159732,-1.1515951
+09e15934-be91-45e8-9438-64c9d9fd6bac,3a6c4162eb27,La Rochelle,"Hôtel Le Yachtman, The Originals Collection",https://www.booking.com/hotel/fr/le-yachtman.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9sYSByb2NoZWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC1JHMyQbAAgHSAiRjZjczYzc4OC05NTZhLTRiOWQtODJlMC1hZTM3MGYyODk1MDLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=8f4d742af328006e&srepoch=1764952271&from=searchresults,"Avec une note de 8,0
+8,0
+Très bien
+1 991 expériences vécues",46.159732,-1.1515951
+80d2d37d-39a5-4ad9-a978-52a5c4b06c57,3a6c4162eb27,La Rochelle,Le jardin de l'horloge,https://www.booking.com/hotel/fr/le-jardin-de-l-horloge.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9sYSByb2NoZWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC1JHMyQbAAgHSAiRjZjczYzc4OC05NTZhLTRiOWQtODJlMC1hZTM3MGYyODk1MDLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=8f4d742af328006e&srepoch=1764952271&from=searchresults,"Avec une note de 9,4
+9,4
+Fabuleux 
+29 expériences vécues",46.159732,-1.1515951
+212a1d07-c3fa-4a20-bf0a-c3291aedbce3,3a6c4162eb27,La Rochelle,Best Western Plus Central Park Hotel,https://www.booking.com/hotel/fr/central-park-amp-spa.fr.html?aid=304142&label=gen173nr-10CAQoggJCEnNlYXJjaF9sYSByb2NoZWxsZUgNWARoTYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC1JHMyQbAAgHSAiRjZjczYzc4OC05NTZhLTRiOWQtODJlMC1hZTM3MGYyODk1MDLYAgHgAgE&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=8f4d742af328006e&srepoch=1764952271&from=searchresults,"Avec une note de 8,7
+8,7
+Superbe
+2 181 expériences vécues",46.159732,-1.1515951

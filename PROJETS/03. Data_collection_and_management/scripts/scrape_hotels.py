@@ -1,11 +1,19 @@
-import pandas as pd
+import os
 import uuid
+import pandas as pd
 import urllib.parse
 import asyncio
 from playwright.async_api import async_playwright
 
+# Chemin vers le dossier 'data', basé sur ce script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.dirname(script_dir)  # remonte d'un niveau si nécessaire
+data_dir = os.path.join(root_dir, "data")
+os.makedirs(data_dir, exist_ok=True)
+
 # Charger ton fichier de géocodage
-cities = pd.read_csv("data/geocode_villes.csv")
+cities_csv = os.path.join(data_dir, "geocode_villes.csv")
+cities = pd.read_csv(cities_csv)
 
 async def scrape_booking():
     all_hotels = []
@@ -33,7 +41,7 @@ async def scrape_booking():
 
             hotels = await page.locator('[data-testid="property-card"]').all()
 
-            for hotel in hotels[:3]:  # Limiter à 3 hôtels par ville
+            for hotel in hotels[:5]:  # Limiter à 3 hôtels par ville
                 try:
                     name = await hotel.locator('[data-testid="title"]').inner_text()
                 except:
@@ -63,10 +71,13 @@ async def scrape_booking():
         await browser.close()
 
     # Sauvegarde CSV
+    hotels_csv = os.path.join(data_dir, "hotels.csv")
     df = pd.DataFrame(all_hotels)
-    df.to_csv("data/hotels.csv", index=False)
-    print("Fichier 'hotels.csv' exporté avec les hôtels.")
+    df.to_csv(hotels_csv, index=False)
+    print(f"Fichier '{hotels_csv}' exporté avec les hôtels.")
 
-# Lancement
+# -----------------------------
+# Lancement du script
+# -----------------------------
 if __name__ == "__main__":
     asyncio.run(scrape_booking())
