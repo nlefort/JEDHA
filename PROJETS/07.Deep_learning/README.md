@@ -74,7 +74,7 @@ Métriques globales :
 
 - [x] Évaluation des modèles
 
-- [ ] Déploiement du modèle (météo, événements)
+- [ ] Déploiement du modèle
 
 ## :arrow_forward: Installation, exécution, tutlisation
 

@@ -4,8 +4,6 @@
 
 Bonjour,
 
-Je m'appelle Nadège et je suis actuellement en reconversion professionnelle.
-
 Ce dépôt a pour finalité de :
 
 * Centraliser tous les projets de formations
@@ -15,7 +13,7 @@ La réalisation des projets décris ci-dessous s'inscrivent dans le cadre de la 
 
 ## Roadamp
 
-| Projet   | Objectif                   | Technologies                   |
+| Projets   | Objectif                   | Technologies                   |
 | -------- | ----------------------------- | ------------------------------ |
 | Speed Dating | *Analyser un jeu de données pour comprendre ce qui fait qu’une personne accepte un second rendez-vous* | Python, Pandas, Matplotlib |
 | Plan Your Trip | *Créer une base de données enrichie en utilisant la méthode du scrapping et contenant des données de destinations, des données météos et des données de villégiatures*, *Positionner sur une carte les meilleures destinations et les meilleurs hôtels* | SQL, Python                    |
