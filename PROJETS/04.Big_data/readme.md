@@ -104,7 +104,7 @@ Résultat : une ligne = 1 catégorie du jeu. si le jeu a 4 catégories, 4 lignes
 
 - Enregistrer format parquet : df principal, df secondaires
 
-*Remarque : Il a été fait le choix d'avoir un Dataframe principal et des dataframes secondaires afin notamment d'avoir une plus grande vitesse de calculs. Ce choix est cohérent pour une exploration de données. Dans le cas où le projet devrait se poursvuivre sur des modèles d'apprentissage automatique, il conviendra de réunir les deux dataframe.*
+*Remarque : Il a été fait le choix d'avoir un Dataframe principal et des dataframes secondaires afin d'avoir une plus grande vitesse de calculs. Ce choix est cohérent pour une exploration de données. Dans le cas où le projet devrait se poursvuivre sur des modèles d'apprentissage automatique, il conviendra de réunir les deux dataframe.*
 
 ## :toolbox: Technologies & outils
 

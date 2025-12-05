@@ -45,13 +45,13 @@ Le projet a été découpé en scripts. **A des fins pédagogiques, un notebook 
 +---data # Fichiers générés (CSV, HTML)
 |       
 +---scripts # Code source principale (main.py, script principal)
-|   |   cartes.py
-|   |   fusion_chargement_s3.py
+|   |   cartes.py # script secondaire
+|   |   fusion_chargement_s3.py # script secondaire
 |   |   geocodage_villes.py # script secondaire
 |   |   main.py # script principal
-|   |   meteo.py
-|   |   rds_sql.py
-|   |   scrape_hotels.py
+|   |   meteo.py # script secondaire
+|   |   rds_sql.py # script secondaire
+|   |   scrape_hotels.py # script secondaire
 |   |   
 |   \---__pycache__
 

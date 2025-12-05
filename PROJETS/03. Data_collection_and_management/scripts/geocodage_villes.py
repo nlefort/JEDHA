@@ -1,8 +1,9 @@
-#bibliothèque
-import requests #faire les requêtes http
-import hashlib #
-import time
+# Bibliothèques
+import requests # Faire les requêtes http
+import hashlib # Générer des id pour les villes
 import pandas as pd
+import os
+import time
 
 villes=["Mont Saint Michel",
 "Saint Malo",
@@ -69,11 +70,35 @@ def geocode_ville(nom_ville: str) -> dict:
         print(f"Erreur lors de la requête pour {nom_ville} :", response.status_code)
         return None
     
-if __name__ == "__main__":
+def generer_geocode_csv(villes: list[str], filename: str = "geocode_villes.csv"):
+    """Génère un CSV contenant lat/lon de toutes les villes."""
     rows = []
     for ville in villes:
         result = geocode_ville(ville)
         if result:
             rows.append(result)
+        time.sleep(1)  # pour respecter les limites de Nominatim
+
+    if not rows:
+        print("Aucun résultat récupéré, CSV non généré.")
+        return
+
     df = pd.DataFrame(rows)
-    df.to_csv("D:/Profils/NLefort/Desktop/JEDHA/PROJETS/03. Data_collection_and_management/data/geocode_villes.csv", index=False)
+    df.to_csv(filename, index=False)
+    print(f"Fichier CSV généré : {filename}")
+
+# -----------------------------
+# Exécution
+# -----------------------------
+if __name__ == "__main__":
+    # Gestion du dossier data
+    try:
+        base_dir = os.path.dirname(os.path.dirname(__file__))
+    except NameError:  # pour notebooks
+        base_dir = os.getcwd()
+
+    data_dir = os.path.join(base_dir, "data")
+    os.makedirs(data_dir, exist_ok=True)
+    csv_path = os.path.join(data_dir, "geocode_villes.csv")
+
+    generer_geocode_csv(villes, filename=csv_path)

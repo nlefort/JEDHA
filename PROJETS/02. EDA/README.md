@@ -80,7 +80,7 @@ pip install pandas numpy matplotlib seaborn
 
 ### 1. Lancer le notebook
 
-Ouvrir le notebook dans votre IDE préféré (JupyterLab, VSCode, Google Colab, etc.) puis exécuter les cellules séquentiellement.k
+Ouvrir le notebook dans votre IDE préféré (JupyterLab, VSCode, Google Colab, etc.) puis exécuter les cellules séquentiellement.
 
 ## :busts_in_silhouette: Auteurs
 
