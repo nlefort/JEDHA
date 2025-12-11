@@ -19,10 +19,10 @@ RUN apt-get update --yes \
     && rm -rf /var/lib/apt/lists/*
 
 # Copier le code de l'application
-#COPY api ./api
-#COPY streamlit ./streamlit
-#COPY model ./model
-#COPY data ./data
+# COPY api ./api
+# COPY streamlit ./streamlit
+# COPY model ./model
+# COPY data ./data
 
 COPY . .
 
@@ -32,7 +32,9 @@ RUN chmod +x /start.sh
 
 
 # Exposer les ports (FAST API et Streamlit)
-# Port Hugging Face Space
+# Port MLFlow
+EXPOSE 5000
+# Port Hugging Face Space non nécessaire
 # EXPOSE 7860 
 # Port FastAPI par défaut
 EXPOSE 8000 

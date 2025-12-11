@@ -42,16 +42,11 @@ if menu == "Accueil":
     ## Bienvenue sur l'application Getaround 
     Cette application regroupe :
     - une analyse des données GetAround
-                - Analyse descriptive des location
-                - Simulation du délai tampon entre deux locations
-                - Analyse économique du délai tampon
-                - Synthèse et recommandation
     - une estimation du prix de location
-                - à partir d'un modèle de prédictionaccès à votre modèle CatBoost via une API FastAPI
-    """)
+""")
 
 # --- PAGE TABLEAU DE BORD ---
-elif menu == "Tableau de bord des locations":
+elif menu == "Analyse des données GetAround":
     st.header("Analyse des données Getaround")
 
 
@@ -251,7 +246,7 @@ elif menu == "Tableau de bord des locations":
 
 
 
-elif menu == "Estimation du prix":
+elif menu == "Estimation du prix de location":
     st.header(" Estimation du prix de location")
 
     model_key = st.selectbox("Modèle", ["Citroën", "Renault", "BMW", "KIA", "Fiat", "Mazda", "Audi", "Nissan"])
