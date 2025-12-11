@@ -8,7 +8,7 @@ import plotly.express as px
 
 st.set_page_config(page_title="Getaround Dashboard", layout="wide")
 
-st.title("Analyse retard et estimation de prix des locations")
+st.title("Analyse des retards et estimation de prix des locations")
 
 # Message de debug
 st.sidebar.success("Application Streamlit lancée avec succès")
@@ -33,7 +33,7 @@ else:
 # Menu principal
 menu = st.sidebar.radio(
     "Navigation",
-    ["Accueil", "Tableau de bord des locations", "Estimation du prix"]
+    ["Accueil", "Analyse des données GetAround", "Estimation du prix de location"]
 )
 
 # --- PAGE ACCUEIL ---
@@ -41,8 +41,13 @@ if menu == "Accueil":
     st.markdown("""
     ## Bienvenue sur l'application Getaround 
     Cette application regroupe :
-    - un tableau de bord de visualisation des données (EDA)
-    - un accès à votre modèle CatBoost via une API FastAPI
+    - une analyse des données GetAround
+                - Analyse descriptive des location
+                - Simulation du délai tampon entre deux locations
+                - Analyse économique du délai tampon
+                - Synthèse et recommandation
+    - une estimation du prix de location
+                - à partir d'un modèle de prédictionaccès à votre modèle CatBoost via une API FastAPI
     """)
 
 # --- PAGE TABLEAU DE BORD ---

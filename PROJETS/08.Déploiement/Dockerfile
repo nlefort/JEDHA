@@ -41,4 +41,4 @@ EXPOSE 8501
 
 
 # Commande qui lance le launcher (démarre uvicorn et streamlit)
-CMD ["/start.sh"]
+CMD ["/bin/bash", "/start.sh"]

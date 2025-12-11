@@ -104,7 +104,7 @@ INFO:     Application startup complete.
 2.Tester dans le navigateur
 
 - <http://127.0.0.1:8000> → message d’accueil
-- <http://127.0.0.1:8000/docs>  → interface Swagger
+- <http://127.0.0.1:8000/docs>  → interface documentation API
 
 3.Exemple de requête POST (curl)
 
@@ -124,6 +124,8 @@ Réponse attendue :
 ```
 
 4.Exemple avec Python
+
+utiliser le script api/test.py
 
 ``` python
 import requests
@@ -174,6 +176,16 @@ docker build -t getaround-all .
 docker run -p 8000:8000 -p 8501:8501 -v ${PWD}:/app getaround-all
 
 ```
+
+* le déploiment Docker doit permettre
+  * visualiser l'API -> ``INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)``
+  * visualiser le tableau de bord Streamlit -> 
+  
+  ```bash
+  You can now view your Streamlit app in your browser.
+
+  URL: http://0.0.0.0:8501`
+  ```
 
 ## Visualisation MLflow
 
