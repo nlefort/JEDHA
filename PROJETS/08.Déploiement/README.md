@@ -86,7 +86,48 @@ Déploiement via FastAPI et Streamlit
 | `/predict` | POST    | Renvoie une prédiction à partir d’un JSON |
 | `/docs`    | GET     | Interface Swagger interactive             |
 
-## :test_tube: Exemple de test de l'API
+
+## :running: Instruction d'exécution (local & Docker)
+
+### Entraînement du modèle (local)
+
+Commande à effectuer à la racine du projet
+
+Entraînement du modèle CatBoost et sauvegarde --> `python train_model.py`
+Réponse attendue :
+
+``` bash
+Dataset chargé : (4843, 14)
+[...]
+Entraînement du modèle CatBoost...
+Entraînement terminé.
+RMSE: 14.23 €
+R2: 0.82
+Modèle loggé dans MLflow.
+[...]
+Modèle sauvegardé dans d:\Profils\NLefort\Desktop\JEDHA\PROJETS\08.Déploiement\model\model_auto.pkl
+
+Prix prédit : 141.17 € / jour
+Fourchette ±10% : 127.06 € - 155.29 €
+```
+
+### Visualisation MLFlow (local)
+
+Commande à effectuer à la racine du projet
+
+Lancer l'interface de suivi MLFlow --> `mlflow ui`
+
+Réponse attendue :
+
+```bash
+[INFO] Starting MLflow UI at http://127.0.0.1:5000
+[...]
+INFO:     Application startup complete.
+```
+
+Ouvrir dans le navigateur : <http://127.0.0.1:5000>
+
+### Lancer le service API (local)
 
 1.Lancer le serveur à la racine du projet
 
@@ -160,6 +201,40 @@ Commande attendue (ouvrir un nouveau terminal)
 python test.py
 ```
 
+### Lancer le service Streamlit (local)
+
+1.Lancer le serveur à la racine du projet (>dossier streamlit/)
+
+```bash
+python app.py
+```
+2.Tester dans le navigateur
+
+- <http://127.0.0.1:8501> → Visualisation du dashboard
+
+
+### :whale: Déploiement Docker (mise en production)
+
+```bash
+docker build -t getaround-all .
+docker run --rm -v ${PWD}:/app getaround-all python /app/train_model.py
+docker run -p 5000:5000 -p 8000:8000 -p 8501:8501 -v ${PWD}:/app getaround-all
+
+```
+
+- le déploiment Docker doit permettre
+  - Construire l'image Docker -> docker build -t getaround-all .
+  - lancer le script train_model.py -> docker run --rm -v ${PWD}:/app getaround-all python /app/train_model.py
+  - visualiser MLFlow -> `http://0.0.0.0:5000`
+  - visualiser l'API -> ``INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)``
+  - visualiser le tableau de bord Streamlit -> 
+  
+  ```bash
+  You can now view your Streamlit app in your browser.
+
+  URL: http://0.0.0.0:8501`
+  ```
+
 ## :toolbox: Dépannage rapide
 
 | Erreur                        | Cause probable                   | Solution                                    |
@@ -168,38 +243,6 @@ python test.py
 | 422                           | JSON invalide                    | Corriger les clés/types du payload          |
 | CatBoostError                 | Valeurs "Oui/Non" au lieu de 0/1 | Convertir avant envoi                       |
 | Could not import module "app" | Mauvais répertoire               | Exécuter dans le dossier contenant `app.py` |
-
-## :whale: Déploiement Docker
-
-```bash
-docker build -t getaround-all .
-docker run -p 8000:8000 -p 8501:8501 -v ${PWD}:/app getaround-all
-
-```
-
-* le déploiment Docker doit permettre
-  * visualiser l'API -> ``INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)``
-  * visualiser le tableau de bord Streamlit -> 
-  
-  ```bash
-  You can now view your Streamlit app in your browser.
-
-  URL: http://0.0.0.0:8501`
-  ```
-
-## Visualisation MLflow
-
-```bash
-mlflow ui
-```
-
-Réponse attendue :
-
-```bash
-[INFO] Starting MLflow UI at http://127.0.0.1:5000
-```
-
-Ouvrir dans le navigateur : <http://127.0.0.1:5000>
 
 ## :compass: Roadmap
 
@@ -214,6 +257,8 @@ Ouvrir dans le navigateur : <http://127.0.0.1:5000>
 - [x] Interface Streamlit
 
 - [x] Déploiement final sur Hugging Face
+
+- [x] Déploiement Docker
 
 ## :busts_in_silhouette: Auteurs
 
