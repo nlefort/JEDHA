@@ -9,7 +9,6 @@
 *.msi
 *.xls
 *.txt
-*.png
 *.jpg
 *.jpeg
 *.pth
