@@ -1,7 +1,7 @@
 *.lnk
 *.exe
 *.ods
-*.xlsx
+.xlsx
 *.docx
 *.pptx
 *.pdf

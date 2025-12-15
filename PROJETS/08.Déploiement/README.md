@@ -89,6 +89,14 @@ Déploiement via FastAPI et Streamlit
 
 ## :running: Instruction d'exécution (local & Docker)
 
+### Visualuser l'analyse descriptive complète
+
+Ouvrir `notebooks/EDA.ipynb`
+
+### Visualiser la constitution du modèle de ML
+
+Ouvrir `notebook/ML.ipynb`
+
 ### Entraînement du modèle (local)
 
 Commande à effectuer à la racine du projet
