@@ -65,7 +65,7 @@ Le projet a été découpé en scripts. **A des fins pédagogiques, un notebook 
 | Domaine    | Outils                   |
 | ---------- | ---------|
 | Collecte de données web | Requests, time, asyncio |
-| Stockage dans un datalake | boto3 |
+| Stockage dans un datalake | S3 |
 | Base de données relationnelle | MySQL, amazon RDS |
 | Visualisation | Plotly, pandas |
 
