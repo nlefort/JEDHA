@@ -11,7 +11,7 @@ from cartes import visualiser_cartes_dataset_final
 
 if __name__ == "__main__":
     # 1. Géocodage des villes
-    generer_geocode_csv()
+    generer_geocode_csv(villes)
 
     # 2. Récupération météo
     meteo_villes()  
