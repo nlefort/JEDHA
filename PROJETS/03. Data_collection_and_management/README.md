@@ -31,6 +31,92 @@ Conversion des données en table SQL (RDS)
 Création de cartes interactives
 ```
 
+### Collecte et exploitation des données
+
+```bash
+                         ┌─────────────────────────┐
+                         │  Source 1 : Nominatim   │
+                         │  (géocodage des villes) │
+                         └─────────────┬───────────┘
+                                       │
+                              Requête GET
+                                       │
+                                       ▼
+                         ┌─────────────────────────┐
+                         │   geocode_villes.csv    │
+                         │ ──────────────────────  │
+                         │ id_ville                │
+                         │ nom_ville               │
+                         │ latitude  (lat)         │
+                         │ longitude (lon)         │
+                         └─────────────┬───────────┘
+                                       │
+                   Utilisation directe des coordonnées lat / lon
+                                       │
+              ┌────────────────────────┴────────────────────────┐
+              │                                                 │
+              ▼                                                 ▼
+
+┌──────────────────────┐                      ┌──────────────────────┐
+│ Source 2 :           │                      │ Source 3 :           │
+│ OpenWeatherMap API   │                      │ Booking              │
+└──────────┬───────────┘                      └──────────┬───────────┘
+           │                                               │
+    Requête GET                                      Requête GET
+   (lat, lon)                                      (lat, lon)
+           │                                               │
+           ▼                                               ▼
+┌──────────────────────┐                      ┌──────────────────────┐
+│ Données météo        │                      │ Données hôtels       │
+│ ───────────────────  │                      │ ───────────────────  │
+│ temp_moy             │                      │ note                 │
+│ ressenti_moy         │                      │ latitude             │
+│ humidite_moy         │                      │ longitude            │
+│ pluie_moy            │                      │ paramètres hôtels    │
+│ uv_moy               │                      └──────────┬───────────┘
+│ + score météo        │                                 │
+└──────────┬───────────┘                                 │
+           │                                             │
+           ▼                                             ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│                           Fichiers intermédiaires                        │
+│ ──────────────────────────────────────────────────────────────────────── │
+│ villes_meteo.csv        hotels.csv                                       │
+│ id_ville | nom_ville    id_ville | nom_ville | paramètres hôtels         │
+└───────────────────────────────┬──────────────────────────────────────────┘
+                                │
+                                ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│                      Dataset final consolidé                             │
+│ ──────────────────────────────────────────────────────────────────────── │
+│ Dataset_final.csv                                                        │
+│ (géolocalisation + météo + hôtels)                                       │
+└───────────────────────────────┬──────────────────────────────────────────┘
+                                │
+                                ▼
+                    ┌──────────────────────────┐
+                    │ Base de données SQL      │
+                    │ (Amazon RDS)             │
+                    │ CREATE TABLE             │
+                    └───────────┬──────────────┘
+                                │
+                                ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│ Exploitation des données                                                 │
+│ ──────────────────────────────────────────────────────────────────────── │
+│ • Interrogation de la base SQL                                           │
+│ • Agrégations (scores, moyennes, classements)                            │
+│ • Création de cartes interactives                                        │
+│ • Top villes selon météo / attractivité                                  │
+│ • Top hôtels par ville / note / score                                    │
+└──────────────────────────────────────────────────────────────────────────┘
+
+
+```
+
+Les coordonnées géographiques obtenues lors de l’étape de géocodage constituent le point central du pipeline.
+Elles permettent de cibler les requêtes envoyées aux API météo et hôtelières, garantissant ainsi la cohérence spatiale des données collectées. L’ensemble des informations est ensuite consolidé, stocké et exploité à des fins analytiques et de visualisation.
+
 ### Arborescence
 
 Le projet a été découpé en scripts. **A des fins pédagogiques, un notebook est également disponible**.
