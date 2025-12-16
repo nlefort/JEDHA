@@ -2,7 +2,7 @@
 
 ## :rocket: Objectif du projet
 
-Le projet consiste à déterminer un seuil entre deux locations de voitures qui serait le meilleur compromis entre baisse de revenus pour les propriétaires de véhicules et conflits évités pour l'entreprise. Le second volet du projet consiste à estimer le prix de la location d'un véhicule en fonctione de plusieurs caractéristiques.
+Le projet consiste à déterminer un seuil entre deux locations de voitures qui serait le meilleur compromis entre baisse de revenus pour les propriétaires de véhicules et conflits évités pour l'entreprise. Le second volet du projet consiste à estimer le prix de la location d'un véhicule en fonctionne de plusieurs caractéristiques.
 Les objectifs de ce projet sont les suivants  :
 
 - Analyser les retards de retour de location,
@@ -28,7 +28,7 @@ Les objectifs de ce projet sont les suivants  :
 
 ## :brain: Pipeline de traitement
 
-La collecte et le traitement des données suivante la progression suivante :
+La collecte et le traitement des données suivent la progression suivante :
 
 ```text
 Importation des données
@@ -47,7 +47,7 @@ Déploiement du modèle de prédiction (FastApi)
 ↓
 Mise à disposition des analyses et du modèle de prédiction (Streamlit)
 ↓
-Déploiement du modèle, API de prédiction et dashboard (Docker)
+Déploiement du modèle, API de prédiction, dashboard, MLflow (Docker)
 
 ```
 
@@ -61,6 +61,87 @@ Déploiement du modèle, API de prédiction et dashboard (Docker)
 | **API FastAPI**          | Endpoint `/predict` pour servir le modèle               |
 | **Dashboard Streamlit**  | Visualisation des retards, impact du seuil & revenus    |
 | **Décision finale**      | Trouver le bon compromis entre délai & rentabilité      |
+
+### Interaction utilisateur
+
+```pqsql
+                Utilisateur
+                     │
+      ┌──────────────┼──────────────┐
+      ▼              ▼              ▼
+┌───────────┐ ┌──────────────┐ ┌─────────────┐
+│ Navigateur│ │ Navigateur   │ │ Navigateur  │
+│ :8000     │ │ :8501        │ │ :5000       │
+└─────┬─────┘ └──────┬───────┘ └─────┬───────┘
+      │              │               │
+      ▼              ▼               ▼
+ FastAPI         Streamlit        MLflow UI
+ API REST        Dashboard        Expériences
+ (prédiction)    Visualisation    Modèles
+
+```
+## Focus : Standardisation de l'environnement
+
+```pgsql
+┌───────────────────────────────┐
+│        Démarrage Docker       │
+│   (docker run )               │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│ Image Python 3.10             │
+│ Environnement d’exécution     │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│ Installation des dépendances  │
+│ - FastAPI                     │
+│ - Streamlit                   │
+│ - MLflow                      │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│ Copie du code applicatif      │
+│ (API, UI, modèles, données)   │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│ Exécution du script start.sh  │
+│ (orchestration des services)  │
+└───────────────┬───────────────┘
+                │
+                ▼
+      ┌─────────────────────────────┐
+      │ Lancement des services      │
+      │ en parallèle                │
+      └─────────────┬───────────────┘
+                    │
+    ┌───────────────┼───────────────┐
+    ▼               ▼               ▼
+┌─────────────┐ ┌──────────────┐ ┌─────────────┐
+│ FastAPI     │ │ Streamlit    │ │ MLflow      │
+│ API REST    │ │ Interface UI │ │ Tracking    │
+│ Port 8000   │ │ Port 8501    │ │ Port 5000   │
+└─────┬───────┘ └──────┬───────┘ └─────┬───────┘
+      │                │               │
+      ▼                ▼               ▼
+  Consommation API  Visualisation   Suivi des
+  (prédictions,     des résultats   expériences
+   inference)       & modèles       & modèles
+
+```
+
+L’architecture repose sur un conteneur Docker intégrant trois services :
+
+- une API FastAPI exposée via Uvicorn pour la logique métier et l’inférence des modèles
+- une interface Streamlit destinée à la visualisation et à l’interaction utilisateur
+- un serveur MLflow permettant le suivi des expériences, des métriques et des modèles entraînés.
+Le lancement simultané de ces services est assuré par un script d’orchestration (start.sh).
+Chaque composant est accessible via un port distinct.
 
 ### Commandes principales
 
@@ -90,10 +171,9 @@ Déploiement du modèle, API de prédiction et dashboard (Docker)
 | `/predict` | POST    | Renvoie une prédiction à partir d’un JSON |
 | `/docs`    | GET     | Interface Swagger interactive             |
 
-
 ## :running: Instruction d'exécution (local & Docker)
 
-### Visualuser l'analyse descriptive complète
+### Visualiser l'analyse descriptive complète
 
 Ouvrir `notebooks/EDA.ipynb`
 
@@ -234,7 +314,7 @@ docker run -p 5000:5000 -p 8000:8000 -p 8501:8501 -v ${PWD}:/app getaround-all
 
 ```
 
-- le déploiment Docker doit permettre
+- le déploiement Docker doit permettre
   - Construire l'image Docker -> docker build -t getaround-all .
   - lancer le script train_model.py -> docker run --rm -v ${PWD}:/app getaround-all python /app/train_model.py
   - visualiser MLFlow -> `http://0.0.0.0:5000`
@@ -246,6 +326,8 @@ docker run -p 5000:5000 -p 8000:8000 -p 8501:8501 -v ${PWD}:/app getaround-all
 
   URL: http://0.0.0.0:8501`
   ```
+
+
 
 ## :toolbox: Dépannage rapide
 
@@ -271,6 +353,8 @@ docker run -p 5000:5000 -p 8000:8000 -p 8501:8501 -v ${PWD}:/app getaround-all
 - [x] Déploiement final sur Hugging Face
 
 - [x] Déploiement Docker
+
+- [ ] Déploiement via Docker Compose
 
 ## :busts_in_silhouette: Auteurs
 

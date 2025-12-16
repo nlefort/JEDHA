@@ -1,6 +1,4 @@
 #!/bin/bash
-
-# Activer l'arrêt immédiat en cas d'erreur
 set -e
 
 echo "--- Démarrage des services Getaround (MLflow, FastAPI, Streamlit) ---"
