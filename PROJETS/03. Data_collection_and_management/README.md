@@ -89,8 +89,8 @@ Création de cartes interactives
 ┌──────────────────────────────────────────────────────────────────────────┐
 │                      Dataset final consolidé                             │
 │ ──────────────────────────────────────────────────────────────────────── │
-│ Dataset_final.csv                                                        │
-│ (géolocalisation + météo + hôtels)                                       │
+│ Dataset_final.csv (géolocalisation + météo + hôtels)                     │
+│ Bucket S3                                                                │
 └───────────────────────────────┬──────────────────────────────────────────┘
                                 │
                                 ▼
