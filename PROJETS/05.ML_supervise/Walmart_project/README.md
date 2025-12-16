@@ -39,6 +39,33 @@ Analyse finale des performances et des variables influentes
 | Exploitation et visualisation des données | Pandas, NumPy, Seaborn, Matplotlib, Plotly |
 | Apprentissage automatique supervisé | Scikit-learn, LinearRegression, Ridge, Lasso, GridSearchCV, KFold |
 
+## :key: Résultats clés
+
+- **Analyse descriptive** : 
+
+- Saisonnalité des ventes :  Plus de ventes en février, décembre et juin
+- Ventes hebdomadaires plus importantes lorsqu'il y a des jours fériés
+- Pas de relation linéaire entre ventes hebdomadaires vs températures/ prix du fuel / indice des prix à la consommation / chômage
+
+- **Modèle de regression linéaire** : R² = 0.94 --> le modèle explique une grande partie de la variance des ventes. Surapprentissage du modèle (écart RMSE).
+
+- **Modèle de regression linéaire ajusté (Ridge, Lasso)** : R² = 0.94 --> le modèle explique une grande partie de la variance des ventes. réduction du surapprentissage. Effet "Store" qui prédomine.
+
+- **Modèle de regression linéaire normalisé des ventes (Ridge)** : R² = 0.22 --> le modèle explique peu la variance des ventes.
+
+Pour prédire les ventes, la variable "Store" est essentielle car au-delà des aspects économiques de nombreux autres facteurs impactent les résultats d'un magasin.
+L'inclusion de variables géographique, dimensions de magasin, pourrait permettre d'expliquer davanatage les résulats par magasin.
+
+- Hotspots principaux :
+
+  - Midtown Manhattan
+  - Financial District
+  - Williamsburg / Brooklyn
+  - JFK Airport (en soirée)
+
+Les zones chaudes varient fortement selon le jour et l’heure : le modèle capte bien ces dynamiques spatio-temporelles.
+
+
 ## :compass: Roadmap
 
 - [x]  Statistiques descriptives globales et visualisations

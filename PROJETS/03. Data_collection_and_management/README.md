@@ -20,7 +20,7 @@ La collecte et le traitement des données suivent la progression suivante :
 ```text
 Collecte des données de localisation (géocodage Nominatim)
     ↓
-Collecte des données météos (OpenWeather API)
+Collecte des données météo (OpenWeather API)
     ↓
 Collecte des données hôtels (Booking.com)
     ↓
@@ -151,8 +151,8 @@ Le projet a été découpé en scripts. **A des fins pédagogiques, un notebook 
 | Domaine    | Outils                   |
 | ---------- | ---------|
 | Collecte de données web | Requests, time, asyncio |
-| Stockage dans un datalake | S3 |
-| Base de données relationnelle | MySQL, amazon RDS |
+| Stockage dans un datalake | Amazon S3 |
+| Base de données relationnelle | MySQL, Amazon RDS |
 | Visualisation | Plotly, pandas |
 
 ## :compass: Roadmap
@@ -165,13 +165,13 @@ Le projet a été découpé en scripts. **A des fins pédagogiques, un notebook 
 
 - [x] Fusionner toutes les données en un dataset final
 
-- [x] Charger ce dataset final sur un s3
+- [x] Charger ce dataset final sur un bucket s3
 
 - [x] Créer une table SQL avec les données nettoyées
 
 - [x] Générer des cartes interactives pour les meilleures destinations et hôtels
 
-## :arrow_forward: Installation, exécution, tutlisation
+## :arrow_forward: Installation, exécution, utilisation
 
 ### 0. Prérequis
 
