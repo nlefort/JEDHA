@@ -47,7 +47,7 @@ Déploiement du modèle de prédiction (FastApi)
 ↓
 Mise à disposition des analyses et du modèle de prédiction (Streamlit)
 ↓
-Déploiement du modèle, API de prédiction et dashborad (Docker)
+Déploiement du modèle, API de prédiction et dashboard (Docker)
 
 ```
 
