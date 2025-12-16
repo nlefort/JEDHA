@@ -43,7 +43,11 @@ Entraînement d’un modèle CatBoost
 ↓
 Enregistrement du modèle avec MLflow
 ↓
-Déploiement via FastAPI et Streamlit
+Déploiement du modèle de prédiction (FastApi)
+↓
+Mise à disposition des analyses et du modèle de prédiction (Streamlit)
+↓
+Déploiement du modèle, API de prédiction et dashborad (Docker)
 
 ```
 
@@ -75,7 +79,7 @@ Déploiement via FastAPI et Streamlit
 | **Analyse & Visualisation** | Pandas, NumPy, Seaborn, Matplotlib, Plotly  |
 | **Machine Learning**        | CatBoost, Scikit-learn, GridSearchCV        |
 | **Déploiement**             | FastAPI, Streamlit, Uvicorn, Docker, MLflow |
-| **Testing & Requêtes**      | cURL, Requests                              |
+| **Testing & Requêtes**      | Curl, Requests                              |
 
 ### Méthodes de l'API
 

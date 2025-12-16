@@ -15,10 +15,10 @@ Les principaux objectifs sont :
 
 ## :brain: Pipeline de traitement
 
-La collecte et le traitement des données suivante la progression suivante :
+La collecte et le traitement des données suivent la progression suivante :
 
 ```text
-Collecte des données de localisation (géococage Nominatim)
+Collecte des données de localisation (géocodage Nominatim)
     ↓
 Collecte des données météos (OpenWeather API)
     ↓
