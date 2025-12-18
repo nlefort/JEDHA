@@ -56,15 +56,6 @@ Analyse finale des performances et des variables influentes
 Pour prédire les ventes, la variable "Store" est essentielle car au-delà des aspects économiques de nombreux autres facteurs impactent les résultats d'un magasin.
 L'inclusion de variables géographique, dimensions de magasin, pourrait permettre d'expliquer davanatage les résulats par magasin.
 
-- Hotspots principaux :
-
-  - Midtown Manhattan
-  - Financial District
-  - Williamsburg / Brooklyn
-  - JFK Airport (en soirée)
-
-Les zones chaudes varient fortement selon le jour et l’heure : le modèle capte bien ces dynamiques spatio-temporelles.
-
 
 ## :compass: Roadmap
 
