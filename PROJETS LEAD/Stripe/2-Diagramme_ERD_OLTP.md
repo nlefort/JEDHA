@@ -1,60 +1,8 @@
 # Diagramme entité-relation (ERD) pour système OLTP
 
-## Principe
-
-### Qu'est ce que l'OLTP ?
-
-OLTP = Online Transaction Processing
-
-- Base de données qui gère les opérations quotidiennes : 
- - Un client paie -> `INSERT` dans transactions
- - Un remboursement → `UPDATE` du statut
-
-### Choix outils
-
-| Critère | PostgreSQL | Justification |
-| ------- | ---------- | ------------- |
-| ACID | Oui | Garantie la Cohérence |
-| Performance | gère +10 000 transactions/sec | Latence faible |
-| Réplication | standby automatique | Disponibilité des données en cas de panne |
-| Maturité | +25 ans | Technologie éprouvée |
-
-## Introduction au schéma
-
-Ce diagramme ERD représente l'architecture d'un système de traitement de paiements à haute disponibilité, pour l'entreprise Stripe. L'objectif de cette modélisation est d'assurer une intégrité transactionnelle absolue tout en garantissant la traçabilité complète de chaque mouvement de fonds, de l'initiation du paiement jusqu'au règlement final ou aux éventuels litiges (retrofacturations).
-
-### Tables essentielles
-
-### Principe : Normalisation
-
-### Règles de gestion et contraintes métier
-
-*Règle 1: Unicité de l'identité*
-
-- Règle: un même utilisateur ne peut posséder qu'un seul `compte` idenitifié par son adresse mail
-- Implémentation: contraine `unique` sur le champ `email` de la table `COMPTE`
-
-*Règle 2: Traçabilité des flux*
-
-- Règle: une transaction financière ne doit jamais être supprimée. Toute modification de son cycle de vie (échec, succès, remboursement) doit être traçée par un changement de `statut` et une mise à jour du champ `updated_at`.
-- Implémentation: interdiction des `DELETE` physiques, utilisation de `DateTime` pour l'audit
-
-*Règle 3: Intégrité des montants*
-
-- Règle: Tous les montants financiers doivent être stockés en centimes d'unité monétaire (exemple: 1000 pour 10.00 €)
-- Implémentation: Utilisation du type `Interger` pour `amount_cents` afin de garantir une prédiction arithmétique de 100%
-
-*Règle 4: Cohérence des remboursements*
-
-- Règle: Le montant total cumulé des remboursements (`REMBOURSEMENTS`) liés à une transaction ne peut excéder le montant minimal (`amount_cents`) de cette `TRANSACTION`
-- Implémentation: Logique de validation applicative (ou Trigger SQL) vérifiant la somme des remboursements par rapport à la transaction source.
-
-*Règle 5: Sécurité bancaire (PCI-DSS)*
-
-- Règle : Le numéro complet de la carte bancaire ne doit jamais être stocké en base de données. Seule la représentation masquée (`last4`) et le jeton sécurisé (`token`) sont autorisés.
-- Implémentation : La table `METHODE_PAIEMENT` ne contient aucun champ pour le numéro de carte complet (`PAN`) ou le code de sécurité (`CVV`).
-
 ## Diagramme
+
+Ce diagramme ERD représente l'architecture d'un système de traitement de paiements à haute disponibilité, pour l'entreprise Stripe. L'objectif de cette modélisation est d'assurer une intégrité transactionnelle tout en garantissant la traçabilité de chaque mouvement de fonds, de l'initiation du paiement jusqu'au règlement final ou aux éventuels litiges (retrofacturations).
 
 ```mermaid
 ---
@@ -204,5 +152,73 @@ erDiagram
         timestamp updated_at "Date de dernière modification"
     }
 
-    %% 
 ```
+
+### Exemple concret
+
+Scénario : Abonnement à Netflix (15,99€)
+
+```sql
+-- 1. Netflix est un marchand
+INSERT INTO commercant VALUES (
+    1, -- commercant_ID
+    'Netflix Inc.', -- nom_etps
+    'Streaming', -- secteur_activite
+    'USA' -- pays
+);
+
+-- 2. Vous êtes un client
+INSERT INTO client VALUES (
+    100, -- client_ID
+    'monmail@email.com', -- mail
+    'particlier' -- type client
+);
+
+-- 3. Votre carte est tokenisée (sécurisée)
+INSERT INTO methode_paiement VALUES (
+    500, -- methode_paiement_id
+    100,  -- client_id
+    'card', -- moyen_paiement
+    '4242',  -- 4 derniers chiffres
+    'tok_abc123'  -- token sécurisé
+);
+
+-- 4. La transaction
+INSERT INTO transaction VALUES (
+    10000,
+    1,      -- commercant_id = Netflix
+    100,    -- client_id = Vous
+    500,    -- moyen_paiement_id = Votre carte
+    15.99,  -- montant
+    0.46,   -- frais Stripe (payés par Netflix)
+    'success', -- état de la transaction
+    NOW() -- date de realisation
+);
+```
+
+### Règles de gestion et contraintes métier
+
+*Règle 1: Unicité de l'identité*
+
+- Règle: un même utilisateur ne peut posséder qu'un seul `compte` idenitifié par son adresse mail
+- Implémentation: contraine `unique` sur le champ `email` de la table `COMPTE`
+
+*Règle 2: Traçabilité des flux*
+
+- Règle: une transaction financière ne doit jamais être supprimée. Toute modification de son cycle de vie (échec, succès, remboursement) doit être traçée par un changement de `statut` et une mise à jour du champ `updated_at`.
+- Implémentation: interdiction des `DELETE` physiques, utilisation de `DateTime` pour l'audit
+
+*Règle 3: Intégrité des montants*
+
+- Règle: Tous les montants financiers doivent être stockés en centimes d'unité monétaire (exemple: 1000 pour 10.00 €)
+- Implémentation: Utilisation du type `Interger` pour `amount_cents` afin de garantir une prédiction arithmétique de 100%
+
+*Règle 4: Cohérence des remboursements*
+
+- Règle: Le montant total cumulé des remboursements (`REMBOURSEMENTS`) liés à une transaction ne peut excéder le montant minimal (`amount_cents`) de cette `TRANSACTION`
+- Implémentation: Logique de validation applicative (ou Trigger SQL) vérifiant la somme des remboursements par rapport à la transaction source.
+
+*Règle 5: Sécurité bancaire (PCI-DSS)*
+
+- Règle : Le numéro complet de la carte bancaire ne doit jamais être stocké en base de données. Seule la représentation masquée (`last4`) et le jeton sécurisé (`token`) sont autorisés.
+- Implémentation : La table `METHODE_PAIEMENT` ne contient aucun champ pour le numéro de carte complet (`PAN`) ou le code de sécurité (`CVV`).
