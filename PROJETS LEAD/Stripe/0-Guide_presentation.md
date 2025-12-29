@@ -26,7 +26,7 @@ C'est la base de données qui gère les opérations quotidiennes :
 ### Pourquoi PostgreSQL ?
 
 | Critère | PostgreSQL | Justification |
-|-------- | ---------- | -------------- |
+| ------- | ---------- | -------------- |
 | **ACID** | Oui | Garantit la cohérence (pas de paiement perdu) |
 | **Performance** | 10,000+ transactions/sec | Gère la charge de Stripe |
 | **Réplication** | Standby automatique | Haute disponibilité si panne |
