@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+  model:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.model
+    working_dir: /app
+    volumes:
+      - ./data:/app/data:ro
+      - ./model:/app/model:rw
+      - ./api:/app/api:rw
+      - ./mlflow:/app/mlflow:rw   # Centralisation du dossier MLflow (mlruns + sqlite)
+    environment:
+      - MLFLOW_TRACKING_URI=file:///app/mlflow
+    command: python model/train_model.py
+
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    depends_on:
+      model:
+        condition: service_completed_successfully
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api:/app/api:rw
+      - ./model:/app/model:ro
+      - ./data:/app/data:ro
+      - ./mlflow:/app/mlflow:ro    # API peut lire MLflow si besoin
+    environment:
+      - MLFLOW_TRACKING_URI=sqlite:///app/mlflow/mlflow.db
+    command: uvicorn api.app:app --host 0.0.0.0 --port 8000 --reload
+
+  mlflow_ui:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlflow:/app/mlflow:rw       # Même dossier MLflow
+    environment:
+      - MLFLOW_TRACKING_URI=file:///app/mlflow
+    command: mlflow ui --backend-store-uri file:///app/mlflow --host 0.0.0.0 --port 5000

@@ -1,5 +1,5 @@
 # ===============================================
-#  Automatic Fraud Detection - Model Training Script (FIXED)
+#  Automatic Fraud Detection - Model Training Script
 # ===============================================
 
 import os
@@ -11,8 +11,22 @@ from sklearn.preprocessing import StandardScaler
 from xgboost import XGBClassifier
 from sklearn.metrics import f1_score, confusion_matrix, recall_score, precision_score, classification_report
 from imblearn.over_sampling import SMOTE
-import mlflow
+import mlflow.sklearn
 import mlflow.xgboost
+
+# ----------------------------
+# 0. Configuration MLFlow
+# ----------------------------
+# Utiliser la variable d'environnement
+MLFLOW_URI = os.getenv("MLFLOW_TRACKING_URI", "file:///app/mlflow")
+mlflow.set_tracking_uri(MLFLOW_URI)
+mlflow.set_experiment("Fraud_Detection_XGBoost")
+
+# ACTIVER L'AUTOLOG POUR TOUT CAPTURER
+mlflow.xgboost.autolog(log_models=True, log_input_examples=True)
+
+print(f"MLflow Tracking URI: {mlflow.get_tracking_uri()}")
+print(f"Experiment: {mlflow.get_experiment_by_name('Fraud_Detection_XGBoost')}")
 
 # ----------------------------
 # 1. Lecture du dataset
@@ -105,8 +119,9 @@ X_test['category_enc'] = X_test['category'].map(target_map)
 
 # Gérer les catégories inconnues (valeur moyenne globale)
 mean_fraud_rate = y_train.mean()
-X_train['category_enc'].fillna(mean_fraud_rate, inplace=True)
-X_test['category_enc'].fillna(mean_fraud_rate, inplace=True)
+X_train['category_enc'] = X_train['category_enc'].fillna(mean_fraud_rate)
+X_test['category_enc'] = X_test['category_enc'].fillna(mean_fraud_rate)
+
 
 # Supprimer la colonne category originale
 X_train = X_train.drop('category', axis=1)
@@ -148,7 +163,7 @@ print(f"Après SMOTE : Fraudes={y_train_resampled.sum()}, Non-fraudes={len(y_tra
 # ----------------------------
 # 7. Définition du modèle
 # ----------------------------
-print("\nConfiguration du modèle XGBoost...")
+print("\nEntraînement du modèle...")
 
 best_params = {
     'learning_rate': 0.1,
@@ -157,28 +172,27 @@ best_params = {
     'subsample': 1.0,
     'scale_pos_weight': 1,  # Ajusté car SMOTE a déjà équilibré
     'random_state': 42,
-    'eval_metric': 'logloss'
+    'eval_metric': 'logloss',
+    'use_label_encoder': False
 }
 
-model = XGBClassifier(**best_params)
+with mlflow.start_run(run_name="xgboost_fraud_detection") as run:
+    print(f"Run ID: {run.info.run_id}"
+          )
+    mlflow.log_params(best_params)
+    mlflow.log_param("smote_strategy", 0.5)
+    mlflow.log_param("test_size", 0.2)
 
-# ----------------------------
-# 8. Entraînement avec MLflow
-# ----------------------------
-print("\nEntraînement du modèle...")
-
-mlflow.xgboost.autolog()
-mlflow.set_experiment("Automatic_Fraud_Detection_XGBoost")
-
-with mlflow.start_run(run_name="xgboost_fraud_detection_fixed"):
-    
-    # ENTRAÎNEMENT SUR LES DONNÉES RESAMPLED
+    # Entraînement du modèle
+    model = XGBClassifier(**best_params)
     model.fit(X_train_resampled, y_train_resampled)
+
     print("Entraînement terminé")
-    
+
     # ----------------------------
-    # 9. Évaluation sur TEST SET (données JAMAIS vues)
+    # 8. Evaluation sur le Test Set
     # ----------------------------
+
     print("\nÉvaluation sur le Test Set...")
     
     y_pred = model.predict(X_test)
@@ -203,61 +217,73 @@ with mlflow.start_run(run_name="xgboost_fraud_detection_fixed"):
     print(f"  TN={cm[0,0]:6d} | FP={cm[0,1]:6d}")
     print(f"  FN={cm[1,0]:6d} | TP={cm[1,1]:6d}")
     print()
-    
-    # Classification report
-    print("Classification Report :")
-    print(classification_report(y_test, y_pred, target_names=['Légal', 'Fraude']))
-    
-    # Log dans MLflow
-    mlflow.log_params(best_params)
+        
+    # Log des métriques dans MLflow
     mlflow.log_metric("f1_score", f1)
     mlflow.log_metric("recall", recall)
     mlflow.log_metric("precision", precision)
+    mlflow.log_metric("true_negatives", int(cm[0,0]))
+    mlflow.log_metric("false_positives", int(cm[0,1]))
+    mlflow.log_metric("false_negatives", int(cm[1,0]))
+    mlflow.log_metric("true_positives", int(cm[1,1]))
     
-    # Log du modèle
-    mlflow.xgboost.log_model(model, "xgboost_model")
+    # Log du modèle dans MLflow
+    mlflow.sklearn.log_model(
+        model, 
+        artifact_path="model",
+        registered_model_name="fraud_detection_xgboost"
+    )
+    
     print("Modèle loggé dans MLflow")
     
     # ----------------------------
-    # 10. Feature Importance
+    # 9. Feature Importance
     # ----------------------------
-    print("\nFeature Importance :")
+
     fi = model.feature_importances_
-    features = X_train.columns
     importance_df = pd.DataFrame({
-        'Feature': features, 
+        'Feature': X_train.columns, 
         'Importance': fi
-    }).sort_values(by='Importance', ascending=False)
+    }).sort_values('Importance', ascending=False)
+    
+    print("\n🔍 Feature Importance:")
     print(importance_df.to_string(index=False))
     
+    # Log feature importance dans MLflow
+    for idx, row in importance_df.iterrows():
+        mlflow.log_metric(f"importance_{row['Feature']}", row['Importance'])
+    
     # ----------------------------
-    # 11. Sauvegarde du modèle ET du scaler
+    # 10. Sauvegarde du modèle ET du scaler
     # ----------------------------
-    print("\nSauvegarde des artefacts...")
+    print("\nSauvegarde locale des artefacts...")
     
     CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
     
-    # Sauvegarder le modèle
     model_path = os.path.join(CURRENT_DIR, 'model_auto.pkl')
-    joblib.dump(model, model_path)
-    print(f"Modèle sauvegardé : {model_path}")
-    
-    # Sauvegarder le scaler
     scaler_path = os.path.join(CURRENT_DIR, 'scaler.pkl')
-    joblib.dump(scaler, scaler_path)
-    print(f"Scalers sauvegardé : {scaler_path}")
-    
-    # Sauvegarder le target encoding map
     encoding_path = os.path.join(CURRENT_DIR, 'target_encoding.pkl')
+    
+    joblib.dump(model, model_path)
+    joblib.dump(scaler, scaler_path)
     joblib.dump(target_map, encoding_path)
-    print(f"Target encoding sauvegardé : {encoding_path}")
+    
+    print(f"Modèle : {model_path}")
+    print(f"Scaler : {scaler_path}")
+    print(f"Encoding : {encoding_path}")
+    
+    # Log des artefacts dans MLflow
+    mlflow.log_artifact(model_path)
+    mlflow.log_artifact(scaler_path)
+    mlflow.log_artifact(encoding_path)
 
-print("\n" + "="*50)
+print("\n" + "="*60)
 print("ENTRAÎNEMENT TERMINÉ AVEC SUCCÈS")
-print("="*50)
+print("🔗 Accédez à MLflow UI: http://localhost:5000")
+print("="*60)
 
 # ----------------------------
-# 12. Fonction de prédiction réutilisable
+# 11. Fonction de prédiction réutilisable
 # ----------------------------
 def predict_transaction(amt, age, distance_km, hour, weekday, 
                        category, gender_m, city_pop, zip_code):
@@ -275,11 +301,18 @@ def predict_transaction(amt, age, distance_km, hour, weekday,
     category_enc = target_map.get(category, mean_fraud_rate)
     
     # Créer le DataFrame
-    data = pd.DataFrame([[
-        amt, zip_code, city_pop, distance_km, 
-        category_enc, gender_m, hour, weekday
-    ]], columns=X_train.columns)
-    
+    data = pd.DataFrame([{
+        "amt": amt,
+        "zip": zip_code,
+        "city_pop": city_pop,
+        "distance_km": distance_km,
+        "gender_m": gender_m,
+        "Hour": hour,
+        "Weekday": weekday,
+        "category_enc": category_enc
+    }])
+
+
     # Standardiser les features numériques
     data[num_features] = scaler.transform(data[num_features])
     

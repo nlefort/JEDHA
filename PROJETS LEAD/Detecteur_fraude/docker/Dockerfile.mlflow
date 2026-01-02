@@ -1,0 +1,18 @@
+FROM python:3.12-slim
+
+# On évite les fichiers .pyc et on force l'affichage des logs
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+WORKDIR /app
+
+# Installation de MLflow (pas besoin de build-essential pour l'UI simple)
+RUN pip install --no-cache-dir mlflow
+
+# On n'utilise pas COPY pour mlruns ! 
+# On compte sur le VOLUME du docker-compose pour injecter les données en temps réel.
+
+EXPOSE 5000
+
+# Commande pour lancer l'UI en pointant vers le dossier monté
+CMD ["mlflow", "ui", "--host", "0.0.0.0", "--port", "5000", "--backend-store-uri", "/app/mlruns"]
