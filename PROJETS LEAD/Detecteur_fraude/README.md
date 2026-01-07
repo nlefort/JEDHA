@@ -8,7 +8,7 @@ Le projet consiste à utiliser l'IA pour détecter les paiements frauduleux. L'a
 - Envoi des notifications quand une fraude est détectée
 - Génère un rapport quotidien quand une fraude est détectée
 
-## Architecture 
+## Architecture
 
 ## :deciduous_tree: Arborescence du projet
 
@@ -187,22 +187,11 @@ Ouvrir `notebook/ML.ipynb`
 
 Commande à effectuer à la racine du projet
 
-Entraînement du modèle CatBoost et sauvegarde --> `python train_model.py`
+Entraînement du modèle  et sauvegarde --> `python train_model.py`
 Réponse attendue :
 
 ``` bash
-Dataset chargé : (4843, 14)
-[...]
-Entraînement du modèle CatBoost...
-Entraînement terminé.
-RMSE: 14.23 €
-R2: 0.82
-Modèle loggé dans MLflow.
-[...]
-Modèle sauvegardé dans d:\Profils\NLefort\Desktop\JEDHA\PROJETS\08.Déploiement\model\model_auto.pkl
 
-Prix prédit : 141.17 € / jour
-Fourchette ±10% : 127.06 € - 155.29 €
 ```
 
 ### Visualisation MLFlow (local)

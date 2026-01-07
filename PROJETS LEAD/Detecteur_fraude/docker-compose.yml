@@ -1,6 +1,82 @@
-version: "3.9"
+
+
+x-airflow-common: &airflow-common
+  build:
+    context: .
+    dockerfile: docker/Dockerfile.airflow
+  env_file:
+    - .env
+  environment:
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+    AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+    AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_WEBSERVER_SECRET_KEY}
+    AIRFLOW__CORE__DEFAULT_TIMEZONE: Europe/Paris
+  volumes:
+    - ./airflow/dags:/opt/airflow/dags
+    - ./airflow/scripts:/opt/airflow/scripts
+    - ./libs:/opt/project/libs
+  depends_on:
+    airflow-db:
+      condition: service_healthy
 
 services:
+  airflow-db:
+    image: postgres:16
+    container_name: airflow-db
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - airflow_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U airflow -d airflow" ]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    ports:
+      - "5433:5432"
+
+  airflow-init:
+    <<: *airflow-common
+    container_name: airflow-init
+    command: [ "bash", "/opt/airflow/scripts/entrypoint_init.sh" ]
+    restart: "no"
+
+  airflow-webserver:
+    <<: *airflow-common
+    container_name: airflow-webserver
+    command: [ "bash", "-lc", "airflow webserver" ]
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -fsS http://localhost:8080/health | grep -q 'healthy'" ]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    volumes:
+      - ./database:/opt/airflow/database
+
+  airflow-scheduler:
+      build:
+        context: .
+        dockerfile: docker/Dockerfile.airflow  # <--- Le chemin exact vers ton fichier
+      container_name: airflow-scheduler
+      restart: always
+      depends_on:
+        - airflow-db
+      volumes:
+        - ./dags:/opt/airflow/dags
+        - ./logs:/opt/airflow/logs
+        - ./database:/opt/airflow/database
+        - ./model:/opt/airflow/model
+      command: scheduler
+
   model:
     build:
       context: .
@@ -44,3 +120,6 @@ services:
     environment:
       - MLFLOW_TRACKING_URI=file:///app/mlflow
     command: mlflow ui --backend-store-uri file:///app/mlflow --host 0.0.0.0 --port 5000
+
+volumes:
+  airflow_db_data:
