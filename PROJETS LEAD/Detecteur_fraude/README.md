@@ -1,344 +1,211 @@
-# :dart: Détecteur de fraude
+# :dart: Détecteur de fraude 
 
 ## :rocket: Objectifs du projet
 
-Le projet consiste à utiliser l'IA pour détecter les paiements frauduleux. L'algorithme d'apprentissage doit être en capacité de prédire les paiements frauduleux en temps réel et doit être mis en production dans un environnement standardisé afin d'être utilisé par plusieurs équipes  :
+Ce projet a pour but de détecter les paiements frauduleux en temps réel à l’aide de l’IA et de mettre en production un pipeline automatisé exploitable par plusieurs équipes.
 
-- Détecter les fraudes en temps réel sur des transactions bancaires
-- Envoi des notifications quand une fraude est détectée
-- Génère un rapport quotidien quand une fraude est détectée
+Les objectifs principaux sont :
 
-## Architecture 
+- Détecter les fraudes sur des transactions bancaires en temps réel
+- Envoyer des notifications lorsqu’une fraude est détectée
+- Générer des rapports quotidiens sur les transactions frauduleuses
 
-## :deciduous_tree: Arborescence du projet
+## :brain: Flux global du projet
 
-```text
-08.Déploiement
-|   .Dockerignore # Fichiers ignorés par le conteneur Docker
-|   README.md
-|   requirements.txt # Dépendances globales
-|   train_model.py # Script d'entraînement avec MLflow
-+---api # API FastAPI déployée sur Hugging Face
-+---data # Données sources
-+---mlruns
-+---model # Modèle final sauvegardé
-+---notebooks # EDA et ML
-\---streamlit # Dashborad web interactif
- ```
-
-## :brain: Pipeline de traitement
-
-La collecte et le traitement des données suivent la progression suivante :
-
-```text
-Importation des données
-↓
-Analyse exploratoire (EDA)
-↓
-Prétraitement (nettoyage, dates, outliers)
-↓
-Entraînement d’un modèle CatBoost
-↓
-Évaluation et interprétation
-↓
-Enregistrement du modèle avec MLflow
-↓
-Déploiement du modèle de prédiction (FastApi)
-↓
-Mise à disposition des analyses et du modèle de prédiction (Streamlit)
-↓
-Déploiement du modèle, API de prédiction, dashboard, MLflow (Docker)
-↓
-Automatisation des tâcjes (Airflow)
+```ascii
+         Appel API (FakerAPI)
+            ↓
+        Airflow DAG
+     (ingestion / ETL)
+            ↓
+     Transformation des paiements
+     et standardisation
+            ↓
+     Entraînement ML
+      (MLflow tracking)
+            ↓
+      Modèles + métriques
+            ↓
+     API FastAPI → Prédictions
+            ↓
+      Stockage des résultats (SQLite)
+            ↓      
+      Monitoring / logs
 ```
 
-| Étape                    | Description                                             |
-| ------------------------ | ------------------------------------------------------- |
-| **Données sources**      | Fichiers `.csv` fournis  |
-| **EDA / Prétraitement**  | Analyse exploratoire, nettoyage, encodage des features  |
-| **Modèle ML (CatBoost)** | Régression du prix de location journalier               |
-| **MLflow Tracking**      | Suivi complet : hyperparamètres, RMSE, R², modèle loggé |
-| **Export modèle**        | Sauvegarde en `.pkl` pour intégration API               |
-| **API FastAPI**          | Endpoint `/predict` pour servir le modèle               |
-| **Dashboard Streamlit**  | ... |
-| **Décision finale**      | ... |
+## :building_construction: Architecture globale
 
-### Interaction utilisateur
+### Composants
 
-```pqsql
-                Utilisateur
-                     │
-      ┌──────────────┼──────────────┐
-      ▼              ▼              ▼
-┌───────────┐ ┌──────────────┐ ┌─────────────┐
-│ Navigateur│ │ Navigateur   │ │ Navigateur  │
-│ :8000     │ │ :8501        │ │ :5000       │
-└─────┬─────┘ └──────┬───────┘ └─────┬───────┘
-      │              │               │
-      ▼              ▼               ▼
- FastAPI         Streamlit        MLflow UI
- API REST        Dashboard        Expériences
- (prédiction)    Visualisation    Modèles
+| Technologie | Rôle |
+| ----------- | ---- |
+| API FastAPI | Expose les endpoints pour récupérer les paiements et faire des prédictions |
+| Airflow | Orchestration des tâches (récupération des paiements, prédiction, stockage) |
+| MLflow | Suivi des expérimentations et gestion des modèles |
+| SQLite | Stockage des transactions et résultats |
+| Docker Compose | Environnement reproductible |
+| GitHub | Stockage du code |
 
-```
-
-## Focus : Standardisation de l'environnement
-
-```pgsql
-┌───────────────────────────────┐
-│        Démarrage Docker       │
-│   (docker run )               │
-└───────────────┬───────────────┘
-                │
-                ▼
-┌───────────────────────────────┐
-│ Image Python 3.10             │
-│ Environnement d’exécution     │
-└───────────────┬───────────────┘
-                │
-                ▼
-┌───────────────────────────────┐
-│ Installation des dépendances  │
-│ - FastAPI                     │
-│ - Streamlit                   │
-│ - MLflow                      │
-└───────────────┬───────────────┘
-                │
-                ▼
-┌───────────────────────────────┐
-│ Copie du code applicatif      │
-│ (API, UI, modèles, données)   │
-└───────────────┬───────────────┘
-                │
-                ▼
-┌───────────────────────────────┐
-│ Exécution du script start.sh  │
-│ (orchestration des services)  │
-└───────────────┬───────────────┘
-                │
-                ▼
-      ┌─────────────────────────────┐
-      │ Lancement des services      │
-      │ en parallèle                │
-      └─────────────┬───────────────┘
-                    │
-    ┌───────────────┼───────────────┐
-    ▼               ▼               ▼
-┌─────────────┐ ┌──────────────┐ ┌─────────────┐
-│ FastAPI     │ │ Streamlit    │ │ MLflow      │
-│ API REST    │ │ Interface UI │ │ Tracking    │
-│ Port 8000   │ │ Port 8501    │ │ Port 5000   │
-└─────┬───────┘ └──────┬───────┘ └─────┬───────┘
-      │                │               │
-      ▼                ▼               ▼
-  Consommation API  Visualisation   Suivi des
-  (prédictions,     des résultats   expériences
-   inference)       & modèles       & modèles
-
-```
-
-L’architecture repose sur un conteneur Docker intégrant trois services :
-
-- une API FastAPI exposée via Uvicorn pour la logique métier et l’inférence des modèles
-- une interface Streamlit destinée à la visualisation et à l’interaction utilisateur
-- un serveur MLflow permettant le suivi des expériences, des métriques et des modèles entraînés.
-Le lancement simultané de ces services est assuré par un script d’orchestration (start.sh).
-Chaque composant est accessible via un port distinct.
-
-### Commandes principales
-
-| Étape            | Commande                         | Description                                  |
-| ---------------- | -------------------------------- | -------------------------------------------- |
-| **Entraînement** | `python train_model.py`          | Entraîne et enregistre le modèle dans MLflow |
-| **MLflow UI**    | `mlflow ui`                      | Démarre l’interface de suivi                 |
-| **API (local)**  | `uvicorn api.app:app --reload`   | Lance le serveur FastAPI local               |
-| **Dashboard**    | `streamlit run streamlit/app.py` | Lance le tableau de bord Streamlit           |
-| **Déploiement**  | Docker + Hugging Face            | Met l’ensemble en production                 |
-
-### Technologies & outils
-
-| Domaine                     | Outils                                      |
-| --------------------------- | ------------------------------------------- |
-| **Analyse & Visualisation** | Pandas, NumPy, Seaborn, Matplotlib, Plotly  |
-| **Machine Learning**        | CatBoost, Scikit-learn, GridSearchCV        |
-| **Déploiement**             | FastAPI, Streamlit, Uvicorn, Docker, MLflow |
-| **Testing & Requêtes**      | Curl, Requests                              |
-
-### Méthodes de l'API
-
-| Endpoint   | Méthode | Description                               |
-| ---------- | ------- | ----------------------------------------- |
-| `/`        | GET     | Message d’accueil                         |
-| `/health`  | GET     | Vérifie si l’API fonctionne               |
-| `/predict` | POST    | Renvoie une prédiction à partir d’un JSON |
-| `/docs`    | GET     | Interface Swagger interactive             |
-
-## :running: Instruction d'exécution (local & Docker)
-
-### Visualiser l'analyse descriptive complète
-
-Ouvrir `notebooks/EDA.ipynb`
-
-### Visualiser la constitution du modèle de ML
-
-Ouvrir `notebook/ML.ipynb`
-
-### Entraînement du modèle (local)
-
-Commande à effectuer à la racine du projet
-
-Entraînement du modèle CatBoost et sauvegarde --> `python train_model.py`
-Réponse attendue :
-
-``` bash
-Dataset chargé : (4843, 14)
-[...]
-Entraînement du modèle CatBoost...
-Entraînement terminé.
-RMSE: 14.23 €
-R2: 0.82
-Modèle loggé dans MLflow.
-[...]
-Modèle sauvegardé dans d:\Profils\NLefort\Desktop\JEDHA\PROJETS\08.Déploiement\model\model_auto.pkl
-
-Prix prédit : 141.17 € / jour
-Fourchette ±10% : 127.06 € - 155.29 €
-```
-
-### Visualisation MLFlow (local)
-
-Commande à effectuer à la racine du projet
-
-Lancer l'interface de suivi MLFlow --> `mlflow ui`
-
-Réponse attendue :
+### Interactions entre les modules
 
 ```bash
-[INFO] Starting MLflow UI at http://127.0.0.1:5000
-[...]
-INFO:     Application startup complete.
+Transactions >> API >> Airflow >> ML Model >> Résultats >> Stockage/Alertes/Reports
+
 ```
 
-Ouvrir dans le navigateur : <http://127.0.0.1:5000>
+| Étape          | Module source | Module cible | Description               | Fichier clé                  |
+| -------------- | ------------- | ------------ | ------------------------- | ---------------------------- |
+| Configuration  | `.env`        | Airflow      | Variables d’environnement | `.env`                       |
+| Orchestration  | Airflow DAG   | Airflow      | Définition du pipeline    | `/airflow/dags/*.py`         |
+| Entraînement   | Model         | MLflow       | Training & métriques      | `model/train_model.py`       |
+| Registry       | MLflow        | MLflow       | Versioning modèle         | MLflow UI                    |
+| Serving        | FastAPI       | MLflow       | Chargement modèle prod    | `/api/app.py`                |
 
-### Lancer le service API (local)
+### Flux API de prédiction
 
-1.Lancer le serveur à la racine du projet
+- ``GET /payments`` : récupère un batch de paiements
+- ``POST /predict`` : prédit la fraude sur une transaction
+- ``GET /stats`` : affiche les statistiques des transactions traitées
+- ``GET /health`` : vérifie l’état de l’API
+
+### MLFlow
+
+- **Interface Web** : ``http://localhost:5000``
+- **Tracking URI (depuis les conteneurs)** : `http://mlflow:5000`
+- **Tracking URI (depuis l'hôte)** : `http://localhost:5000`
+
+MLFlow permet de :
+
+- comparer les runs,
+- analyser les métriques,
+- gérer les versions,
+- promouvoir un modèle de production
+
+## :atom_symbol: Installation
+
+Prérequis
+
+- Docker
+- Docker Compose
 
 ```bash
-uvicorn api.app:app --reload
+git clone https://github.com/nlefort/JEDHA/tree/main/PROJETS%20LEAD/Detecteur_fraude
+cd Detection_fraude
 ```
 
-Sortie attendue :
+Renseigner les variables nécessaires dans `.env`
+
+### Générer les clés Airflow
 
 ```bash
-INFO:     Uvicorn running on http://127.0.0.1:8000
-INFO:     Application startup complete.
+# AIRFLOW_FERNET_KEY (chiffrement des secrets)
+python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
+
+# AIRFLOW_WEBSERVER_SECRET_KEY (sessions web)
+python -c "import secrets; print(secrets.token_urlsafe(32))"
 ```
 
-2.Tester dans le navigateur
+### Exécution
 
-- <http://127.0.0.1:8000> → message d’accueil
-- <http://127.0.0.1:8000/docs>  → interface documentation API
+1. Construire et démarrer les services Docker :
 
-3.Exemple de requête POST (curl)
+`docker compose up -d --build`
+
+2. Initialiser Airflow :
 
 ```bash
-curl -X POST "http://127.0.0.1:8000/predict" \
+docker compose run --rm airflow airflow db init
+docker compose run --rm airflow airflow users create \
+    --username admin --password admin \
+    --firstname Admin --lastname User \
+    --role Admin --email admin@example.com
+```
+
+### URLs des services
+
+| Service | URL | Description |
+| ------- | --- | ----------- |
+| Airflow | http://localhost:8080 | Orchestration des pipelines (admin/admin) |
+| MLflow | http://localhost:5000 | Tracking des expériences ML |
+| API | http://localhost:8000 | API de prédiction |
+| API Docs | http://localhost:8000/docs | Documentation Swagger |
+
+### Utilisation
+
+1. Lancer le DAG dans Airflow (Call API + training + stockage)
+2. Vérifier les runs et métriques dans MLflow
+3. Appeler l’API `/predict`
+
+### Exemple de prédiction
+
+Requête
+
+```http
+POST/predict
+```
+
+```json
+curl -X POST "http://localhost:8000/predict" \
 -H "Content-Type: application/json" \
--d "{\"model_key\":\"Renault\",\"fuel\":\"diesel\",\"paint_color\":\"noir\",\"car_type\":\"compact\",\"private_parking_available\":1,\"has_gps\":1,\"has_air_conditioning\":0,\"automatic_car\":0,\"has_getaround_connect\":1,\"has_speed_regulator\":0,\"winter_tires\":0,\"mileage\":50000,\"engine_power\":110}"
+-d '{
+    "amt": 120.5,
+    "zip": 75001,
+    "city_pop": 21000,
+    "distance_km": 12.5,
+    "category": "shopping_net",
+    "gender_m": 1,
+    "hour": 14,
+    "weekday": 3
+}'
+
 ```
 
-Réponse attendue :
+Réponse
 
-```bash
+```json
 {
-  "prediction": 141.17,
-  "interval": [127.06, 155.29]
-}
-```
-
-4.Exemple avec Python
-
-utiliser le script api/test.py
-
-``` python
-import requests
-
-url = "http://127.0.0.1:8000/predict"
-data = {
-  "model_key": "Renault",
-  "fuel": "diesel",
-  "paint_color": "noir",
-  "car_type": "compact",
-  "private_parking_available": "Oui",
-  "has_gps": "Oui",
-  "has_air_conditioning": "Non",
-  "automatic_car": "Non",
-  "has_getaround_connect": "Oui",
-  "has_speed_regulator": "Non",
-  "winter_tires": "Non",
-  "mileage": 50000,
-  "engine_power": 110
+    "is_fraud": 0,
+    "probability": "0.23%",
+    "verdict": "TRANSACTION OK"
 }
 
-resp = requests.post(url, json=data)
-print(resp.status_code)
-print(resp.json())
-print(f"Prédiction de prix : {resp.json()['prediction']:.2f} €")
-
 ```
 
-Commande attendue (ouvrir un nouveau terminal)
+### Promouvoir un modèle en Production
 
-```bash
-python test.py
-```
+1. Enregistrer le modèle via MLflow
+2. Mettre à jour le modèle dans le dossier model/
+3. Redémarrer le service API si nécessaire
 
-### Lancer le service Streamlit (local)
+## :test_tube: Tests & qualité
 
-1.Lancer le serveur à la racine du projet (>dossier streamlit/)
+- Les DAGs Airflow doivent passer les tests d’intégrité (airflow dags test <dag_id> <date>)
+- Les modèles ML sont évalués via des métriques classiques (Recall, Precision, F1-score)
+- L’API FastAPI peut être testée avec pytest ou curl
+- L'Exploration des données et les tests des modèles sont disponibles dans `notebooks/EDA.ipynb` et `notebooks/ML.ipynb`
 
-```bash
-python app.py
-```
-2.Tester dans le navigateur
+## :mag: Dépannage
 
-- <http://127.0.0.1:8501> → Visualisation du dashboard
+Airflow
 
+- DAGs non visibles >> vérifier `AIRFLOW_HOME` et que `.env` est chargé
+- Tâches bloquées >> logs dans Airflow UI (task instance logs)
+- Scheduler pas démarré >> vérifier service `airflow-scheduler`
 
-### :whale: Déploiement Docker (mise en production)
+MLflow
 
-```bash
-docker build -t getaround-all .
-docker run --rm -v ${PWD}:/app getaround-all python /app/train_model.py
-docker run -p 5000:5000 -p 8000:8000 -p 8501:8501 -v ${PWD}:/app getaround-all
+- Runs absents >> vérifier que MLflow tracking URI est bien défini (`mlflow.set_tracking_uri`)
+- MLflow innaccessible : vérifier que le port 5000 n'est pas occupé
 
-```
+FastAPI
 
-- le déploiement Docker doit permettre
-  - Construire l'image Docker -> docker build -t getaround-all .
-  - lancer le script train_model.py -> docker run --rm -v ${PWD}:/app getaround-all python /app/train_model.py
-  - visualiser MLFlow -> `http://0.0.0.0:5000`
-  - visualiser l'API -> ``INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)``
-  - visualiser le tableau de bord Streamlit -> 
-  
-  ```bash
-  You can now view your Streamlit app in your browser.
+- Erreur de prédiction >> logs API `docker-compose logs api`
+- Routes non disponibles >> vérifier sur `/docs`
 
-  URL: http://0.0.0.0:8501`
-  ```
+Docker
 
-
-
-## :toolbox: Dépannage rapide
-
-| Erreur                        | Cause probable                   | Solution                                    |
-| ----------------------------- | -------------------------------- | ------------------------------------------- |
-| 500                           | Mauvais chemin vers le modèle    | Vérifier `joblib.load()`                    |
-| 422                           | JSON invalide                    | Corriger les clés/types du payload          |
-| CatBoostError                 | Valeurs "Oui/Non" au lieu de 0/1 | Convertir avant envoi                       |
-| Could not import module "app" | Mauvais répertoire               | Exécuter dans le dossier contenant `app.py` |
+- Rebuild nécessaire >> `docker-compose build` pour forcer la reconstruction sans cache
+- Conteneurs qui plantent >> `docker ps` pour surveiller la bonne mise en service des conteneurs
 
 ## :compass: Roadmap
 
@@ -350,16 +217,16 @@ docker run -p 5000:5000 -p 8000:8000 -p 8501:8501 -v ${PWD}:/app getaround-all
 
 - [x] Déploiement API FastAPI
 
-- [x] Interface Streamlit
+- [x] Déploiement Docker Compose
 
-- [x] Déploiement final sur Hugging Face
+- [x] Automatisation Airflow
 
-- [x] Déploiement Docker
+- [ ] Monitoring
 
-- [ ] Déploiement via Docker Compose
+- [ ] CI/CD
 
 ## :busts_in_silhouette: Auteurs
 
 Projet développé par [Nadège Lefort](https://github.com/nlefort)
 
-*La réalisation de ce projet s'inscrit dans le cadre de la [formation Data Scientist](https://www.jedha.co/formations/formation-data-scientist) développé par [Jedha](https://www.jedha.co/), en vue de l'obtention de la certification professionnelle de niveau 6 (bac+4) enregistrée au RNCP : [Concepteur développeur en science des données](https://www.francecompetences.fr/recherche/rncp/35288/).*
+*La réalisation de ce projet s'inscrit dans le cadre de la [formation Data Scientist](https://www.jedha.co/formations/formation-data-engineer) développé par [Jedha](https://www.jedha.co/), en vue de l'obtention de la certification professionnelle de niveau 7 (bac+7) enregistrée au RNCP : [Architecte en intelligence artificielle](https://www.francecompetences.fr/recherche/rncp/38777/).*

@@ -7,7 +7,7 @@
 *.doc
 *.msi
 *.xls
-*.txt
+#*.txt
 *.jpg
 *.jpeg
 *.pth
@@ -48,3 +48,10 @@ mlruns/
 Orchestration/
 PROJETS/DOCUMENTATION*
 fraudTest.csv
+mlruns/
+mlartifacts/
+*.cbm
+*.csv
+*.pyc
+*.pkl
+mlflow/

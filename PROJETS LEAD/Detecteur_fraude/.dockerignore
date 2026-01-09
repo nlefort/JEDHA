@@ -1,0 +1,22 @@
+# Git
+.git
+.gitignore
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environments
+.env
+*.env
+
+# Local data
+notebooks/
+data/
+
+# Heavy files or useless
+*.ipynb
+*.pdf
+*.md
+*.csv
