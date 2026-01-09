@@ -246,7 +246,7 @@ with mlflow.start_run(run_name="xgboost_fraud_detection") as run:
         'Importance': fi
     }).sort_values('Importance', ascending=False)
     
-    print("\n🔍 Feature Importance:")
+    print("\nFeature Importance:")
     print(importance_df.to_string(index=False))
     
     # Log feature importance dans MLflow
@@ -279,7 +279,7 @@ with mlflow.start_run(run_name="xgboost_fraud_detection") as run:
 
 print("\n" + "="*60)
 print("ENTRAÎNEMENT TERMINÉ AVEC SUCCÈS")
-print("🔗 Accédez à MLflow UI: http://localhost:5000")
+print("Accédez à MLflow UI: http://localhost:5000")
 print("="*60)
 
 # ----------------------------
@@ -289,7 +289,6 @@ def predict_transaction(amt, age, distance_km, hour, weekday,
                        category, gender_m, city_pop, zip_code):
     """
     Prédit si une transaction est frauduleuse
-    
     IMPORTANT : Utilise les artefacts sauvegardés (scaler, encoding)
     """
     # Charger les artefacts
@@ -336,7 +335,7 @@ predict_transaction(
     hour=2,
     weekday=5, 
     category='gas_transport',  # Utiliser une vraie catégorie
-    gender_m=0, 
+    gender_m=1, 
     city_pop=15000,
     zip_code=12345
 )

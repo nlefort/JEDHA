@@ -1,5 +1,5 @@
 """
-DAG Airflow - Détection de Fraude (Version Certification)
+DAG Airflow - Détection de Fraude
 ==========================================================
 Pipeline ETL simple pour la certification :
 1. Récupère les paiements de l'API
@@ -11,6 +11,9 @@ Pipeline ETL simple pour la certification :
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+import logging
+import traceback
+from airflow.exceptions import AirflowFailException
 import requests
 import pandas as pd
 import sqlite3
@@ -23,40 +26,34 @@ from pathlib import Path
 # ==========================================
 # Chemin du projet (adapter selon votre environnement)
 PROJECT_ROOT = Path(__file__).parent.parent.parent
-API_URL = "http://localhost:8000/payments"
-DB_PATH = PROJECT_ROOT / "database" / "fraud_data.db"
+API_URL = "http://api:8000/payments"
+DB_PATH = "/opt/airflow/database/fraud_predictions.db"
 MODEL_DIR = PROJECT_ROOT / "model"
 
 # ==========================================
 # FONCTION 1 : Récupérer les paiements
 # ==========================================
-def fetch_payments(**context):
-    """
-    Récupère les paiements depuis l'API FastAPI
-    """
-    try:
-        print("Récupération des paiements depuis l'API...")
-        
-        response = requests.get(
-            API_URL, 
-            params={'limit': 20},
-            timeout=10
-        )
-        response.raise_for_status()
-        
-        data = response.json()
-        payments = data.get('payments', [])
-        
-        print(f"{len(payments)} paiements récupérés")
-        
-        # Stocker dans XCom pour la tâche suivante
-        context['ti'].xcom_push(key='payments', value=payments)
-        
-        return len(payments)
-    
-    except Exception as e:
-        print(f"Erreur : {e}")
-        return 0
+def fetch_payments():
+
+    logging.info("Récupération des paiements depuis l'API...")
+
+    r = requests.get("http://api:8000/payments?limit=20", timeout=10)
+    r.raise_for_status()
+
+    payload = r.json()
+
+    if payload.get("status") != "success":
+        raise AirflowFailException(f"API error: {payload}")
+
+    payments = payload.get("data", [])
+
+    if not payments:
+        raise AirflowFailException("Aucun paiement récupéré")
+
+    logging.info(f"{len(payments)} paiements récupérés")
+
+    return payments
+
 
 # ==========================================
 # FONCTION 2 : Prédire les fraudes
@@ -68,15 +65,15 @@ def predict_fraud(**context):
     try:
         # Récupérer les paiements depuis XCom
         payments = context['ti'].xcom_pull(
-            key='payments', 
+            #key='payments', 
             task_ids='fetch_payments'
         )
         
         if not payments or len(payments) == 0:
-            print("Aucun paiement à traiter")
+            logging.info("Aucun paiement à traiter")
             return 0
         
-        print(f"Traitement de {len(payments)} paiements...")
+        logging.info(f"Traitement de {len(payments)} paiements...")
         
         # Charger le modèle et les transformers
         model = joblib.load(MODEL_DIR / "model_auto.pkl")
@@ -101,6 +98,8 @@ def predict_fraud(**context):
                 if col not in df.columns:
                     df[col] = 0
         
+        df.rename(columns={'hour':'Hour', 'weekday':'Weekday'}, inplace=True)
+
         X = df[features].copy()
         
         # Standardisation des features numériques
@@ -113,7 +112,7 @@ def predict_fraud(**context):
         
         # Compter les fraudes
         nb_frauds = df['is_fraud_predicted'].sum()
-        print(f"{nb_frauds} fraudes détectées")
+        logging.info(f"{nb_frauds} fraudes détectées")
         
         # Stocker pour la tâche suivante
         context['ti'].xcom_push(key='predictions', value=df.to_dict('records'))
@@ -121,8 +120,8 @@ def predict_fraud(**context):
         return int(nb_frauds)
     
     except Exception as e:
-        print(f"Erreur lors de la prédiction : {e}")
-        import traceback
+        logging.info(f"Erreur lors de la prédiction : {e}")
+
         traceback.print_exc()
         return 0
 
@@ -163,23 +162,23 @@ def store_in_database(**context):
             index=False
         )
         
-        print(f"{len(df)} transactions stockées")
+        logging.info(f"{len(df)} transactions stockées")
         
         # Compter le nombre total de transactions
         total = pd.read_sql("SELECT COUNT(*) as count FROM transactions", conn)
-        print(f"Total en base : {total['count'].iloc[0]} transactions")
+        logging.info(f"Total en base : {total['count'].iloc[0]} transactions")
         
         conn.close()
         
     except Exception as e:
-        print(f"Erreur lors du stockage : {e}")
-        import traceback
+        logging.info(f"Erreur lors du stockage : {e}")
+
         traceback.print_exc()
 
 # ==========================================
-# FONCTION 4 : Générer un rapport (bonus)
+# FONCTION 4 : Générer un rapport
 # ==========================================
-def generate_daily_report(**context):
+def generate_daily_report():
     """
     Génère un rapport quotidien simple
     """
@@ -228,7 +227,7 @@ default_args = {
 dag = DAG(
     'fraud_detection_simple',
     default_args=default_args,
-    description='Pipeline ETL de détection de fraude (Certification)',
+    description='Pipeline ETL de détection de fraude',
     schedule_interval='*/5 * * * *',  # Toutes les 5 minutes
     catchup=False,
     tags=['fraud', 'ml', 'certification'],
@@ -259,7 +258,7 @@ task_store = PythonOperator(
     dag=dag,
 )
 
-# Tâche 4 : Rapport quotidien (optionnel)
+# Tâche 4 : Rapport quotidien
 task_report = PythonOperator(
     task_id='daily_report',
     python_callable=generate_daily_report,

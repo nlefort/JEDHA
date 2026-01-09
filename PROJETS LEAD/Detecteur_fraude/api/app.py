@@ -10,6 +10,8 @@ import pickle
 import os
 import numpy as np
 import joblib
+import requests
+import sqlite3
 
 # ----------------------------
 # 1. Initialisation FastAPI
@@ -24,6 +26,8 @@ app = FastAPI(
 # 2. Chargement du modèle
 # ----------------------------
 # Définir le chemin absolu du modèle
+
+RESULTS_DB = "/app/database/fraud_predictions.db"
 
 # Chemins vers les artefacts
 MODEL_DIR = os.getenv("MODEL_DIR", "/app/model")
@@ -114,17 +118,10 @@ state = APIState()
 async def startup_event():
     print("Démarrage de l'API ...")
     
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    dataset_path = os.path.join(BASE_DIR, 'data', 'fraudTest_random.csv')
-    
-    print(f"Tentative de chargement : {dataset_path}")
+async def startup_event():
+    print("Démarrage de l'API en mode DYNAMIQUE (FakerAPI)...")
 
-    if os.path.exists(dataset_path):
-        state.load_dataset(dataset_path)
-    else:
-        print("Aucun CSV de simulation trouvé — API lancée sans dataset")
-
-    print("API prête à recevoir des requêtes")
+    print("API prête à recevoir des requêtes sur /payments")
 
 
 # ----------------------------
@@ -144,86 +141,50 @@ async def root():
         }
     }
 
-@app.get("/payments", response_model=PaymentResponse)
-async def get_payments(
-    limit: int = 10,
-    include_fraud_label: bool = False
-):
-    if state.df is None:
-        raise HTTPException(status_code=500, detail="Dataset non chargé")
-    
-    if limit < 1 or limit > 100:
-        raise HTTPException(status_code=400, detail="limit doit être entre 1 et 100")
-    
-    # Variation de la taille du batch (simule le flux réel)
-    actual_limit = random.randint(max(1, limit // 2), min(100, limit * 3 // 2))
-    
-    # Récupération du batch dans le dataframe
-    end_index = min(state.current_index + actual_limit, len(state.df))
-    batch = state.df.iloc[state.current_index:end_index].copy()
-    
-    # Boucle de l'index
-    if end_index >= len(state.df):
-        state.current_index = 0
-    else:
-        state.current_index = end_index
-    
-    payments = []
-    for _, row in batch.iterrows():
-        # On convertit la ligne du DF en dictionnaire
-        row_dict = row.to_dict()
+@app.get("/payments")
+async def get_payments(limit: int = 10):
+    """
+    Récupère des données de FakerAPI et les adapte.
+    Si FakerAPI est HS, on génère des données aléatoires propres.
+    """
+    try:
+        # 1. Tentative d'appel à FakerAPI pour les données de base (Nom, Carte, etc.)
+        faker_url = f"https://fakerapi.it/api/v1/credit_cards?_quantity={limit}"
+        response = requests.get(faker_url, timeout=5)
         
-        # Gestion du label de fraude (masqué par défaut pour le client de l'API)
-        if not include_fraud_label:
-            row_dict['is_fraud'] = 0 
+        # Si FakerAPI répond bien
+        if response.status_code == 200:
+            raw_data = response.json().get('data', [])
+        else:
+            raw_data = range(limit) # Fallback si l'API externe répond mal
+
+        # 2. On construit les features attendues par ton modèle ML
+        processed_data = []
+        for _ in raw_data:
+            processed_data.append({
+                "amt": round(random.uniform(5.0, 1200.0), 2),
+                "zip": random.randint(10000, 99999),
+                "city_pop": random.randint(500, 1000000),
+                "distance_km": round(random.uniform(0.1, 150.0), 2),
+                "category": random.choice(["grocery_pos", "entertainment", "shopping_net", "gas_transport"]),
+                "gender_m": random.choice([0, 1]),
+                "hour": datetime.now().hour,
+                "weekday": datetime.now().weekday()
+            })
             
-        # Création de l'objet Payment en utilisant le dictionnaire de la ligne
-        # **row_dict passe automatiquement toutes les colonnes (amt, lat, long, category...)
-        try:
-            payment = Payment(**row_dict)
-            payments.append(payment)
-        except Exception as e:
-            print(f"Erreur de mapping sur une ligne : {e}")
-            continue
-    
-    state.total_calls += 1
-    
-    return PaymentResponse(
-        status="success",
-        count=len(payments),
-        timestamp=datetime.now().isoformat(),
-        payments=payments
-    )
+        return {"status": "success", "data": processed_data}
 
-@app.get("/health", response_model=HealthResponse)
+    except Exception as e:
+        # En cas de gros bug, on renvoie une erreur JSON propre au lieu d'un 502
+        raise HTTPException(status_code=502, detail=str(e))
+
+@app.get("/health")
 async def health_check():
-    """Vérifie le status de l'API"""
-    if state.df is None:
-        raise HTTPException(status_code=503, detail="Dataset non chargé")
-    
-    return HealthResponse(
-        status="healthy",
-        total_transactions=len(state.df),
-        current_index=state.current_index,
-        api_version="1.0.0"
-    )
-
-@app.get("/stats", response_model=dict)
-async def get_stats():
-    """Statistiques de l'API"""
-    if state.df is None:
-        raise HTTPException(status_code=500, detail="Dataset non chargé")
-    
-    fraud_count = state.df['is_fraud'].sum() if 'is_fraud' in state.df.columns else 0
-    
     return {
-        "total_transactions": len(state.df),
-        "fraud_transactions": int(fraud_count),
-        "fraud_rate": f"{(fraud_count / len(state.df) * 100):.2f}%",
-        "current_index": state.current_index,
-        "total_api_calls": state.total_calls,
-        "progress": f"{(state.current_index / len(state.df) * 100):.1f}%"
+        "status": "healthy",
+        "api_version": "1.0.0"
     }
+
 
 @app.post("/predict", response_model=dict)
 def predict_fraude(data: Payment):
@@ -262,6 +223,24 @@ def predict_fraude(data: Payment):
         }
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Erreur: {str(e)}")
+
+@app.get("/api/results")
+def get_results():
+    try:
+        if not os.path.exists(RESULTS_DB):
+            return {"status": "error", "message": f"Base de données introuvable à {RESULTS_DB}"}
+            
+        conn = sqlite3.connect(RESULTS_DB)
+        # On récupère les 20 dernières transactions
+        df = pd.read_sql("SELECT * FROM transactions ORDER BY processed_at DESC LIMIT 20", conn)
+        conn.close()
+        
+        return {
+            "status": "success",
+            "data": df.to_dict(orient="records")
+        }
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
 
 # ----------------------------
 # 6. Endpoints

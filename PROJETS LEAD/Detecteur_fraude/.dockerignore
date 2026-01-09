@@ -15,7 +15,6 @@ __pycache__/
 notebooks/
 data/
 
-
 # Heavy files or useless
 *.ipynb
 *.pdf

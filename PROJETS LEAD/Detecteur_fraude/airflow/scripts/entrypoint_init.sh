@@ -1,17 +1,24 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/bash
+set -e
 
-echo "[airflow-init] DB migrate..."
-airflow db migrate
+echo "--- Initialisation d'Airflow ---"
 
-echo "[airflow-init] Creating admin user (idempotent)..."
+# 1. On attend que Postgres réponde
+echo "Vérification de la DB..."
+airflow db check
+
+# 2. On crée/met à jour les tables
+echo "Mise à jour de la DB..."
+airflow db upgrade
+
+# 3. On crée l'admin (idempotent grâce au || true)
+echo "Création de l'utilisateur admin..."
 airflow users create \
-  --username "${AIRFLOW_ADMIN_USER}" \
-  --password "${AIRFLOW_ADMIN_PASSWORD}" \
-  --firstname Admin \
-  --lastname User \
-  --role Admin \
-  --email admin@example.com \
-  || true
+    --username admin \
+    --firstname admin \
+    --lastname admin \
+    --role Admin \
+    --email admin@example.com \
+    --password admin || true
 
-echo "[airflow-init] Done."
+echo "--- Initialisation terminée ---"

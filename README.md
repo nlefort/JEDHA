@@ -9,12 +9,26 @@ Ce dépôt a pour finalité de :
 * Centraliser tous les projets de formations
 * Partager mon travail
 
-La réalisation des projets décris ci-dessous s'inscrivent dans le cadre de la [formation Data Scientist](https://www.jedha.co/formations/formation-data-scientist) développé par [Jedha](https://www.jedha.co/), en vue de l'obtention de la certification professionnelle de niveau 6 (bac+4) enregistrée au RNCP : [Concepteur développeur en science des données](https://www.francecompetences.fr/recherche/rncp/35288/).
+## :notebook: Dossier "PROJETS LEAD"
 
-## Roadamp
+| Projets | Objectifs |
+| ------- | --------- |
+| Gouvernance des dpnnées | *Etude de cas : Proposer pour une entreprise un cadre de gouvernance et son plan de mise oeuvre* |
+| Architecture | *Créer une architecture unifiée intégrant des un système OLTP, OLAP et NoSQL* |
+| Flux | *Porposer la mise en oeuvre d'un flux en temps réel de la capture de la données à la prédiction de fraude* |
 
-| Projets   | Objectif                   | 
-| -------- | ----------------------------- | 
+La réalisation des projets dans le dossier décris ci-dessous s'inscrivent dans le cadre de la [formation Data Scientist](https://www.jedha.co/formations/formation-data-engineer) développé par [Jedha](https://www.jedha.co/), en vue de l'obtention de la certification professionnelle de niveau 7 (bac+7) enregistrée au RNCP : [Architecte en intelligence artificielle](https://www.francecompetences.fr/recherche/rncp/38777/).*
+
+## :notebook: Dossier "PROJETS"
+
+La réalisation des projets dans le dossier décris ci-dessous s'inscrivent dans le cadre de la [formation Data Scientist](https://www.jedha.co/formations/formation-data-scientist) développé par [Jedha](https://www.jedha.co/), en vue de l'obtention de la certification professionnelle de niveau 6 (bac+4) enregistrée au RNCP : [Concepteur développeur en science des données](https://www.francecompetences.fr/recherche/rncp/35288/).
+
+Cette certification a été obtenue en janvier 2026.
+
+## Roadmap
+
+| Projets | Objectifs |
+| ------- | -------- |
 | Speed Dating | *Analyser un jeu de données pour comprendre ce qui fait qu’une personne accepte un second rendez-vous* |
 | Plan Your Trip | *Créer une base de données enrichie en utilisant la méthode du scrapping et contenant des données de destinations, des données météos et des données de villégiatures*, *Positionner sur une carte les meilleures destinations et les meilleurs hôtels* |
 | Plateforme Jeux vidéos | *Analyser le marché des jeux vidéos*, *Utiliser les méthodes de calcul distribué* |
