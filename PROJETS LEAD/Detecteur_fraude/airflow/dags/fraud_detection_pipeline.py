@@ -8,268 +8,85 @@ Pipeline ETL simple pour la certification :
 4. Génère un rapport quotidien (optionnel)
 """
 
-from datetime import datetime, timedelta
-from airflow import DAG
-from airflow.operators.python import PythonOperator
-import logging
-import traceback
-from airflow.exceptions import AirflowFailException
-import requests
+from airflow.decorators import dag, task
+from datetime import datetime
 import pandas as pd
 import sqlite3
+import requests
 import joblib
 import os
-from pathlib import Path
 
 # ==========================================
 # CONFIGURATION
 # ==========================================
 # Chemin du projet (adapter selon votre environnement)
-PROJECT_ROOT = Path(__file__).parent.parent.parent
-API_URL = "http://api:8000/payments"
-DB_PATH = "/opt/airflow/database/fraud_predictions.db"
-MODEL_DIR = PROJECT_ROOT / "model"
+# Configuration simplifiée
+DB_PATH = "/app/data/fraud_predictions.db"
+MODEL_PATH = "/opt/airflow/dags/models/model_auto.pkl" # Placé dans les dags pour accès facile
 
-# ==========================================
-# FONCTION 1 : Récupérer les paiements
-# ==========================================
-def fetch_payments():
-
-    logging.info("Récupération des paiements depuis l'API...")
-
-    r = requests.get("http://api:8000/payments?limit=20", timeout=10)
-    r.raise_for_status()
-
-    payload = r.json()
-
-    if payload.get("status") != "success":
-        raise AirflowFailException(f"API error: {payload}")
-
-    payments = payload.get("data", [])
-
-    if not payments:
-        raise AirflowFailException("Aucun paiement récupéré")
-
-    logging.info(f"{len(payments)} paiements récupérés")
-
-    return payments
+# Planificiation du DAG
+@dag(
+    schedule_interval='*/5 * * * *',
+    start_date=datetime(2026, 1, 7),
+    catchup=False,
+    tags=['fraud', 'ML', 'prediction']
+)
 
 
 # ==========================================
-# FONCTION 2 : Prédire les fraudes
+# FONCTION : Récupérer les paiements > prédire les fraudes > stocker le résulat > faire un rapport
 # ==========================================
-def predict_fraud(**context):
-    """
-    Applique le modèle ML sur les paiements
-    """
-    try:
-        # Récupérer les paiements depuis XCom
-        payments = context['ti'].xcom_pull(
-            #key='payments', 
-            task_ids='fetch_payments'
-        )
-        
-        if not payments or len(payments) == 0:
-            logging.info("Aucun paiement à traiter")
-            return 0
-        
-        logging.info(f"Traitement de {len(payments)} paiements...")
-        
-        # Charger le modèle et les transformers
-        model = joblib.load(MODEL_DIR / "model_auto.pkl")
-        scaler = joblib.load(MODEL_DIR / "scaler.pkl")
-        target_map = joblib.load(MODEL_DIR / "target_encoding.pkl")
-        
-        # Convertir en DataFrame
+def fraud_detection_pipeline():
+
+    @task
+    def fetch_payments():
+        r = requests.get("http://api:8000/payments?limit=20")
+        return r.json()["data"]
+
+    @task
+    def predict_fraud(payments):
         df = pd.DataFrame(payments)
         
-        # SIMPLIFICATION : On suppose que l'API renvoie déjà les features
-        # Dans un vrai projet, vous feriez le feature engineering ici
+        # Chargement des données
+        model = joblib.load(MODEL_PATH)
         
-        # Features attendues par le modèle
-        features = ['amt', 'zip', 'city_pop', 'distance_km', 
-                   'category_enc', 'gender_m', 'Hour', 'Weekday']
+        # On ne garde que les colonnes nécessaires
+        features = ['amt', 'zip', 'city_pop', 'distance_km'] 
+        X = df[features].fillna(0)
         
-        # Vérifier que les colonnes existent
-        if not all(col in df.columns for col in features):
-            print(" Colonnes manquantes dans les données")
-            # Générer des valeurs par défaut pour la démo
-            for col in features:
-                if col not in df.columns:
-                    df[col] = 0
-        
-        df.rename(columns={'hour':'Hour', 'weekday':'Weekday'}, inplace=True)
+        df['is_fraud'] = model.predict(X)
+        return df.to_dict('records')
 
-        X = df[features].copy()
-        
-        # Standardisation des features numériques
-        num_features = ['amt', 'zip', 'city_pop', 'distance_km', 'Hour', 'Weekday']
-        X[num_features] = scaler.transform(X[num_features])
-        
-        # Prédiction
-        df['fraud_probability'] = model.predict_proba(X)[:, 1]
-        df['is_fraud_predicted'] = (df['fraud_probability'] >= 0.5).astype(int)
-        
-        # Compter les fraudes
-        nb_frauds = df['is_fraud_predicted'].sum()
-        logging.info(f"{nb_frauds} fraudes détectées")
-        
-        # Stocker pour la tâche suivante
-        context['ti'].xcom_push(key='predictions', value=df.to_dict('records'))
-        
-        return int(nb_frauds)
-    
-    except Exception as e:
-        logging.info(f"Erreur lors de la prédiction : {e}")
-
-        traceback.print_exc()
-        return 0
-
-# ==========================================
-# FONCTION 3 : Stocker dans la base
-# ==========================================
-def store_in_database(**context):
-    """
-    Stocke les résultats dans NeonDB (PostgreSQL)
-    """
-    try:
-        predictions = context['ti'].xcom_pull(
-            key='predictions', 
-            task_ids='predict_fraud'
-        )
-        
-        if not predictions:
-            print("Aucune prédiction à stocker")
-            return
-        
-        print(f"Stockage de {len(predictions)} transactions...")
-        
-        # Créer le dossier database si nécessaire
-        DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-        
-        # Connexion SQLite
-        conn = sqlite3.connect(DB_PATH)
+    @task
+    def store_data(predictions):
         df = pd.DataFrame(predictions)
-
-        # Ajouter timestamp de traitement
-        df['processed_at'] = datetime.now().isoformat()
-        
-        # Stocker (append si la table existe déjà)
-        df.to_sql(
-            'transactions', 
-            conn, 
-            if_exists='append', 
-            index=False
-        )
-        
-        logging.info(f"{len(df)} transactions stockées")
-        
-        # Compter le nombre total de transactions
-        total = pd.read_sql("SELECT COUNT(*) as count FROM transactions", conn)
-        logging.info(f"Total en base : {total['count'].iloc[0]} transactions")
-        
-        conn.close()
-        
-    except Exception as e:
-        logging.info(f"Erreur lors du stockage : {e}")
-
-        traceback.print_exc()
-
-# ==========================================
-# FONCTION 4 : Générer un rapport
-# ==========================================
-def generate_daily_report():
-    """
-    Génère un rapport quotidien simple
-    """
-    try:
         conn = sqlite3.connect(DB_PATH)
-        
-        # Statistiques des dernières 24h
-        query = """
-        SELECT 
-            COUNT(*) as total_transactions,
-            SUM(is_fraud_predicted) as nb_fraudes,
-            AVG(fraud_probability) as proba_moyenne,
-            MAX(processed_at) as derniere_maj
-        FROM transactions
-        WHERE processed_at >= datetime('now', '-1 day')
-        """
-        
-        stats = pd.read_sql(query, conn)
-        
-        print("\n" + "="*60)
-        print("RAPPORT QUOTIDIEN")
-        print("="*60)
-        print(f"Transactions traitées : {stats['total_transactions'].iloc[0]}")
-        print(f"Fraudes détectées     : {stats['nb_fraudes'].iloc[0]}")
-        print(f"Probabilité moyenne   : {stats['proba_moyenne'].iloc[0]:.2%}")
-        print(f"Dernière MAJ          : {stats['derniere_maj'].iloc[0]}")
-        print("="*60 + "\n")
-        
+        df.to_sql('transactions', conn, if_exists='append', index=False)
+        count = len(df)
         conn.close()
-        
-    except Exception as e:
-        print(f"Impossible de générer le rapport : {e}")
+        return f"{count} transactions enregistrées"
 
-# ==========================================
-# DÉFINITION DU DAG
-# ==========================================
-default_args = {
-    'owner': 'data_team',
-    'depends_on_past': False,
-    'start_date': datetime(2026, 1, 7),
-    'email_on_failure': False,
-    'retries': 1,
-    'retry_delay': timedelta(minutes=2),
-}
+    @task
+    def daily_report():
+        conn = sqlite3.connect(DB_PATH)
+        df = pd.read_sql("SELECT COUNT(*) as total, SUM(is_fraud) as frauds FROM transactions", conn)
+        print(f"RESUMÉ : {df.total[0]} total, {df.frauds[0]} fraudes.")
+        conn.close()
 
-dag = DAG(
-    'fraud_detection_simple',
-    default_args=default_args,
-    description='Pipeline ETL de détection de fraude',
-    schedule_interval='*/5 * * * *',  # Toutes les 5 minutes
-    catchup=False,
-    tags=['fraud', 'ml', 'certification'],
-)
+    # Flux de données limpide
+    data = fetch_payments()
+    preds = predict_fraud(data)
+    store_data(preds) >> daily_report()
 
-# ==========================================
-# DÉFINITION DES TÂCHES
-# ==========================================
+# Instanciation
+fraud_detection_pipeline()
 
-# Tâche 1 : Récupérer les paiements
-task_fetch = PythonOperator(
-    task_id='fetch_payments',
-    python_callable=fetch_payments,
-    dag=dag,
-)
-
-# Tâche 2 : Prédire les fraudes
-task_predict = PythonOperator(
-    task_id='predict_fraud',
-    python_callable=predict_fraud,
-    dag=dag,
-)
-
-# Tâche 3 : Stocker dans la DB
-task_store = PythonOperator(
-    task_id='store_in_db',
-    python_callable=store_in_database,
-    dag=dag,
-)
-
-# Tâche 4 : Rapport quotidien
-task_report = PythonOperator(
-    task_id='daily_report',
-    python_callable=generate_daily_report,
-    dag=dag,
-)
 
 # ==========================================
 # DÉFINITION DU FLUX
 # ==========================================
-# Flux linéaire simple pour la certification
-task_fetch >> task_predict >> task_store >> task_report
+# Flux linéaire simple
+# fetch_payments >> predict_fraud >> store_data >> daily_report
 
 # Signification :
 # 1. Fetch payments (API)
