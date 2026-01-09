@@ -48,8 +48,10 @@ mlruns/
 Orchestration/
 PROJETS/DOCUMENTATION*
 fraudTest.csv
-*/Detecteur_fraude/mlflow
-*/Detecteur_fraude/model
+mlruns/
+mlartifacts/
 *.cbm
 *.csv
 *.pyc
+*.pkl
+mlflow/
