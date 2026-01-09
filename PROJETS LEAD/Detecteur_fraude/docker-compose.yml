@@ -1,96 +1,48 @@
 version: '3.9'
+
 services:
-  airflow:
-    image: apache/airflow:2.7.1
-    container_name: airflow
-    restart: always
-    environment:
-      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
-      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
-      - AIRFLOW__CORE__FERNET_KEY=${AIRFLOW_FERNET_KEY}
-      - AIRFLOW__WEBSERVER__SECRET_KEY=${AIRFLOW_WEBSERVER_SECRET_KEY}
-    depends_on:
-      - airflow-db
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs
-      - ./plugins:/opt/airflow/plugins
-    command: webserver
-
-
+  # Base de données pour Airflow
   airflow-db:
     image: postgres:16
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
-    ports:
-      - "5432:5432"
     volumes:
       - airflow_db_data:/var/lib/postgresql/data
 
-  airflow-scheduler:
+  # Airflow (Webserver & Scheduler réunis par simplification de lecture)
+  airflow:
     image: apache/airflow:2.7.1
-    container_name: airflow-scheduler
-    restart: always
     depends_on:
-      - airflow
       - airflow-db
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+    ports:
+      - "8080:8080"
     volumes:
       - ./dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs
-      - ./plugins:/opt/airflow/plugins
-    command: scheduler
+      - shared_data:/app/data # Volume partagé pour la DB SQLite finale
+    command: standalone # Mode simplifié pour dev : lance tout (webserver + scheduler)
 
-  model:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile.model
-    working_dir: /app
-    volumes:
-      - ./data:/app/data:ro
-      - ./model:/app/model:rw
-      - ./api:/app/api:rw
-      - ./mlflow:/app/mlflow:rw   # Centralisation du dossier MLflow (mlruns + sqlite)
-    environment:
-      - MLFLOW_TRACKING_URI=file:///app/mlflow
-    command: python model/train_model.py
-
-
+  # API de paiement
   api:
-    build:
+    build: 
       context: .
       dockerfile: docker/Dockerfile.api
-    depends_on:
-      model:
-        condition: service_completed_successfully
     ports:
       - "8000:8000"
     volumes:
-      - ./api:/app/api:rw
-      - ./model:/app/model:ro
-      - ./data:/app/data:ro
-      - ./mlflow:/app/mlflow:ro    # API peut lire MLflow si besoin
-      - ./database:/app/database  # Airflow écrit ici, l'API lit ici
-    environment:
-      - MLFLOW_TRACKING_URI=sqlite:///app/mlflow/mlflow.db
-    command: uvicorn api.app:app --host 0.0.0.0 --port 8000 --reload
+      - shared_data:/app/data
 
-
+  # MLflow UI
   mlflow_ui:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile.mlflow
+    image: ghcr.io/mlflow/mlflow
     ports:
       - "5000:5000"
-    volumes:
-      - ./mlflow:/app/mlflow:rw       # Même dossier MLflow
-    environment:
-      - MLFLOW_TRACKING_URI=file:///app/mlflow
-    command: mlflow ui --backend-store-uri file:///app/mlflow --host 0.0.0.0 --port 5000
-
+    command: mlflow ui --host 0.0.0.0
 
 volumes:
   airflow_db_data:
+  shared_data:
