@@ -22,7 +22,15 @@ import os
 # Chemin du projet (adapter selon votre environnement)
 # Configuration simplifiée
 DB_PATH = "/app/data/fraud_predictions.db"
-MODEL_PATH = "/opt/airflow/dags/models/model_auto.pkl" # Placé dans les dags pour accès facile
+import os, joblib
+
+MODEL_DIR = "/app/data/model"
+os.makedirs(MODEL_DIR, exist_ok=True)
+
+joblib.dump(model, f"{MODEL_DIR}/model_auto.pkl")
+joblib.dump(scaler, f"{MODEL_DIR}/scaler.pkl")
+joblib.dump(target_map, f"{MODEL_DIR}/target_encoding.pkl")
+
 
 # Planificiation du DAG
 @dag(

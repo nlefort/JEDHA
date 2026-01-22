@@ -11,20 +11,22 @@ services:
     volumes:
       - airflow_db_data:/var/lib/postgresql/data
 
-  # Airflow (Webserver & Scheduler réunis par simplification de lecture)
+  # Airflow (Webserver & Scheduler réunis )
   airflow:
-    image: apache/airflow:2.7.1
+    build: 
+      context: .
+      dockerfile: docker/Dockerfile.airflow
     depends_on:
       - airflow-db
     environment:
-      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
-      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
     ports:
       - "8080:8080"
     volumes:
       - ./dags:/opt/airflow/dags
-      - shared_data:/app/data # Volume partagé pour la DB SQLite finale
-    command: standalone # Mode simplifié pour dev : lance tout (webserver + scheduler)
+      - shared_data:/app/data # volume partagé avec l'API
+    command: standalone # Lance webserver + scheduler
 
   # API de paiement
   api:
@@ -35,13 +37,18 @@ services:
       - "8000:8000"
     volumes:
       - shared_data:/app/data
+    depends_on:
+      - airflow-db
 
   # MLflow UI
   mlflow_ui:
-    image: ghcr.io/mlflow/mlflow
+    build:
+        context: .
+        dockerfile: docker/Dockerfile.mlflow
     ports:
-      - "5000:5000"
-    command: mlflow ui --host 0.0.0.0
+        - "5000:5000"
+    volumes:
+        - ./mlruns:/app/mlruns
 
 volumes:
   airflow_db_data:

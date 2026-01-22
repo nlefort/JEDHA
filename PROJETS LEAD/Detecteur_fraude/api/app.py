@@ -30,7 +30,13 @@ app = FastAPI(
 RESULTS_DB = "/app/database/fraud_predictions.db"
 
 # Chemins vers les artefacts
-MODEL_DIR = os.getenv("MODEL_DIR", "/app/model")
+MODEL_DIR = os.getenv("MODEL_DIR", "/app/data/model")
+
+# Définir les variables avant le try-except
+model = None
+scaler = None
+target_map = None
+
 
 try:
     model = joblib.load(os.path.join(MODEL_DIR, 'model_auto.pkl'))
@@ -114,10 +120,7 @@ state = APIState()
 # 4.1 Lancement de l'API
 # =========================
 
-@app.on_event("startup")
-async def startup_event():
-    print("Démarrage de l'API ...")
-    
+@app.on_event("startup")   
 async def startup_event():
     print("Démarrage de l'API en mode DYNAMIQUE (FakerAPI)...")
 
@@ -224,7 +227,7 @@ def predict_fraude(data: Payment):
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Erreur: {str(e)}")
 
-@app.get("/api/results")
+@app.get("/results")
 def get_results():
     try:
         if not os.path.exists(RESULTS_DB):
