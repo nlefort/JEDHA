@@ -6,31 +6,28 @@ Ce projet a pour but de détecter les paiements frauduleux en temps réel à l�
 
 Les objectifs principaux sont :
 
-- Détecter les fraudes sur des transactions bancaires en temps réel
-- Envoyer des notifications lorsqu’une fraude est détectée
-- Générer des rapports quotidiens sur les transactions frauduleuses
+- **Ingestion continue** : Récupération automatique des transactions via une API externe.
+- **Intelligence Artificielle** : Détection des fraudes à l'aide d'un modèle **XGBoost** optimisé.
+- **Industrialisation** : Orchestration complète via **Airflow** et conteneurisation **Docker**.
+- **Traçabilité** : Monitoring des performances et des versions de modèles avec **MLflow**.
 
 ## :brain: Flux global du projet
 
 ```ascii
-         Appel API (FakerAPI)
+         Appel API (API mise à disposition par Jedha)
             ↓
         Airflow DAG
      (ingestion / ETL)
             ↓
-     Transformation des paiements
-     et standardisation
+     Feature Engineering
+     (Distance Harvesine, Extraction temporelle)
             ↓
-     Entraînement ML
-      (MLflow tracking)
-            ↓
-      Modèles + métriques
-            ↓
-     API FastAPI → Prédictions
+     Modèle XGBoost
+      (Prédiction & MLFlow tracking)
             ↓
       Stockage des résultats (SQLite)
             ↓      
-      Monitoring / logs
+      Monitoring / Notebook EDA
 ```
 
 ## :building_construction: Architecture globale
@@ -39,11 +36,12 @@ Les objectifs principaux sont :
 
 | Technologie | Rôle |
 | ----------- | ---- |
-| API FastAPI | Expose les endpoints pour récupérer les paiements et faire des prédictions |
-| Airflow | Orchestration des tâches (récupération des paiements, prédiction, stockage) |
-| MLflow | Suivi des expérimentations et gestion des modèles |
-| SQLite | Stockage des transactions et résultats |
-| Docker Compose | Environnement reproductible |
+| FastAPI | Micro-service servant le modèle pour des prédictions unitaires en temps réel |
+| Airflow | Orchestrateur gérant le cycle de vie de la donnée (ETL + Inférence Batch) |
+| XGBoost | Modèle de classification supervisée (optimisé par SMOTE pour les classes déséquilibrées) |
+| MLflow | Registre de modèles et suivi des métriques (F1-Score, Recall) |
+| SQLite | Base de données locale pour l'archivage des prédictions |
+| Docker Compose | Environnement reproductible, isolation des services |
 | GitHub | Stockage du code |
 
 ### Interactions entre les modules
@@ -56,12 +54,14 @@ Transactions >> API >> Airflow >> ML Model >> Résultats >> Stockage/Alertes/Rep
 | Étape          | Module source | Module cible | Description               | Fichier clé                  |
 | -------------- | ------------- | ------------ | ------------------------- | ---------------------------- |
 | Configuration  | `.env`        | Airflow      | Variables d’environnement | `.env`                       |
-| Orchestration  | Airflow DAG   | Airflow      | Définition du pipeline    | `/airflow/dags/*.py`         |
 | Entraînement   | Model         | MLflow       | Training & métriques      | `model/train_model.py`       |
-| Registry       | MLflow        | MLflow       | Versioning modèle         | MLflow UI                    |
-| Serving        | FastAPI       | MLflow       | Chargement modèle prod    | `/api/app.py`                |
+| Orchestration  | Airflow DAG   | API/Modèle   | Pipeline d'inférence toutes les 5 min   | `/airflow/dags/fraud_detection_pipeline.py` |
+| Serving        | FastAPI       | Client       | Point d'entrée de prédiction  | `/api/app.py` |
+| Stockage       | DAG           | SQLite       | Persistance des résultats        | data/fraud_predictions.db |
 
-### Flux API de prédiction
+### Flux API de prédiction (exposition du modèle)
+
+En complément de l'API mise à disposition dans le cadre du projet, un service FastAPI est également crée afin d'exposer le modèle et le tester en temps réel.
 
 - ``GET /payments`` : récupère un batch de paiements
 - ``POST /predict`` : prédit la fraude sur une transaction
@@ -85,8 +85,9 @@ MLFlow permet de :
 
 Prérequis
 
-- Docker
-- Docker Compose
+- Docker & Docker Compose
+
+Lancement
 
 ```bash
 git clone https://github.com/nlefort/JEDHA/tree/main/PROJETS%20LEAD/Detecteur_fraude
@@ -136,40 +137,78 @@ docker compose run --rm airflow airflow users create \
 2. Vérifier les runs et métriques dans MLflow
 3. Appeler l’API `/predict`
 
-### Exemple de prédiction
+### Exemple de prédiction via l'API
 
-Requête
+Le modèle attend des caractéristiques géographiques et temporelles. 
+La distance Haversine et les variables temporelles sont calculées automatiquement par l'API ou le DAG.
+
+Requête non frauduleuse :
 
 ```http
 POST/predict
 ```
 
 ```json
-curl -X POST "http://localhost:8000/predict" \
--H "Content-Type: application/json" \
--d '{
-    "amt": 120.5,
-    "zip": 75001,
-    "city_pop": 21000,
-    "distance_km": 12.5,
-    "category": "shopping_net",
-    "gender_m": 1,
-    "hour": 14,
-    "weekday": 3
+curl -X 'POST' `
+  'http://localhost:8000/predict' `
+  -H 'accept: application/json' `
+  -H 'Content-Type: application/json' `
+  -d '{
+  "amt": 60.00,
+  "category": "grocery_pos",
+  "city_pop": 5000,
+  "distance_km": 0,
+  "gender_m": 1,
+  "hour": 15,
+  "weekday": 0,
+  "zip": 12345
 }'
-
 ```
 
 Réponse
 
 ```json
 {
-    "is_fraud": 0,
-    "probability": "0.23%",
-    "verdict": "TRANSACTION OK"
+  "is_fraud": 0,
+  "probability": "0.00%",
+  "verdict": "TRANSACTION OK"
 }
-
 ```
+
+Requête frauduleuse : 
+
+```http
+POST/predict
+```
+
+```json
+curl -X 'POST' \
+  'http://localhost:8000/predict' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "amt": 800.00,
+  "category": "shopping_net",
+  "city_pop": 20000,
+  "distance_km": 2850.0,
+  "gender_m": 0,
+  "hour": 2,
+  "weekday": 5,
+  "zip": 11710
+}'
+```
+
+Réponse
+
+```json
+{
+  "is_fraud": 1,
+  "probability": "53.53%",
+  "verdict": "ALERTE FRAUDE"
+}
+```
+
+Les résulats de ces tests ne sont pas stockés dans la base SQLite.
 
 ### Promouvoir un modèle en Production
 
@@ -221,7 +260,7 @@ Docker
 
 - [x] Automatisation Airflow
 
-- [ ] Monitoring
+- [x] Monitoring des prédiction (Base SQLite & Notebook)
 
 - [ ] CI/CD
 

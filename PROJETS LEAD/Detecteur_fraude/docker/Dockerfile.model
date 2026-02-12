@@ -1,20 +1,22 @@
 FROM python:3.12-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
-    ENV GIT_PYTHON_REFRESH=quiet
+    PYTHONUNBUFFERED=1 \
+    GIT_PYTHON_REFRESH=quiet
 
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
-    && rm -rf /var/lib/apt/lists/* WORKDIR /app
+    && rm -rf /var/lib/apt/lists/* 
+
+WORKDIR /app
 
 # Installation des dépendances
 COPY requirements/model.txt /tmp/model.txt
 RUN pip install --no-cache-dir -r /tmp/model.txt
 
 # On copie le code
-COPY model/ /app/model/
+COPY model/ /app/data/model
 #COPY data/ /app/data/
 
 # Commande pour lancer l'entraînement au démarrage

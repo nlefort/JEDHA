@@ -15,8 +15,8 @@ airflow db upgrade
 echo "Création de l'utilisateur admin..."
 airflow users create \
     --username admin \
-    --firstname admin \
-    --lastname admin \
+    --firstname Admin \
+    --lastname User \
     --role Admin \
     --email admin@example.com \
     --password admin || true
