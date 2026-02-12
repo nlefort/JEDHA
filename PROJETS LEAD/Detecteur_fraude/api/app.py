@@ -189,35 +189,39 @@ async def health_check():
     }
 
 
-@app.post("/predict", response_model=dict)
+@app.post("/predict")
 def predict_fraude(data: Payment):
     """Prédit si une transaction est frauduleuse ou non"""
     try:
-        # 1. Préparation de la catégorie (Target Encoding)
-        # On utilise la moyenne de fraude de l'entraînement comme fallback
-        mean_fraud_rate = 0.002  # À ajuster selon tes logs d'entraînement
-        category_enc = target_map.get(data.category, mean_fraud_rate)
+        # 1. Target Encoding (cohérent avec ton entraînement)
+        # On utilise .get() pour éviter le KeyError si la catégorie est nouvelle
+        category_enc = target_map.get(data.category, 0.002) 
         
-        # 2. Création du DataFrame avec l'ordre EXACT des colonnes de l'entraînement
-        # L'ordre doit être : amt, zip, city_pop, distance_km, gender_m, hour, weekday, category_enc
-        input_df = pd.DataFrame([[
-            data.amt, 
-            data.zip, 
-            data.city_pop, 
-            data.distance_km, 
-            data.gender_m, 
-            data.hour, 
-            data.weekday,
-            category_enc
-        ]], columns=["amt", "zip", "city_pop", "distance_km", "gender_m", "Hour", "Weekday", "category_enc"])
+        # 2. Création du DataFrame avec les noms de colonnes EXACTS du train_model
+        # Attention : 'Hour' et 'Weekday' doivent avoir une majuscule !
+        input_data = {
+            "amt": [data.amt],
+            "zip": [data.zip],
+            "city_pop": [data.city_pop],
+            "distance_km": [data.distance_km],
+            "gender_m": [data.gender_m],
+            "Hour": [data.hour],       # On mappe 'hour' vers 'Hour'
+            "Weekday": [data.weekday], # On mappe 'weekday' vers 'Weekday'
+            "category_enc": [category_enc]
+        }
+        input_df = pd.DataFrame(input_data)
         
-        # 3. Standardisation
+        # 3. Réorganiser les colonnes dans l'ordre exact du modèle
+        features_list = ["amt", "zip", "city_pop", "distance_km", "gender_m", "Hour", "Weekday", "category_enc"]
+        input_df = input_df[features_list]
+
+        # 4. Standardisation (uniquement sur les colonnes numériques)
         num_features = ["amt", "zip", "city_pop", "distance_km", "Hour", "Weekday"]
         input_df[num_features] = scaler.transform(input_df[num_features])
         
-        # 4. Prédiction
+        # 5. Prédiction
         prob = float(model.predict_proba(input_df)[0][1])
-        prediction = 1 if prob >= 0.50 else 0 # Seuil utilisé dans ton test
+        prediction = 1 if prob >= 0.50 else 0 
         
         return {
             "is_fraud": prediction,

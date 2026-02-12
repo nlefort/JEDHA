@@ -19,14 +19,18 @@ services:
     depends_on:
       - airflow-db
     environment:
-      AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+      - AIRFLOW__CORE__EXECUTOR:LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@airflow-db/airflow
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
     ports:
       - "8080:8080"
     volumes:
-      - ./dags:/opt/airflow/dags
-      - shared_data:/app/data # volume partagé avec l'API
-    command: standalone # Lance webserver + scheduler
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/scripts/entrypoint_init.sh:/init_airflow.sh
+      - ./data:/opt/airflow/data
+      - ./model:/opt/airflow/data/model
+      # - shared_data:/app/data # volume partagé avec l'API
+    command: bash -c "/init_airflow.sh && airflow standalone"
 
   # API de paiement
   api:
@@ -36,7 +40,8 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - shared_data:/app/data
+      - ./model:/app/data/model
+      - ./data:/app/database
     depends_on:
       - airflow-db
 
@@ -47,9 +52,9 @@ services:
         dockerfile: docker/Dockerfile.mlflow
     ports:
         - "5000:5000"
-    volumes:
-        - ./mlruns:/app/mlruns
+    # volumes:
+      # - shared_data:/app/data
 
 volumes:
   airflow_db_data:
-  shared_data:
+  # shared_data:

@@ -16,7 +16,7 @@ COPY requirements/model.txt /tmp/model.txt
 RUN pip install --no-cache-dir -r /tmp/model.txt
 
 # On copie le code
-COPY model/ /app/model/
+COPY model/ /app/data/model
 #COPY data/ /app/data/
 
 # Commande pour lancer l'entraînement au démarrage

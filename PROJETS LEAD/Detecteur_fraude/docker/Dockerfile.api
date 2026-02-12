@@ -16,7 +16,8 @@ COPY requirements/api.txt /tmp/api.txt
 RUN pip install --upgrade pip \
     && pip install --no-cache-dir -r /tmp/api.txt
 
-COPY ./api /app/api
+COPY /api /app/api
+COPY /model/ /app/data/model
 
 EXPOSE 8000
 

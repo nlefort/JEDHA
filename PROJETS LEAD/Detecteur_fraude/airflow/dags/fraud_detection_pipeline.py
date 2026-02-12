@@ -15,22 +15,16 @@ import sqlite3
 import requests
 import joblib
 import os
+import json
 
 # ==========================================
 # CONFIGURATION
 # ==========================================
 # Chemin du projet (adapter selon votre environnement)
 # Configuration simplifiée
-DB_PATH = "/app/data/fraud_predictions.db"
-import os, joblib
-
-MODEL_DIR = "/app/data/model"
+DB_PATH = "/opt/airflow/data/fraud_predictions.db"
+MODEL_DIR = "/opt/airflow/data/model"
 os.makedirs(MODEL_DIR, exist_ok=True)
-
-joblib.dump(model, f"{MODEL_DIR}/model_auto.pkl")
-joblib.dump(scaler, f"{MODEL_DIR}/scaler.pkl")
-joblib.dump(target_map, f"{MODEL_DIR}/target_encoding.pkl")
-
 
 # Planificiation du DAG
 @dag(
@@ -40,7 +34,6 @@ joblib.dump(target_map, f"{MODEL_DIR}/target_encoding.pkl")
     tags=['fraud', 'ML', 'prediction']
 )
 
-
 # ==========================================
 # FONCTION : Récupérer les paiements > prédire les fraudes > stocker le résulat > faire un rapport
 # ==========================================
@@ -48,21 +41,69 @@ def fraud_detection_pipeline():
 
     @task
     def fetch_payments():
-        r = requests.get("http://api:8000/payments?limit=20")
-        return r.json()["data"]
+        # 'api' : est le nom du service dans docker-compose
+        #r = requests.get("http://api:8000/payments?limit=20")
+        URL_ECOLE = "https://sdacelo-real-time-fraud-detection.hf.space/current-transactions"
+
+        r = requests.get(URL_ECOLE, timeout=10)
+        r.raise_for_status()
+        raw_data = r.json()
+        
+        # L'API renvoie une string JSON, on la décode en dictionnaire
+        raw_data = r.json()
+        if isinstance(raw_data, str):
+            raw_data = json.loads(raw_data)
+            
+        return raw_data
 
     @task
-    def predict_fraud(payments):
-        df = pd.DataFrame(payments)
+    def predict_fraud(raw_json):
+        import pandas as pd
+        import joblib
+        import numpy as np
+        from datetime import datetime
+
+        # 1. Reconstruction du DataFrame depuis le format split de l'API
+        df = pd.DataFrame(data=raw_json['data'], columns=raw_json['columns'])
         
-        # Chargement des données
-        model = joblib.load(MODEL_PATH)
+        # 2. Feature Engineering (Distance & Temps)
+        def haversine(lat1, lon1, lat2, lon2):
+            r = 6371
+            phi1, phi2 = np.radians(lat1), np.radians(lat2)
+            a = np.sin(np.radians(lat2-lat1)/2)**2 + \
+                np.cos(phi1)*np.cos(phi2)*np.sin(np.radians(lon2-lon1)/2)**2
+            return 2 * r * np.arcsin(np.sqrt(a))
+
+        df['distance_km'] = haversine(df['lat'], df['long'], df['merch_lat'], df['merch_long'])
         
-        # On ne garde que les colonnes nécessaires
-        features = ['amt', 'zip', 'city_pop', 'distance_km'] 
-        X = df[features].fillna(0)
+        # Extraction de l'heure et du jour (basé sur le timestamp current_time de l'API)
+        # Note: current_time semble être en secondes
+        dt_object = pd.to_datetime(df['current_time'], unit='ms')
+        df['Hour'] = dt_object.dt.hour
+        df['Weekday'] = dt_object.dt.weekday
         
+        # 3. Encodages (Gender & Category)
+        df['gender_m'] = df['gender'].map({'M': 1, 'F': 0}).fillna(0)
+        
+        target_map = joblib.load("/opt/airflow/data/model/target_encoding.pkl")
+        # On utilise la moyenne de fraude du train (0.0052 approx) si catégorie inconnue
+        df['category_enc'] = df['category'].map(target_map).fillna(0.0052)
+
+        # 4. Préparation finale (Ordre strict des colonnes)
+        features_list = ["amt", "zip", "city_pop", "distance_km", "gender_m", "Hour", "Weekday", "category_enc"]
+        X = df[features_list].copy()
+
+        # 5. Scaling et Prédiction
+        scaler = joblib.load("/opt/airflow/data/model/scaler.pkl")
+        model = joblib.load("/opt/airflow/data/model/model_auto.pkl")
+        
+        # Attention : Le scaler n'a été fit que sur les 6 premières colonnes (num_features) dans ton script !
+        num_features = ["amt", "zip", "city_pop", "distance_km", "Hour", "Weekday"]
+        X[num_features] = scaler.transform(X[num_features])
+        
+        # Prédiction
         df['is_fraud'] = model.predict(X)
+        
         return df.to_dict('records')
 
     @task
@@ -77,9 +118,14 @@ def fraud_detection_pipeline():
     @task
     def daily_report():
         conn = sqlite3.connect(DB_PATH)
-        df = pd.read_sql("SELECT COUNT(*) as total, SUM(is_fraud) as frauds FROM transactions", conn)
-        print(f"RESUMÉ : {df.total[0]} total, {df.frauds[0]} fraudes.")
-        conn.close()
+        # Petit check pour éviter que le rapport plante si la table n'existe pas encore
+        try:
+            df = pd.read_sql("SELECT COUNT(*) as total, SUM(is_fraud) as frauds FROM transactions", conn)
+            print(f"RESUMÉ : {df.total[0]} total, {df.frauds[0]} fraudes.")
+        except:
+            print("Pas encore de données pour le rapport.")
+        finally:
+            conn.close()
 
     # Flux de données limpide
     data = fetch_payments()
