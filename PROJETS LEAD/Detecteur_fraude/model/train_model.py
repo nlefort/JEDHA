@@ -17,10 +17,16 @@ import mlflow.xgboost
 # ----------------------------
 # 0. Configuration MLFlow
 # ----------------------------
-# Utiliser la variable d'environnement
-MLFLOW_URI = os.getenv("MLFLOW_TRACKING_URI", "file:///app/mlflow")
-mlflow.set_tracking_uri(MLFLOW_URI)
-mlflow.set_experiment("Fraud_Detection_XGBoost")
+# On utilise 127.0.0.1 pour éviter les problèmes de résolution DNS de localhost sur Windows
+os.environ["MLFLOW_TRACKING_URI"] = "http://127.0.0.1:5000"
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
+
+# On vérifie si l'expérience existe avant de la créer
+experiment_name = "Fraud_Detection_XGBoost"
+if not mlflow.get_experiment_by_name(experiment_name):
+    mlflow.create_experiment(experiment_name)
+mlflow.set_experiment(experiment_name)
+
 
 # ACTIVER L'AUTOLOG POUR TOUT CAPTURER
 mlflow.xgboost.autolog(log_models=True, log_input_examples=True)

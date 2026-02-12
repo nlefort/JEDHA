@@ -16,6 +16,7 @@ import requests
 import joblib
 import os
 import json
+import xgboost as xgb
 
 # ==========================================
 # CONFIGURATION

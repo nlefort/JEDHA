@@ -4,7 +4,7 @@ FROM python:3.12-slim
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
-WORKDIR /app
+#WORKDIR /app
 
 # Installation de MLflow (pas besoin de build-essential pour l'UI simple)
 RUN pip install --no-cache-dir mlflow
@@ -15,4 +15,4 @@ RUN pip install --no-cache-dir mlflow
 EXPOSE 5000
 
 # Commande pour lancer l'UI en pointant vers le dossier monté
-CMD ["mlflow", "ui", "--host", "0.0.0.0", "--port", "5000", "--backend-store-uri", "/app/mlruns"]
+CMD ["mlflow", "server", "--host", "0.0.0.0", "--port", "5000", "--backend-store-uri", "/app/mlruns"]

@@ -52,8 +52,15 @@ services:
         dockerfile: docker/Dockerfile.mlflow
     ports:
         - "5000:5000"
-    # volumes:
-      # - shared_data:/app/data
+    volumes:
+    - ./mlruns:/mlflow_data
+    command: >
+      mlflow server 
+      --backend-store-uri file:///mlflow_data
+      --default-artifact-root file:///mlflow_data
+      --host 0.0.0.0 
+      --port 5000
+
 
 volumes:
   airflow_db_data:

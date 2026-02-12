@@ -122,7 +122,7 @@ state = APIState()
 
 @app.on_event("startup")   
 async def startup_event():
-    print("Démarrage de l'API en mode DYNAMIQUE (FakerAPI)...")
+    print("Démarrage de l'API en mode DYNAMIQUE (Utilisation de FakerAPI)...")
 
     print("API prête à recevoir des requêtes sur /payments")
 
