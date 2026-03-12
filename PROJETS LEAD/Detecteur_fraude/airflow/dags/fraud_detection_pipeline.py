@@ -11,6 +11,7 @@ Pipeline ETL simple pour la certification :
 from airflow.decorators import dag, task
 from datetime import datetime
 import pandas as pd
+import numpy as np
 import sqlite3
 import requests
 import joblib
@@ -59,10 +60,11 @@ def fraud_detection_pipeline():
 
     @task
     def predict_fraud(raw_json):
-        import pandas as pd
-        import joblib
-        import numpy as np
-        from datetime import datetime
+        import mlflow
+
+    # 1. Configuration de la connexion
+        mlflow.set_tracking_uri("http://172.18.0.1:5000")
+        mlflow.set_experiment("Fraud_Detection_XGBoost")
 
         # 1. Reconstruction du DataFrame depuis le format split de l'API
         df = pd.DataFrame(data=raw_json['data'], columns=raw_json['columns'])
@@ -103,6 +105,24 @@ def fraud_detection_pipeline():
         
         # Prédiction
         df['is_fraud'] = model.predict(X)
+
+        # 2. Enregistrement du passage dans MLflow
+        with mlflow.start_run(run_name=f"Airflow_Run_{datetime.now().strftime('%H:%M')}"):
+            
+            # Ton code de prédiction existant
+            df['is_fraud'] = model.predict(X)
+
+            # On logue les résultats du batch actuel
+            mlflow.log_metric("batch_size", len(df))
+            # À l'intérieur de ton run MLflow
+            nb_frauds = int(df['is_fraud'].sum()) # <--- Force le type int
+            mlflow.log_metric("frauds_found", nb_frauds)
+
+            
+            # Optionnel : on récupère le run_id pour l'historique
+            run_id = mlflow.active_run().info.run_id
+            df['mlflow_run_id'] = run_id
+
         
         return df.to_dict('records')
 

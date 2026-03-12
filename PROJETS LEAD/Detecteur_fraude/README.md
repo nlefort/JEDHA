@@ -81,6 +81,14 @@ MLFlow permet de :
 - gérer les versions,
 - promouvoir un modèle de production
 
+###  Validation du Pipeline d'Observabilité
+
+Le pipeline d'inférence automatise le tracking des métriques de performance :
+
+- **Orchestration** : Airflow (Success code 0)
+- **Tracking** : MLflow (Génération automatique d'un `mlflow_run_id` par batch)
+- **Persistence** : SQLite (Stockage des prédictions enrichies de l'ID de run)
+
 ## :atom_symbol: Installation
 
 Prérequis

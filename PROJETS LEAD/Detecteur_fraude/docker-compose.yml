@@ -45,21 +45,26 @@ services:
     depends_on:
       - airflow-db
 
-  # MLflow UI
-  mlflow_ui:
-    build:
-        context: .
-        dockerfile: docker/Dockerfile.mlflow
-    ports:
-        - "5000:5000"
-    volumes:
-    - ./mlruns:/mlflow_data
-    command: >
-      mlflow server 
-      --backend-store-uri file:///mlflow_data
-      --default-artifact-root file:///mlflow_data
-      --host 0.0.0.0 
-      --port 5000
+  # MLflow
+  mlflow:
+      build:
+          context: .
+          dockerfile: docker/Dockerfile.mlflow
+      ports:
+          - "5000:5000"
+      environment:
+        - MLFLOW_HTTP_GATEWAY_ALLOWED_HEADERS=Host
+        - MLFLOW_SERVER_GUNICORN_OPTS=--forwarded-allow-ips="*"
+        # AJOUTE CETTE LIGNE CI-DESSOUS :
+        - MLFLOW_HTTP_GATEWAY_ALLOWED_HOSTS=*
+      volumes:
+      - ./mlruns:/mlflow_data
+      command: >
+        mlflow server 
+        --backend-store-uri file:///mlflow_data
+        --default-artifact-root file:///mlflow_data
+        --host 0.0.0.0 
+        --port 5000
 
 
 volumes:
