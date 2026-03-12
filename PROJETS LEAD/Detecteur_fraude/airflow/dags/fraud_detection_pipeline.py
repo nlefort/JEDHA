@@ -98,7 +98,6 @@ def fraud_detection_pipeline():
         scaler = joblib.load("/opt/airflow/data/model/scaler.pkl")
         model = joblib.load("/opt/airflow/data/model/model_auto.pkl")
         
-        # Attention : Le scaler n'a été fit que sur les 6 premières colonnes (num_features) dans ton script !
         num_features = ["amt", "zip", "city_pop", "distance_km", "Hour", "Weekday"]
         X[num_features] = scaler.transform(X[num_features])
         
