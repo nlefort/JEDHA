@@ -55,7 +55,6 @@ services:
       environment:
         - MLFLOW_HTTP_GATEWAY_ALLOWED_HEADERS=Host
         - MLFLOW_SERVER_GUNICORN_OPTS=--forwarded-allow-ips="*"
-        # AJOUTE CETTE LIGNE CI-DESSOUS :
         - MLFLOW_HTTP_GATEWAY_ALLOWED_HOSTS=*
       volumes:
       - ./mlruns:/mlflow_data

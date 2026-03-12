@@ -81,7 +81,7 @@ MLFlow permet de :
 - gérer les versions,
 - promouvoir un modèle de production
 
-###  Validation du Pipeline d'Observabilité
+### Validation du Pipeline d'Observabilité
 
 Le pipeline d'inférence automatise le tracking des métriques de performance :
 
