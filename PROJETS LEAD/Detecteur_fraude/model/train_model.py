@@ -178,8 +178,8 @@ best_params = {
     'subsample': 1.0,
     'scale_pos_weight': 1,  # Ajusté car SMOTE a déjà équilibré
     'random_state': 42,
-    'eval_metric': 'logloss',
-    'use_label_encoder': False
+    'eval_metric': 'logloss'
+    #'use_label_encoder': False
 }
 
 with mlflow.start_run(run_name="xgboost_fraud_detection") as run:

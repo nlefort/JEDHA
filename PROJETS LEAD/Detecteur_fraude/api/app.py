@@ -25,29 +25,43 @@ app = FastAPI(
 # ----------------------------
 # 2. Chargement du modèle
 # ----------------------------
-# Définir le chemin absolu du modèle
-
 RESULTS_DB = "/app/database/fraud_predictions.db"
-
-# Chemins vers les artefacts
 MODEL_DIR = os.getenv("MODEL_DIR", "/app/data/model")
 
-# Définir les variables avant le try-except
+# 1. Initialisation sécurisée (on évite le None)
 model = None
 scaler = None
-target_map = None
-
+target_map = {} # On met un dictionnaire vide par défaut
 
 try:
-    model = joblib.load(os.path.join(MODEL_DIR, 'model_auto.pkl'))
-    scaler = joblib.load(os.path.join(MODEL_DIR, 'scaler.pkl'))
-    target_map = joblib.load(os.path.join(MODEL_DIR, 'target_encoding.pkl'))
-    print(" Modèle, Scaler et Target Map chargés avec succès.")
-except Exception as e:
-    print(f" Erreur lors du chargement des artefacts : {e}")
+    # 2. Chargement du modèle
+    model_path = os.path.join(MODEL_DIR, 'model_auto.pkl')
+    model = joblib.load(model_path)
+    
+    # FIX XGBOOST : On supprime l'attribut qui fâche si l'objet le possède
+    if model is not None and hasattr(model, 'use_label_encoder'):
+        try:
+            delattr(model, 'use_label_encoder')
+        except:
+            pass
 
-# Vérification
-print("Modèle chargé avec succès :", MODEL_DIR)
+    # 3. Chargement du scaler
+    scaler_path = os.path.join(MODEL_DIR, 'scaler.pkl')
+    scaler = joblib.load(scaler_path)
+
+    # 4. Chargement du target_map
+    encoding_path = os.path.join(MODEL_DIR, 'target_encoding.pkl')
+    target_map = joblib.load(encoding_path)
+    
+    print("Tous les artefacts ont été chargés et nettoyés.")
+
+except Exception as e:
+    # Si ça rate, l'API ne crash pas ici, elle affichera l'erreur dans les logs
+    print(f"Erreur critique lors du chargement : {e}")
+
+# Vérification finale dans les logs Docker
+if target_map == {}:
+    print("Attention : target_map est vide, vérifiez le chemin des fichiers !")
 
 # ----------------------------
 # 3. Schéma d'entrée
